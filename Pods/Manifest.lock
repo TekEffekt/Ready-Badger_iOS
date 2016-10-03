@@ -1,0 +1,16 @@
+PODS:
+  - JTHamburgerButton (1.0.5)
+  - LGSideMenuController (1.0.10)
+  - OneSignal (2.1.15)
+
+DEPENDENCIES:
+  - JTHamburgerButton
+  - LGSideMenuController
+  - OneSignal
+
+SPEC CHECKSUMS:
+  JTHamburgerButton: 9a41c7d051c72590a9d2c18416d84d1b912f12e3
+  LGSideMenuController: 8682bdbd0008c1acfbce95eaf96cc3657bca5f95
+  OneSignal: de89d8a0667559332f825dbc2f545af8ce110a5f
+
+COCOAPODS: 0.39.0
