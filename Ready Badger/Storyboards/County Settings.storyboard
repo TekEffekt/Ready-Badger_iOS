@@ -75,10 +75,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="County Settings" id="tyU-rh-SR6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ez2-EL-9Z2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ez2-EL-9Z2">
+                            <connections>
+                                <action selector="searchPressed:" destination="H3Q-xt-xD9" id="6h4-TU-kr9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="countyTable" destination="PhL-vf-ocb" id="39U-6T-XX1"/>
+                        <outlet property="searchButton" destination="Ez2-EL-9Z2" id="gun-ki-wM6"/>
                         <outlet property="toolbar" destination="kTS-TX-iU3" id="rdJ-QJ-f1Q"/>
                     </connections>
                 </viewController>

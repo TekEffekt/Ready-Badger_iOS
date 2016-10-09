@@ -14,6 +14,8 @@
 		B627DA6F1DAA2660009EC6FB /* CountyWrites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6E1DAA2660009EC6FB /* CountyWrites.swift */; };
 		B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA701DAA32B4009EC6FB /* CountyQueries.swift */; };
 		B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA721DAA4056009EC6FB /* CountyTableViewCell.swift */; };
+		B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */; };
+		B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7D1DAA4389009EC6FB /* Searchable.swift */; };
 		B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E735E1DA1D21F00C33683 /* AppDelegate.swift */; };
 		B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62E73651DA1D21F00C33683 /* Assets.xcassets */; };
 		B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EB1DAA0615001A3634 /* BackendOperation.swift */; };
@@ -41,7 +43,6 @@
 		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
 		B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C51DA9D2700001D4F8 /* County Settings.storyboard */; };
 		B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */; };
-		B69004CC1DA9EFD30001D4F8 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004CB1DA9EFD30001D4F8 /* DefaultTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		B627DA6E1DAA2660009EC6FB /* CountyWrites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyWrites.swift; sourceTree = "<group>"; };
 		B627DA701DAA32B4009EC6FB /* CountyQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyQueries.swift; sourceTree = "<group>"; };
 		B627DA721DAA4056009EC6FB /* CountyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountyTableViewCell.swift; path = "County Settings/CountyTableViewCell.swift"; sourceTree = "<group>"; };
+		B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		B627DA7D1DAA4389009EC6FB /* Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
 		B62E735B1DA1D21F00C33683 /* Ready Badger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ready Badger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62E735E1DA1D21F00C33683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B62E73651DA1D21F00C33683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
 		B69004C51DA9D2700001D4F8 /* County Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "County Settings.storyboard"; sourceTree = "<group>"; };
 		B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySettingsViewController.swift; path = "County Settings/CountySettingsViewController.swift"; sourceTree = "<group>"; };
-		B69004CB1DA9EFD30001D4F8 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultTheme.swift; path = Styling/DefaultTheme.swift; sourceTree = "<group>"; };
 		D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,15 @@
 			path = Persistence/Writes;
 			sourceTree = "<group>";
 		};
+		B627DA7B1DAA4389009EC6FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */,
+				B627DA7D1DAA4389009EC6FB /* Searchable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B62E73521DA1D21F00C33683 = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +190,7 @@
 				B69004BC1DA9CF8E0001D4F8 /* Storyboards */,
 				B627DA661DAA2386009EC6FB /* Persistence Layer */,
 				B65D25E91DAA0615001A3634 /* Network Layer */,
-				B69004CA1DA9EFAB0001D4F8 /* Styling */,
+				B627DA7B1DAA4389009EC6FB /* Extensions */,
 				B69004C71DA9D7B80001D4F8 /* County Settings */,
 				B67510E91DA2389B00E81CB3 /* Alert Feed */,
 				B67510E41DA22C1400E81CB3 /* 3rd Party */,
@@ -288,14 +299,6 @@
 				B627DA721DAA4056009EC6FB /* CountyTableViewCell.swift */,
 			);
 			name = "County Settings";
-			sourceTree = "<group>";
-		};
-		B69004CA1DA9EFAB0001D4F8 /* Styling */ = {
-			isa = PBXGroup;
-			children = (
-				B69004CB1DA9EFD30001D4F8 /* DefaultTheme.swift */,
-			);
-			name = Styling;
 			sourceTree = "<group>";
 		};
 		F88612A4C2267C204843D71B /* Pods */ = {
@@ -452,8 +455,9 @@
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
-				B69004CC1DA9EFD30001D4F8 /* DefaultTheme.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
+				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
+				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,

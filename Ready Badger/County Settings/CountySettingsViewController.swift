@@ -8,16 +8,21 @@
 
 import UIKit
 
-class CountySettingsViewController: UIViewController, DefaultTheme, UITableViewDataSource {
+class CountySettingsViewController: UIViewController, DefaultTheme, Searchable, UITableViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var countyTable: UITableView!
     @IBOutlet weak var toolbar: UIToolbar!
+    var searchButton: UIBarButtonItem!
     let counties = CountyQueries.getAllCountiesByReigon().0
     let regions = CountyQueries.getAllCountiesByReigon().1
+    var searchController: UISearchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         countyTable.dataSource = self
+        searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.searchPressed(_:)))
+        setupSearch()
+        searchController.searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,4 +64,12 @@ class CountySettingsViewController: UIViewController, DefaultTheme, UITableViewD
         return regions[section]
     }
 
+    @IBAction func searchPressed(_ sender: UIBarButtonItem) {
+        startSearch()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        cancelSearch()
+    }
+    
 }
