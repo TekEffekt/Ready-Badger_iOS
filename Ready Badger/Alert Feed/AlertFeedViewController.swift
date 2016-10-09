@@ -17,6 +17,7 @@ class AlertFeedViewController: UIViewController, MenuItem {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAlertFeeds()
+        navigationController?.navigationBar.barTintColor = UIColor.navigationBar()
     }
     
     override func viewWillLayoutSubviews() {
@@ -31,25 +32,12 @@ class AlertFeedViewController: UIViewController, MenuItem {
         let typeFeed = storyboard?.instantiateViewController(withIdentifier: "AlertFeedPage") as! FeedPageViewController
         countyFeed.title = "County"
         typeFeed.title = "Type"
+        typeFeed.type = .type
+        countyFeed.type = .county
         alertFeeds = [countyFeed, typeFeed]
     }
     
     private func setupPageMenu() {
-//        let parameters: [CAPSPageMenuOption] = [
-//            .scrollMenuBackgroundColor(UIColor.white),
-//            .menuItemSeparatorColor(#colorLiteral(red: 0.6235294118, green: 0.6235294118, blue: 0.6235294118, alpha: 1)),
-//            .selectionIndicatorColor(UIColor.tint()),
-//            .addBottomMenuHairline(true),
-//            .menuHeight(40),
-//            .menuItemFont(UIFont(name: "Avenir-Medium", size: 14)!),
-//            .bottomMenuHairlineColor(UIColor.clear),
-//            .selectedMenuItemLabelColor(UIColor.black),
-//            .menuItemWidthBasedOnTitleTextWidth(false),
-//            .centerMenuItems(true),
-//            .menuItemSeparatorWidth(4.3),
-//            .enableHorizontalBounce(true)
-//        ]
-        
         let parameters: [CAPSPageMenuOption] = [
             .menuItemSeparatorWidth(4.3),
             .useMenuLikeSegmentedControl(true),
@@ -57,8 +45,9 @@ class AlertFeedViewController: UIViewController, MenuItem {
             .scrollMenuBackgroundColor(UIColor.white),
             .selectedMenuItemLabelColor(UIColor.black),
             .selectionIndicatorColor(UIColor.tint()),
-            .menuItemFont(UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)),
-            .menuHeight(40)
+            .menuItemFont(UIFont.systemFont(ofSize: 14.6, weight: UIFontWeightMedium)),
+            .menuHeight(40),
+            .menuItemSeparatorColor(#colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1))
         ]
         
         pageMenu = CAPSPageMenu(viewControllers: alertFeeds,
@@ -69,4 +58,5 @@ class AlertFeedViewController: UIViewController, MenuItem {
         self.edgesForExtendedLayout = UIRectEdge()
         self.view.addSubview(pageMenu!.view)
     }
+    
 }

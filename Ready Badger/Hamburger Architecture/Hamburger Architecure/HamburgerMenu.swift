@@ -120,6 +120,10 @@ class HamburgerMenu: LGSideMenuController {
         UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
         UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.fade)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }
 

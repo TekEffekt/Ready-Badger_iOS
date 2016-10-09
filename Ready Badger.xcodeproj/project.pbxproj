@@ -17,11 +17,12 @@
 		B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DC1DA2271A00E81CB3 /* MenuLinkCell.swift */; };
 		B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DD1DA2271A00E81CB3 /* MenuTableViewController.swift */; };
 		B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510E21DA227EF00E81CB3 /* Menu Links.swift */; };
-		B67510E61DA2349D00E81CB3 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510E51DA2349D00E81CB3 /* CustomNavigationController.swift */; };
 		B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510E71DA2381700E81CB3 /* CAPSPageMenu.swift */; };
 		B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */; };
 		B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */; };
 		B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */; };
+		B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510F01DA249F000E81CB3 /* AlertFeedType.swift */; };
+		B67510F31DA24EC700E81CB3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +38,12 @@
 		B67510DC1DA2271A00E81CB3 /* MenuLinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLinkCell.swift; sourceTree = "<group>"; };
 		B67510DD1DA2271A00E81CB3 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		B67510E21DA227EF00E81CB3 /* Menu Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu Links.swift"; sourceTree = "<group>"; };
-		B67510E51DA2349D00E81CB3 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		B67510E71DA2381700E81CB3 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFeedViewController.swift; sourceTree = "<group>"; };
 		B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPageViewController.swift; sourceTree = "<group>"; };
 		B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorAppColors.swift; path = "Ready Badger/UIColorAppColors.swift"; sourceTree = SOURCE_ROOT; };
+		B67510F01DA249F000E81CB3 /* AlertFeedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFeedType.swift; sourceTree = "<group>"; };
+		B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +92,6 @@
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B62E73621DA1D21F00C33683 /* Main.storyboard */,
-				B67510E51DA2349D00E81CB3 /* CustomNavigationController.swift */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
 				B62E73671DA1D21F00C33683 /* LaunchScreen.storyboard */,
@@ -127,6 +128,8 @@
 			children = (
 				B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */,
 				B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */,
+				B67510F01DA249F000E81CB3 /* AlertFeedType.swift */,
+				B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */,
 			);
 			path = "Alert Feed";
 			sourceTree = "<group>";
@@ -264,11 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67510E61DA2349D00E81CB3 /* CustomNavigationController.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
+				B67510F31DA24EC700E81CB3 /* FeedTableViewCell.swift in Sources */,
 				B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */,
 				B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
+				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
