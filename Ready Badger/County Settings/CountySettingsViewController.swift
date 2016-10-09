@@ -12,6 +12,8 @@ class CountySettingsViewController: UIViewController, DefaultTheme, UITableViewD
 
     @IBOutlet weak var countyTable: UITableView!
     @IBOutlet weak var toolbar: UIToolbar!
+    let counties = CountyQueries.getAllCountiesByReigon().0
+    let regions = CountyQueries.getAllCountiesByReigon().1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,20 +39,24 @@ class CountySettingsViewController: UIViewController, DefaultTheme, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "County Cell")
-        return cell!
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "County Cell") as? CountyTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.countyLabel.text = counties[regions[indexPath.section]]?[indexPath.row].name
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        let region = regions[section]
+        return counties[region]?.count ?? 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return regions.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "North"
+        return regions[section]
     }
 
 }
