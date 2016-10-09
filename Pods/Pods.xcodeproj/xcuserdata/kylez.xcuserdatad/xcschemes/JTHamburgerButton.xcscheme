@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A7BEF624B323AD2CF4F73FB7'
+               BlueprintIdentifier = '9A2E53F1779CB8603F30802B'
                BlueprintName = 'JTHamburgerButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JTHamburgerButton.framework'>
