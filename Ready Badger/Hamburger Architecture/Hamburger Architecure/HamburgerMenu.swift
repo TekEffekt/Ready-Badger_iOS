@@ -64,11 +64,14 @@ class HamburgerMenu: LGSideMenuController {
     }
     
     private func setupNavigationController() {
-        navController = (storyboard!.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController)
-        self.rootViewController = navController
+        if let storyboard = storyboard, let navController = (storyboard.instantiateViewController(withIdentifier: "Navigation Controller") as? UINavigationController) {
+            self.navController = navController
+            self.rootViewController = navController
+        }
     }
     
     private func loadFirstMenuItem() {
+        openLink(linkName: "Alert Feed")
         let firstItem = navController!.viewControllers.first! as! MenuItem
         firstItem.menu = self
         
@@ -89,13 +92,14 @@ class HamburgerMenu: LGSideMenuController {
     // MARK: Changed Link
     func openLink(linkName name:String) {
         hideLeftView(animated: true, completionHandler: nil)
-        guard let newItem = storyboard!.instantiateViewController(withIdentifier: name) as? MenuItem else { return }
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        guard let newItem = storyboard.instantiateViewController(withIdentifier: name) as? MenuItem else { return }
         
         newItem.menu = self
         
         let newVc = newItem as! UIViewController
         
-        if (name != "Emergency Tone") {
+        if (name != "Emergency Tone" && navController!.viewControllers.count > 0) {
             navController!.viewControllers.removeFirst()
         }
         

@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		5983BE7C986B54F6CC767372 /* Pods_Ready_Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */; };
 		B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E735E1DA1D21F00C33683 /* AppDelegate.swift */; };
-		B62E73641DA1D21F00C33683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E73621DA1D21F00C33683 /* Main.storyboard */; };
 		B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62E73651DA1D21F00C33683 /* Assets.xcassets */; };
-		B62E73691DA1D21F00C33683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E73671DA1D21F00C33683 /* LaunchScreen.storyboard */; };
 		B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DA1DA2271A00E81CB3 /* HamburgerMenu.swift */; };
 		B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DB1DA2271A00E81CB3 /* MenuItem.swift */; };
 		B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DC1DA2271A00E81CB3 /* MenuLinkCell.swift */; };
@@ -23,15 +21,19 @@
 		B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */; };
 		B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510F01DA249F000E81CB3 /* AlertFeedType.swift */; };
 		B67510F31DA24EC700E81CB3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */; };
+		B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */; };
+		B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */; };
+		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
+		B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C51DA9D2700001D4F8 /* County Settings.storyboard */; };
+		B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */; };
+		B69004CC1DA9EFD30001D4F8 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004CB1DA9EFD30001D4F8 /* DefaultTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready_Badger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62E735B1DA1D21F00C33683 /* Ready Badger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ready Badger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62E735E1DA1D21F00C33683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B62E73631DA1D21F00C33683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B62E73651DA1D21F00C33683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B62E73681DA1D21F00C33683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B62E736A1DA1D21F00C33683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B67510DA1DA2271A00E81CB3 /* HamburgerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerMenu.swift; sourceTree = "<group>"; };
 		B67510DB1DA2271A00E81CB3 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -44,6 +46,12 @@
 		B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorAppColors.swift; path = "Ready Badger/UIColorAppColors.swift"; sourceTree = SOURCE_ROOT; };
 		B67510F01DA249F000E81CB3 /* AlertFeedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFeedType.swift; sourceTree = "<group>"; };
 		B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
+		B69004C51DA9D2700001D4F8 /* County Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "County Settings.storyboard"; sourceTree = "<group>"; };
+		B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySettingsViewController.swift; path = "County Settings/CountySettingsViewController.swift"; sourceTree = "<group>"; };
+		B69004CB1DA9EFD30001D4F8 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultTheme.swift; path = Styling/DefaultTheme.swift; sourceTree = "<group>"; };
 		D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,10 +99,11 @@
 			children = (
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
-				B62E73621DA1D21F00C33683 /* Main.storyboard */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
-				B62E73671DA1D21F00C33683 /* LaunchScreen.storyboard */,
+				B69004CA1DA9EFAB0001D4F8 /* Styling */,
+				B69004C71DA9D7B80001D4F8 /* County Settings */,
+				B69004BC1DA9CF8E0001D4F8 /* Storyboards */,
 				B67510E91DA2389B00E81CB3 /* Alert Feed */,
 				B67510E41DA22C1400E81CB3 /* 3rd Party */,
 				B67510D91DA2271A00E81CB3 /* Hamburger Architecure */,
@@ -132,6 +141,33 @@
 				B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */,
 			);
 			path = "Alert Feed";
+			sourceTree = "<group>";
+		};
+		B69004BC1DA9CF8E0001D4F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */,
+				B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */,
+				B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */,
+				B69004C51DA9D2700001D4F8 /* County Settings.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B69004C71DA9D7B80001D4F8 /* County Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */,
+			);
+			name = "County Settings";
+			sourceTree = "<group>";
+		};
+		B69004CA1DA9EFAB0001D4F8 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				B69004CB1DA9EFD30001D4F8 /* DefaultTheme.swift */,
+			);
+			name = Styling;
 			sourceTree = "<group>";
 		};
 		F88612A4C2267C204843D71B /* Pods */ = {
@@ -206,9 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62E73691DA1D21F00C33683 /* LaunchScreen.storyboard in Resources */,
+				B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */,
+				B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */,
+				B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */,
 				B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */,
-				B62E73641DA1D21F00C33683 /* Main.storyboard in Resources */,
+				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +308,11 @@
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
 				B67510F31DA24EC700E81CB3 /* FeedTableViewCell.swift in Sources */,
 				B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */,
+				B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */,
 				B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
+				B69004CC1DA9EFD30001D4F8 /* DefaultTheme.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
@@ -283,25 +323,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B62E73621DA1D21F00C33683 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B62E73631DA1D21F00C33683 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B62E73671DA1D21F00C33683 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B62E73681DA1D21F00C33683 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B62E736B1DA1D21F00C33683 /* Debug */ = {

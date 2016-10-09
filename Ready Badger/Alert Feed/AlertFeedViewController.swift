@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlertFeedViewController: UIViewController, MenuItem {
+class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     
     var pageMenu: CAPSPageMenu?
     var alertFeeds: [FeedPageViewController]!
@@ -17,7 +17,11 @@ class AlertFeedViewController: UIViewController, MenuItem {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAlertFeeds()
-        navigationController?.navigationBar.barTintColor = UIColor.navigationBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        applyTheme()
     }
     
     override func viewWillLayoutSubviews() {

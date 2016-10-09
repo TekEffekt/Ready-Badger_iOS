@@ -18,4 +18,8 @@ extension UIColor {
         return UIColor(red:0.86, green:0.30, blue:0.25, alpha:1.0)
     }
     
+    static func secondaryTint() -> UIColor {
+        return UIColor.white
+    }
+    
 }
