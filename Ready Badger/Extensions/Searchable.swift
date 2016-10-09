@@ -13,6 +13,7 @@ protocol Searchable: class {
     var searchController: UISearchController { set get }
     var searchButton: UIBarButtonItem! { set get }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
+    
 }
 
 extension Searchable where Self: UIViewController {
