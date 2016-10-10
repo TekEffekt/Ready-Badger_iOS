@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X0o-Dj-kau">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu Table View Controller-->
+        <scene sceneID="eNw-cH-8TK">
+            <objects>
+                <viewController restorationIdentifier="HamburgerMenu" storyboardIdentifier="Table" id="RYI-3d-Sd2" customClass="MenuTableViewController" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Isr-cw-5pT"/>
+                        <viewControllerLayoutGuide type="bottom" id="q5B-56-f1C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wnT-sa-Z6r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uME-I5-vZJ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Menu Link" id="1cC-E5-9ET" customClass="MenuLinkCell" customModule="Ready_Badger" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="383" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1cC-E5-9ET" id="0l0-aK-ThI">
+                                            <frame key="frameInset" width="383" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="NameLabel" text="Make A List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wn5-xa-aIn">
+                                                    <frame key="frameInset" minX="72" minY="11" width="170" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="spacerView" translatesAutoresizingMaskIntoConstraints="NO" id="d6T-pd-SLS">
+                                                    <frame key="frameInset" minX="72" minY="40" width="165" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-Ay-OrV">
+                                                    <frame key="frameInset" minX="21" minY="8" width="28" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="icon" destination="sUW-Ay-OrV" id="egz-Iu-P8G"/>
+                                            <outlet property="name" destination="wn5-xa-aIn" id="kOY-HN-LV4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uME-I5-vZJ" firstAttribute="top" secondItem="Isr-cw-5pT" secondAttribute="bottom" id="5Ea-BF-tn3"/>
+                            <constraint firstItem="uME-I5-vZJ" firstAttribute="leading" secondItem="wnT-sa-Z6r" secondAttribute="leadingMargin" constant="-20" id="WLQ-4C-dpW"/>
+                            <constraint firstItem="uME-I5-vZJ" firstAttribute="top" secondItem="Isr-cw-5pT" secondAttribute="bottom" constant="25" id="ohz-sg-PaL"/>
+                            <constraint firstItem="q5B-56-f1C" firstAttribute="top" secondItem="uME-I5-vZJ" secondAttribute="bottom" id="rQb-Y1-4BN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uME-I5-vZJ" secondAttribute="trailing" constant="-20" id="tP5-wY-nUw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ohz-sg-PaL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="uME-I5-vZJ" id="hVP-TE-Rdv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEU-5h-JkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="224"/>
+        </scene>
+        <!--Hamburger Menu-->
+        <scene sceneID="mHb-4z-L1S">
+            <objects>
+                <viewController title="Hamburger Menu" id="X0o-Dj-kau" customClass="HamburgerMenu" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pbY-mR-wOc"/>
+                        <viewControllerLayoutGuide type="bottom" id="G7y-Oz-e4x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMG-Ah-fvb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIL-BX-jjr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="225"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kQN-j1-rZV">
+            <objects>
+                <navigationController storyboardIdentifier="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="DN7-pj-wEf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7LI-17-aZE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.85882352939999995" green="0.29803921570000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XvN-V1-kkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="224"/>
+        </scene>
+    </scenes>
+</document>

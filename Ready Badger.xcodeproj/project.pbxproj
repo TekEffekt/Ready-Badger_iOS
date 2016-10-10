@@ -8,10 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		5983BE7C986B54F6CC767372 /* Pods_Ready_Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */; };
+		B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */; };
+		B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */; };
+		B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6A1DAA25B7009EC6FB /* County.swift */; };
+		B627DA6F1DAA2660009EC6FB /* CountyWrites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6E1DAA2660009EC6FB /* CountyWrites.swift */; };
+		B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA701DAA32B4009EC6FB /* CountyQueries.swift */; };
+		B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA721DAA4056009EC6FB /* CountyTableViewCell.swift */; };
+		B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */; };
+		B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7D1DAA4389009EC6FB /* Searchable.swift */; };
+		B627DA811DAAC6A5009EC6FB /* CountySearchLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */; };
+		B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */; };
+		B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */; };
+		B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA871DAB6C72009EC6FB /* CurrentWeatherItem.swift */; };
+		B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA891DAB714A009EC6FB /* FeedItem.swift */; };
+		B627DA8C1DAB7B33009EC6FB /* HackFeedGather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA8B1DAB7B33009EC6FB /* HackFeedGather.swift */; };
 		B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E735E1DA1D21F00C33683 /* AppDelegate.swift */; };
-		B62E73641DA1D21F00C33683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E73621DA1D21F00C33683 /* Main.storyboard */; };
 		B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62E73651DA1D21F00C33683 /* Assets.xcassets */; };
-		B62E73691DA1D21F00C33683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E73671DA1D21F00C33683 /* LaunchScreen.storyboard */; };
+		B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EB1DAA0615001A3634 /* BackendOperation.swift */; };
+		B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EC1DAA0615001A3634 /* BackendRequest.swift */; };
+		B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */; };
+		B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EF1DAA0615001A3634 /* BackendServiceMethod.swift */; };
+		B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25F11DAA0615001A3634 /* BackendConfiguration.swift */; };
+		B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25F21DAA0615001A3634 /* BackendService.swift */; };
+		B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25F31DAA0615001A3634 /* NetworkQueue.swift */; };
+		B65D261B1DAA07D0001A3634 /* AllCountyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D261A1DAA07D0001A3634 /* AllCountyRequest.swift */; };
+		B65D261D1DAA086E001A3634 /* AllCountyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D261C1DAA086E001A3634 /* AllCountyOperation.swift */; };
 		B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DA1DA2271A00E81CB3 /* HamburgerMenu.swift */; };
 		B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DB1DA2271A00E81CB3 /* MenuItem.swift */; };
 		B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510DC1DA2271A00E81CB3 /* MenuLinkCell.swift */; };
@@ -23,16 +44,42 @@
 		B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */; };
 		B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510F01DA249F000E81CB3 /* AlertFeedType.swift */; };
 		B67510F31DA24EC700E81CB3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */; };
+		B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */; };
+		B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */; };
+		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
+		B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C51DA9D2700001D4F8 /* County Settings.storyboard */; };
+		B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready_Badger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyDataParse.swift; sourceTree = "<group>"; };
+		B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponseParse.swift; sourceTree = "<group>"; };
+		B627DA6A1DAA25B7009EC6FB /* County.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
+		B627DA6E1DAA2660009EC6FB /* CountyWrites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyWrites.swift; sourceTree = "<group>"; };
+		B627DA701DAA32B4009EC6FB /* CountyQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyQueries.swift; sourceTree = "<group>"; };
+		B627DA721DAA4056009EC6FB /* CountyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountyTableViewCell.swift; path = "County Settings/CountyTableViewCell.swift"; sourceTree = "<group>"; };
+		B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		B627DA7D1DAA4389009EC6FB /* Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
+		B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySearchLogic.swift; path = "County Settings/CountySearchLogic.swift"; sourceTree = "<group>"; };
+		B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherRequest.swift; sourceTree = "<group>"; };
+		B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherOperation.swift; sourceTree = "<group>"; };
+		B627DA871DAB6C72009EC6FB /* CurrentWeatherItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherItem.swift; sourceTree = "<group>"; };
+		B627DA891DAB714A009EC6FB /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		B627DA8B1DAB7B33009EC6FB /* HackFeedGather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackFeedGather.swift; sourceTree = "<group>"; };
 		B62E735B1DA1D21F00C33683 /* Ready Badger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ready Badger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62E735E1DA1D21F00C33683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B62E73631DA1D21F00C33683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B62E73651DA1D21F00C33683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B62E73681DA1D21F00C33683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B62E736A1DA1D21F00C33683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65D25EB1DAA0615001A3634 /* BackendOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendOperation.swift; sourceTree = "<group>"; };
+		B65D25EC1DAA0615001A3634 /* BackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequest.swift; sourceTree = "<group>"; };
+		B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequestJSONExtension.swift; sourceTree = "<group>"; };
+		B65D25EF1DAA0615001A3634 /* BackendServiceMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendServiceMethod.swift; sourceTree = "<group>"; };
+		B65D25F11DAA0615001A3634 /* BackendConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendConfiguration.swift; sourceTree = "<group>"; };
+		B65D25F21DAA0615001A3634 /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		B65D25F31DAA0615001A3634 /* NetworkQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkQueue.swift; sourceTree = "<group>"; };
+		B65D261A1DAA07D0001A3634 /* AllCountyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountyRequest.swift; sourceTree = "<group>"; };
+		B65D261C1DAA086E001A3634 /* AllCountyOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCountyOperation.swift; sourceTree = "<group>"; };
 		B67510DA1DA2271A00E81CB3 /* HamburgerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerMenu.swift; sourceTree = "<group>"; };
 		B67510DB1DA2271A00E81CB3 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		B67510DC1DA2271A00E81CB3 /* MenuLinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLinkCell.swift; sourceTree = "<group>"; };
@@ -44,6 +91,11 @@
 		B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorAppColors.swift; path = "Ready Badger/UIColorAppColors.swift"; sourceTree = SOURCE_ROOT; };
 		B67510F01DA249F000E81CB3 /* AlertFeedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFeedType.swift; sourceTree = "<group>"; };
 		B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
+		B69004C51DA9D2700001D4F8 /* County Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "County Settings.storyboard"; sourceTree = "<group>"; };
+		B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySettingsViewController.swift; path = "County Settings/CountySettingsViewController.swift"; sourceTree = "<group>"; };
 		D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +118,69 @@
 				9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B627DA611DAA21C5009EC6FB /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		B627DA661DAA2386009EC6FB /* Persistence Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA6D1DAA2650009EC6FB /* Writes */,
+				B627DA6C1DAA2636009EC6FB /* Queries */,
+				B627DA691DAA25B7009EC6FB /* Objects */,
+			);
+			name = "Persistence Layer";
+			sourceTree = "<group>";
+		};
+		B627DA691DAA25B7009EC6FB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA6A1DAA25B7009EC6FB /* County.swift */,
+			);
+			name = Objects;
+			path = Persistence/Objects;
+			sourceTree = "<group>";
+		};
+		B627DA6C1DAA2636009EC6FB /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA701DAA32B4009EC6FB /* CountyQueries.swift */,
+			);
+			name = Queries;
+			path = Persistence/Queries;
+			sourceTree = "<group>";
+		};
+		B627DA6D1DAA2650009EC6FB /* Writes */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA6E1DAA2660009EC6FB /* CountyWrites.swift */,
+			);
+			name = Writes;
+			path = Persistence/Writes;
+			sourceTree = "<group>";
+		};
+		B627DA7B1DAA4389009EC6FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */,
+				B627DA7D1DAA4389009EC6FB /* Searchable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B627DA861DAB6C2B009EC6FB /* Feed Items */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA871DAB6C72009EC6FB /* CurrentWeatherItem.swift */,
+				B627DA891DAB714A009EC6FB /* FeedItem.swift */,
+			);
+			path = "Feed Items";
 			sourceTree = "<group>";
 		};
 		B62E73521DA1D21F00C33683 = {
@@ -91,15 +206,71 @@
 			children = (
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
-				B62E73621DA1D21F00C33683 /* Main.storyboard */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
-				B62E73671DA1D21F00C33683 /* LaunchScreen.storyboard */,
+				B69004BC1DA9CF8E0001D4F8 /* Storyboards */,
+				B627DA661DAA2386009EC6FB /* Persistence Layer */,
+				B65D25E91DAA0615001A3634 /* Network Layer */,
+				B627DA7B1DAA4389009EC6FB /* Extensions */,
+				B69004C71DA9D7B80001D4F8 /* County Settings */,
 				B67510E91DA2389B00E81CB3 /* Alert Feed */,
 				B67510E41DA22C1400E81CB3 /* 3rd Party */,
 				B67510D91DA2271A00E81CB3 /* Hamburger Architecure */,
 			);
 			path = "Ready Badger";
+			sourceTree = "<group>";
+		};
+		B65D25E91DAA0615001A3634 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA8B1DAB7B33009EC6FB /* HackFeedGather.swift */,
+				B65D25EA1DAA0615001A3634 /* Abstractions */,
+				B65D25F11DAA0615001A3634 /* BackendConfiguration.swift */,
+				B65D25F21DAA0615001A3634 /* BackendService.swift */,
+				B65D25F31DAA0615001A3634 /* NetworkQueue.swift */,
+				B627DA611DAA21C5009EC6FB /* Parse */,
+				B65D25F41DAA0615001A3634 /* Operations */,
+				B65D25FA1DAA0615001A3634 /* Requests */,
+				B65D26001DAA0615001A3634 /* Responses */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		B65D25EA1DAA0615001A3634 /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				B65D25EB1DAA0615001A3634 /* BackendOperation.swift */,
+				B65D25EC1DAA0615001A3634 /* BackendRequest.swift */,
+				B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */,
+				B65D25EF1DAA0615001A3634 /* BackendServiceMethod.swift */,
+				B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		B65D25F41DAA0615001A3634 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				B65D261C1DAA086E001A3634 /* AllCountyOperation.swift */,
+				B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		B65D25FA1DAA0615001A3634 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B65D261A1DAA07D0001A3634 /* AllCountyRequest.swift */,
+				B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		B65D26001DAA0615001A3634 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		B67510D91DA2271A00E81CB3 /* Hamburger Architecure */ = {
@@ -126,12 +297,34 @@
 		B67510E91DA2389B00E81CB3 /* Alert Feed */ = {
 			isa = PBXGroup;
 			children = (
+				B627DA861DAB6C2B009EC6FB /* Feed Items */,
 				B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */,
 				B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */,
 				B67510F01DA249F000E81CB3 /* AlertFeedType.swift */,
 				B67510F21DA24EC700E81CB3 /* FeedTableViewCell.swift */,
 			);
 			path = "Alert Feed";
+			sourceTree = "<group>";
+		};
+		B69004BC1DA9CF8E0001D4F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */,
+				B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */,
+				B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */,
+				B69004C51DA9D2700001D4F8 /* County Settings.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B69004C71DA9D7B80001D4F8 /* County Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */,
+				B627DA721DAA4056009EC6FB /* CountyTableViewCell.swift */,
+				B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */,
+			);
+			name = "County Settings";
 			sourceTree = "<group>";
 		};
 		F88612A4C2267C204843D71B /* Pods */ = {
@@ -206,9 +399,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62E73691DA1D21F00C33683 /* LaunchScreen.storyboard in Resources */,
+				B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */,
+				B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */,
+				B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */,
 				B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */,
-				B62E73641DA1D21F00C33683 /* Main.storyboard in Resources */,
+				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,41 +462,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */,
+				B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */,
+				B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
+				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
+				B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */,
+				B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */,
 				B67510F31DA24EC700E81CB3 /* FeedTableViewCell.swift in Sources */,
+				B65D261D1DAA086E001A3634 /* AllCountyOperation.swift in Sources */,
 				B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */,
+				B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */,
 				B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */,
+				B627DA811DAAC6A5009EC6FB /* CountySearchLogic.swift in Sources */,
+				B65D261B1DAA07D0001A3634 /* AllCountyRequest.swift in Sources */,
+				B627DA6F1DAA2660009EC6FB /* CountyWrites.swift in Sources */,
+				B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */,
+				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
+				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
+				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
+				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
+				B627DA8C1DAB7B33009EC6FB /* HackFeedGather.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
+				B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */,
+				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
+				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
+				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
+				B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */,
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
+				B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */,
+				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B62E73621DA1D21F00C33683 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B62E73631DA1D21F00C33683 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B62E73671DA1D21F00C33683 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B62E73681DA1D21F00C33683 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B62E736B1DA1D21F00C33683 /* Debug */ = {

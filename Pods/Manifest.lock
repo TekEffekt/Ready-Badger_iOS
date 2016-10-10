@@ -2,15 +2,23 @@ PODS:
   - JTHamburgerButton (1.0.5)
   - LGSideMenuController (1.0.10)
   - OneSignal (2.1.15)
+  - Realm (2.0.2):
+    - Realm/Headers (= 2.0.2)
+  - Realm/Headers (2.0.2)
+  - RealmSwift (2.0.2):
+    - Realm (= 2.0.2)
 
 DEPENDENCIES:
   - JTHamburgerButton
   - LGSideMenuController
   - OneSignal
+  - RealmSwift
 
 SPEC CHECKSUMS:
   JTHamburgerButton: 9a41c7d051c72590a9d2c18416d84d1b912f12e3
   LGSideMenuController: 8682bdbd0008c1acfbce95eaf96cc3657bca5f95
   OneSignal: de89d8a0667559332f825dbc2f545af8ce110a5f
+  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
+  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
 
 COCOAPODS: 0.39.0

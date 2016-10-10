@@ -8,16 +8,41 @@
 
 import UIKit
 
-class AlertFeedViewController: UIViewController, MenuItem {
+class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     
     var pageMenu: CAPSPageMenu?
     var alertFeeds: [FeedPageViewController]!
     var menu: HamburgerMenu?
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAlertFeeds()
-        navigationController?.navigationBar.barTintColor = UIColor.navigationBar()
+        
+        NetworkQueue.shared.addOperation(AllCountyOperation(withRequest: AllCountyRequest()))
+    }
+    
+    private func downloadFeedData() {
+        HackFeedGather.gather { (items) in
+            let countyFeed = self.alertFeeds[0]
+            let typeFeed = self.alertFeeds[1]
+            countyFeed.feedData = self.splitItemsByCounty(items: items)
+            typeFeed.feedData = self.splitItemsByType(items: items)
+            countyFeed.keyList = Array(countyFeed.feedData.keys)
+            typeFeed.keyList = Array(typeFeed.feedData.keys)
+            countyFeed.newData = true
+            typeFeed.newData = true
+            OperationQueue.main.addOperation({ 
+                self.loadingIndicator.stopAnimating()
+            })
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        applyTheme()
+        downloadFeedData()
+        loadingIndicator.startAnimating()
     }
     
     override func viewWillLayoutSubviews() {
@@ -35,6 +60,21 @@ class AlertFeedViewController: UIViewController, MenuItem {
         typeFeed.type = .type
         countyFeed.type = .county
         alertFeeds = [countyFeed, typeFeed]
+    }
+    
+    private func splitItemsByCounty(items: [CurrentWeatherItem]) -> [String: [CurrentWeatherItem]] {
+        var result: [String: [CurrentWeatherItem]] = [:]
+        for item in items {
+            if result[item.countyName] == nil {
+                result[item.countyName] = []
+            }
+            result[item.countyName]?.append(item)
+        }
+        return result
+    }
+    
+    private func splitItemsByType(items: [CurrentWeatherItem]) -> [String: [CurrentWeatherItem]] {
+        return ["Current Weather": items]
     }
     
     private func setupPageMenu() {
@@ -57,6 +97,7 @@ class AlertFeedViewController: UIViewController, MenuItem {
         
         self.edgesForExtendedLayout = UIRectEdge()
         self.view.addSubview(pageMenu!.view)
+        view.insertSubview(pageMenu!.view, belowSubview: loadingIndicator)
     }
     
 }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--County Settings-->
+        <scene sceneID="e0s-zZ-irx">
+            <objects>
+                <viewController storyboardIdentifier="County Settings" title="County Settings" id="H3Q-xt-xD9" customClass="CountySettingsViewController" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="38y-ld-ktv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ciz-GP-sEm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fTN-bv-sCz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="55" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="PhL-vf-ocb">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="County Cell" id="ENm-5g-VUo" customClass="CountyTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ENm-5g-VUo" id="Cfw-Mw-JGV">
+                                            <frame key="frameInset" width="375" height="54.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DPO-4m-bQT">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="HSj-Y8-OWl"/>
+                                                        <constraint firstAttribute="height" constant="25" id="dHQ-Wt-YMp"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="countySwitchTapped:" destination="ENm-5g-VUo" eventType="valueChanged" id="KPP-4o-0Xq"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Racine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37K-1P-rEp">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="37K-1P-rEp" firstAttribute="centerY" secondItem="Cfw-Mw-JGV" secondAttribute="centerY" id="6yq-Yr-H9s"/>
+                                                <constraint firstItem="DPO-4m-bQT" firstAttribute="centerY" secondItem="Cfw-Mw-JGV" secondAttribute="centerY" id="Fgh-Uc-veO"/>
+                                                <constraint firstItem="37K-1P-rEp" firstAttribute="leading" secondItem="Cfw-Mw-JGV" secondAttribute="leadingMargin" id="I7u-IX-97v"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DPO-4m-bQT" secondAttribute="trailing" constant="13" id="kJg-jP-D7G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countyLabel" destination="37K-1P-rEp" id="55Z-yI-MNF"/>
+                                            <outlet property="switch" destination="DPO-4m-bQT" id="6gd-qB-zDR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTS-TX-iU3">
+                                <constraints>
+                                    <constraint firstAttribute="height" id="DL6-4U-civ"/>
+                                </constraints>
+                                <items/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kTS-TX-iU3" firstAttribute="leading" secondItem="fTN-bv-sCz" secondAttribute="leading" id="DK6-RK-i1n"/>
+                            <constraint firstItem="Ciz-GP-sEm" firstAttribute="top" secondItem="kTS-TX-iU3" secondAttribute="bottom" id="Jyd-ee-M8D"/>
+                            <constraint firstAttribute="trailing" secondItem="PhL-vf-ocb" secondAttribute="trailing" id="d7I-Ki-Ga9"/>
+                            <constraint firstItem="PhL-vf-ocb" firstAttribute="top" secondItem="38y-ld-ktv" secondAttribute="bottom" id="hMQ-rG-JhM"/>
+                            <constraint firstItem="PhL-vf-ocb" firstAttribute="leading" secondItem="fTN-bv-sCz" secondAttribute="leading" id="pQO-L8-YKm"/>
+                            <constraint firstAttribute="trailing" secondItem="kTS-TX-iU3" secondAttribute="trailing" id="xrb-W7-Jq3"/>
+                            <constraint firstItem="kTS-TX-iU3" firstAttribute="top" secondItem="PhL-vf-ocb" secondAttribute="bottom" id="zeR-kH-AV2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="County Settings" id="tyU-rh-SR6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ez2-EL-9Z2">
+                            <connections>
+                                <action selector="searchPressed:" destination="H3Q-xt-xD9" id="6h4-TU-kr9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="countyTable" destination="PhL-vf-ocb" id="39U-6T-XX1"/>
+                        <outlet property="searchButton" destination="Ez2-EL-9Z2" id="gun-ki-wM6"/>
+                        <outlet property="toolbar" destination="kTS-TX-iU3" id="rdJ-QJ-f1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17e-YP-q1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="147"/>
+        </scene>
+    </scenes>
+</document>
