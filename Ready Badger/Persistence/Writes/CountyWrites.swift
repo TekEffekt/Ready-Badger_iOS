@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 
 class CountyWrites {
+    
     static func saveCounty(name: String, region: String, weatherAlertCode: String, currentWeatherCode: String,
                            facebook: String, twitter: String, website: String) {
         do {
@@ -41,4 +42,5 @@ class CountyWrites {
             print("Realm Exception")
         }
     }
+    
 }

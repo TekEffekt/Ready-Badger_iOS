@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct CurrentWeatherItem {
-    let title: String
-    let description: String
-    let countyName: String
+struct CurrentWeatherItem: FeedItem {
+    var title: String
+    var description: String
+    var countyName: String
 }

@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct FeedItem {
-    let county: String
-    let title: String
-    let description: String
+protocol FeedItem {
+    var countyName: String { get }
+    var title: String { get }
+    var description: String { get }
 }

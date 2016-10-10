@@ -23,6 +23,11 @@ class CountyQueries {
         return []
     }
     
+    static func getAllSelectedCounties() -> [County] {
+        let counties = getAllCounties()
+        return counties.filter() { (county) in county.selected == true }
+    }
+    
     static func getAllCountiesByReigon() -> ([String: [County]], [String]) {
         let counties = getAllCounties()
         var organized: [String: [County]] = [:]
