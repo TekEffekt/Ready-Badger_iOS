@@ -17,6 +17,10 @@
 		B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */; };
 		B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7D1DAA4389009EC6FB /* Searchable.swift */; };
 		B627DA811DAAC6A5009EC6FB /* CountySearchLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */; };
+		B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */; };
+		B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */; };
+		B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA871DAB6C72009EC6FB /* CurrentWeatherItem.swift */; };
+		B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA891DAB714A009EC6FB /* FeedItem.swift */; };
 		B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E735E1DA1D21F00C33683 /* AppDelegate.swift */; };
 		B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62E73651DA1D21F00C33683 /* Assets.xcassets */; };
 		B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EB1DAA0615001A3634 /* BackendOperation.swift */; };
@@ -57,6 +61,10 @@
 		B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
 		B627DA7D1DAA4389009EC6FB /* Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
 		B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySearchLogic.swift; path = "County Settings/CountySearchLogic.swift"; sourceTree = "<group>"; };
+		B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherRequest.swift; sourceTree = "<group>"; };
+		B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherOperation.swift; sourceTree = "<group>"; };
+		B627DA871DAB6C72009EC6FB /* CurrentWeatherItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherItem.swift; sourceTree = "<group>"; };
+		B627DA891DAB714A009EC6FB /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		B62E735B1DA1D21F00C33683 /* Ready Badger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ready Badger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62E735E1DA1D21F00C33683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B62E73651DA1D21F00C33683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +172,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B627DA861DAB6C2B009EC6FB /* Feed Items */ = {
+			isa = PBXGroup;
+			children = (
+				B627DA871DAB6C72009EC6FB /* CurrentWeatherItem.swift */,
+				B627DA891DAB714A009EC6FB /* FeedItem.swift */,
+			);
+			path = "Feed Items";
+			sourceTree = "<group>";
+		};
 		B62E73521DA1D21F00C33683 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				B65D261C1DAA086E001A3634 /* AllCountyOperation.swift */,
+				B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -240,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				B65D261A1DAA07D0001A3634 /* AllCountyRequest.swift */,
+				B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -275,6 +294,7 @@
 		B67510E91DA2389B00E81CB3 /* Alert Feed */ = {
 			isa = PBXGroup;
 			children = (
+				B627DA861DAB6C2B009EC6FB /* Feed Items */,
 				B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */,
 				B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */,
 				B67510F01DA249F000E81CB3 /* AlertFeedType.swift */,
@@ -457,9 +477,12 @@
 				B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */,
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
+				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
+				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
+				B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
@@ -469,6 +492,7 @@
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
+				B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

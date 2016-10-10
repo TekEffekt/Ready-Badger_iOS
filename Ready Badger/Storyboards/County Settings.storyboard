@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="County Cell" id="ENm-5g-VUo" customClass="CountyTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="55"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ENm-5g-VUo" id="Cfw-Mw-JGV">
                                             <frame key="frameInset" width="375" height="54.5"/>
@@ -52,13 +52,14 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="countyLabel" destination="37K-1P-rEp" id="55Z-yI-MNF"/>
+                                            <outlet property="switch" destination="DPO-4m-bQT" id="6gd-qB-zDR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTS-TX-iU3">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="DL6-4U-civ"/>
+                                    <constraint firstAttribute="height" id="DL6-4U-civ"/>
                                 </constraints>
                                 <items/>
                             </toolbar>

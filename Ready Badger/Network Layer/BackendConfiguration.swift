@@ -11,7 +11,7 @@ import Foundation
 class BackendConfiguration {
     
     let baseUrl: NSURL
-    static var shared: BackendConfiguration = BackendConfiguration(urlString: "http://readybadger.org/api/index.php/counties/index/RB-API-KEY/testhi")
+    static var shared: BackendConfiguration = BackendConfiguration(urlString: "http://readybadger.org/api/index.php")
     
     init(urlString: String) {
         baseUrl = NSURL(string: urlString) ?? NSURL()

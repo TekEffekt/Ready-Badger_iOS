@@ -19,6 +19,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         loadAlertFeeds()
         
         NetworkQueue.shared.addOperation(AllCountyOperation(withRequest: AllCountyRequest()))
+        NetworkQueue.shared.addOperation(CurrentWeatherOperation(withRequest: CurrentWeatherRequest(currentWeatherCode: "KRAC")))
     }
     
     override func viewWillAppear(_ animated: Bool) {

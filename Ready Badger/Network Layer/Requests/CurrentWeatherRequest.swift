@@ -1,5 +1,5 @@
 //
-//  AllCountyRequest.swift
+//  CurrentWeatherRequest.swift
 //  Ready Badger
 //
 //  Created by Kyle Zawacki on 10/9/16.
@@ -8,14 +8,20 @@
 
 import Foundation
 
-struct AllCountyRequest: BackendRequest {
+struct CurrentWeatherRequest: BackendRequest {
+    
+    let currentWeatherCode: String
     
     var endpoint: String {
-        return "counties/index/RB-API-KEY/testhi"
+        return "RSS/currentWeather/RB-API-KEY/testhi/currentWeatherCode/\(currentWeatherCode)"
     }
     
     var method: BackendServiceMethod {
         return .GET
+    }
+    
+    var parameters: [String : AnyObject]? {
+        return nil
     }
     
     var headers: [String : String]? {
@@ -23,10 +29,6 @@ struct AllCountyRequest: BackendRequest {
     }
     
     var imageData: NSData? {
-        return nil
-    }
-    
-    var parameters: [String : AnyObject]? {
         return nil
     }
     

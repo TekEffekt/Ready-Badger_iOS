@@ -51,7 +51,10 @@ class CountySettingsViewController: UIViewController, DefaultTheme, Searchable, 
             return UITableViewCell()
         }
         let counties = getCounties()
-        cell.countyLabel.text = counties[getRegions()[indexPath.section]]?[indexPath.row].name
+        let county = counties[getRegions()[indexPath.section]]?[indexPath.row]
+        cell.countyLabel.text = county?.name
+        cell.county = county
+        cell.switch.isOn = county!.selected
         return cell
     }
     

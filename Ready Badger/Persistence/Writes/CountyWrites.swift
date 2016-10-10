@@ -30,4 +30,15 @@ class CountyWrites {
             print("Realm Exception")
         }
     }
+    
+    static func turn(county: County, toSelected selected: Bool) {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                county.selected = selected
+            }
+        } catch _ {
+            print("Realm Exception")
+        }
+    }
 }

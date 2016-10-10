@@ -37,6 +37,8 @@ class BackendService {
             }
         })
         
+        print(urlRequest.url)
+        
         networkTask?.resume()
     }
     
