@@ -16,8 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eis-iJ-uAr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ieq-QX-Ubs"/>
+                                    <constraint firstAttribute="height" constant="40" id="SPk-Ok-XfK"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eis-iJ-uAr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rbs-hb-RFN"/>
+                            <constraint firstItem="eis-iJ-uAr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VJD-lt-c8m"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Alert Feed" id="d55-rz-eb6">
                         <barButtonItem key="rightBarButtonItem" image="Settings Gear" id="7Pk-Zv-kCB">
@@ -30,6 +42,9 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="" value="NO"/>
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="eis-iJ-uAr" id="aWd-Qn-97b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,19 +80,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny and 63 F at Winona, Winoa Municipal Airport-Max Conrad Field, MN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNM-Js-z7x">
-                                                    <frame key="frameInset" minX="51" minY="43" width="316" height="37"/>
+                                                    <frame key="frameInset" minX="51" minY="42" width="316" height="37"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yue-RW-54F">
-                                                    <frame key="frameInset" minX="51" minY="77" width="316" height="58"/>
+                                                    <frame key="frameInset" minX="51" minY="78" width="316" height="58"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Winds are Southeast at 3.5 MH (3 KT). The humidity
  is 88%. Last updated on Sept 23 2016, 11:53 pm 
 CDT.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

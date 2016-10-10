@@ -25,7 +25,7 @@ class FeedPageViewController: UIViewController, UITableViewDataSource {
     func reloadTimer() {
         if (self.feedTable != nil) && newData {
             self.feedTable.reloadData()
-            newData = true
+            newData = false
         }
     }
     

@@ -13,12 +13,13 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     var pageMenu: CAPSPageMenu?
     var alertFeeds: [FeedPageViewController]!
     var menu: HamburgerMenu?
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAlertFeeds()
         
-        //NetworkQueue.shared.addOperation(AllCountyOperation(withRequest: AllCountyRequest()))
+        NetworkQueue.shared.addOperation(AllCountyOperation(withRequest: AllCountyRequest()))
     }
     
     private func downloadFeedData() {
@@ -31,6 +32,9 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
             typeFeed.keyList = Array(typeFeed.feedData.keys)
             countyFeed.newData = true
             typeFeed.newData = true
+            OperationQueue.main.addOperation({ 
+                self.loadingIndicator.stopAnimating()
+            })
         }
     }
     
@@ -38,6 +42,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         super.viewWillAppear(animated)
         applyTheme()
         downloadFeedData()
+        loadingIndicator.startAnimating()
     }
     
     override func viewWillLayoutSubviews() {
@@ -92,6 +97,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         
         self.edgesForExtendedLayout = UIRectEdge()
         self.view.addSubview(pageMenu!.view)
+        view.insertSubview(pageMenu!.view, belowSubview: loadingIndicator)
     }
     
 }
