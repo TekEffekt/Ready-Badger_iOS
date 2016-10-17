@@ -76,12 +76,12 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return MenuLinks.allSections[section].rawValue
     }
     
     // MARK: Table Delegate
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let chosenCell = tableView.cellForRow(at: indexPath as IndexPath) as! MenuLinkCell
         let linkName = chosenCell.name!.text!
         
