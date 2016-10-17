@@ -8,13 +8,14 @@
 
 import UIKit
 
-class DamageReportTableController: UITableViewController, DefaultTheme, MenuItem {
+class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem {
 
     var menu: HamburgerMenu?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()
+        view.tintColor = UIColor.tint()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

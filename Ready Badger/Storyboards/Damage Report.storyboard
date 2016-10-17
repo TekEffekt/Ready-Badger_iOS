@@ -82,12 +82,15 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-5e-BA2">
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                             <color key="value" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="IjL-If-Jp4" id="Yod-ek-6Of"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -450,7 +453,11 @@
                             <outlet property="delegate" destination="IjL-If-Jp4" id="B1R-xK-z9L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Damage Report" id="cBN-jc-kxv"/>
+                    <navigationItem key="navigationItem" title="Damage Report" id="cBN-jc-kxv">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Send" id="6H5-Dy-dYk">
+                            <color key="tintColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nct-gG-oex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
