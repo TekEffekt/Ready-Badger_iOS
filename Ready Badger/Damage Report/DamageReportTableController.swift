@@ -11,6 +11,7 @@ import UIKit
 class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem {
 
     var menu: HamburgerMenu?
+    @IBOutlet weak var disasterTypeLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,6 +24,9 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
             switch segue.identifier! {
                 case DamageReportSegues.DisasterTypeSegue.rawValue:
                     optionVc.options = DamageReportOptions.disasterTypes
+                    optionVc.saveOptions = { [weak self] (options: [String]) in
+                        self?.disasterTypeLabel.text = options.first
+                    }
                 default:
                     break
             }

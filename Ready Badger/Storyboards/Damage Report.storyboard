@@ -24,18 +24,38 @@
                                             <frame key="frameInset" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bolt" translatesAutoresizingMaskIntoConstraints="NO" id="kUm-Cr-c0g">
-                                                    <frame key="frameInset" minX="18" minY="13" width="17" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bolt" translatesAutoresizingMaskIntoConstraints="NO" id="kUm-Cr-c0g">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="17" id="LRH-P9-kRW"/>
+                                                        <constraint firstAttribute="height" constant="17" id="zcT-Nx-UaW"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disaster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-gQ-Nq6">
-                                                    <frame key="frameInset" minX="50" minY="11" width="63" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disaster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bW-gQ-Nq6">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="63" id="bn4-e4-NgN"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disaster" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHw-Jj-CVa">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="hpc-Zl-mmT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kUm-Cr-c0g" firstAttribute="centerY" secondItem="oo2-OY-bcw" secondAttribute="centerY" id="0Kb-vH-9T3"/>
+                                                <constraint firstItem="YHw-Jj-CVa" firstAttribute="trailing" secondItem="oo2-OY-bcw" secondAttribute="trailingMargin" id="2lJ-06-avB"/>
+                                                <constraint firstItem="5bW-gQ-Nq6" firstAttribute="leading" secondItem="kUm-Cr-c0g" secondAttribute="trailing" constant="15" id="2lr-ME-0Go"/>
+                                                <constraint firstItem="5bW-gQ-Nq6" firstAttribute="centerY" secondItem="kUm-Cr-c0g" secondAttribute="centerY" id="BAO-Pk-YOk"/>
+                                                <constraint firstItem="YHw-Jj-CVa" firstAttribute="leading" secondItem="5bW-gQ-Nq6" secondAttribute="trailing" constant="8" id="P55-bP-tnl"/>
+                                                <constraint firstItem="kUm-Cr-c0g" firstAttribute="leading" secondItem="oo2-OY-bcw" secondAttribute="leadingMargin" constant="10" id="nNo-0K-SHU"/>
+                                                <constraint firstItem="YHw-Jj-CVa" firstAttribute="centerY" secondItem="oo2-OY-bcw" secondAttribute="centerY" id="tuy-9S-Efq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="0RQ-H1-hWA" kind="show" identifier="Show Disaster Options" id="HNG-OG-bX2"/>
@@ -125,6 +145,9 @@
                                                             <color key="value" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="IjL-If-Jp4" id="WTb-f5-QeW"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -163,6 +186,9 @@
                                                             <color key="value" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="IjL-If-Jp4" id="ZSo-YV-qnW"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -197,6 +223,9 @@
                                                             <color key="value" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="IjL-If-Jp4" id="9rD-4H-dLH"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -260,6 +289,9 @@
                                                             <color key="value" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="IjL-If-Jp4" id="1eP-F0-p6Q"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -348,6 +380,9 @@
                                                             <color key="value" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="IjL-If-Jp4" id="uMb-M7-Rwk"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -458,6 +493,9 @@
                             <color key="tintColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="disasterTypeLabel" destination="YHw-Jj-CVa" id="nNk-32-Qd5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nct-gG-oex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
