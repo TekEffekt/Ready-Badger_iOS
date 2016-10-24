@@ -26,4 +26,6 @@ enum DamageReportCellType: String {
     case description  = "Description"
     case photo = "Photo"
     case datePicker = "Date Picker"
+    case waterInches = "Water Inches"
+    case livingInBasement = "Living In Basement"
 }

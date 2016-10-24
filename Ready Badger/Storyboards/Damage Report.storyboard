@@ -579,8 +579,83 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Basement Flooded" id="bw0-vW-u71" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Water Inches" id="2Qu-j1-Z2S" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="932" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Qu-j1-Z2S" id="fic-jn-eIl">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Water" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-eQ-3jW">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="17" id="I4K-pP-ak9"/>
+                                                <constraint firstAttribute="height" constant="17" id="TLa-yd-jN3"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inches of water in basement" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klP-nw-hlT">
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="hyR-JE-DFX"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="klP-nw-hlT" firstAttribute="leading" secondItem="7cH-eQ-3jW" secondAttribute="trailing" constant="15" id="0Qg-MH-60O"/>
+                                        <constraint firstItem="7cH-eQ-3jW" firstAttribute="centerY" secondItem="fic-jn-eIl" secondAttribute="centerY" id="1mB-bZ-3wO"/>
+                                        <constraint firstItem="7cH-eQ-3jW" firstAttribute="leading" secondItem="fic-jn-eIl" secondAttribute="leadingMargin" constant="10" id="9Hc-55-oGC"/>
+                                        <constraint firstItem="klP-nw-hlT" firstAttribute="top" secondItem="fic-jn-eIl" secondAttribute="top" constant="2" id="Glb-8r-Lh4"/>
+                                        <constraint firstAttribute="trailing" secondItem="klP-nw-hlT" secondAttribute="trailing" constant="8" id="ZOf-OR-8s9"/>
+                                        <constraint firstAttribute="bottom" secondItem="klP-nw-hlT" secondAttribute="bottom" constant="1.5" id="acp-Ph-RyD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Living In Basement" id="XSY-9K-F94" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="976" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XSY-9K-F94" id="avW-S8-f5o">
+                                    <frame key="frameInset" width="342" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bed" translatesAutoresizingMaskIntoConstraints="NO" id="bns-MW-Z6u">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="17" id="EHS-5W-kyI"/>
+                                                <constraint firstAttribute="height" constant="17" id="O5C-cR-Iei"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is someone living there?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21H-K0-EO2">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Tej-l6-asw"/>
+                                                <constraint firstAttribute="width" constant="220" id="nvK-6O-Stj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvQ-NO-2b1">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RvQ-NO-2b1" firstAttribute="top" secondItem="avW-S8-f5o" secondAttribute="topMargin" id="1yx-MJ-Cb4"/>
+                                        <constraint firstItem="RvQ-NO-2b1" firstAttribute="leading" secondItem="21H-K0-EO2" secondAttribute="trailing" id="755-yM-Kq5"/>
+                                        <constraint firstItem="bns-MW-Z6u" firstAttribute="leading" secondItem="avW-S8-f5o" secondAttribute="leadingMargin" constant="10" id="8K4-Eb-VIy"/>
+                                        <constraint firstItem="21H-K0-EO2" firstAttribute="leading" secondItem="bns-MW-Z6u" secondAttribute="trailing" constant="15" id="BEd-nW-OIB"/>
+                                        <constraint firstItem="bns-MW-Z6u" firstAttribute="centerY" secondItem="avW-S8-f5o" secondAttribute="centerY" id="JPX-Fh-F0O"/>
+                                        <constraint firstItem="21H-K0-EO2" firstAttribute="centerY" secondItem="bns-MW-Z6u" secondAttribute="centerY" id="K2i-cs-tqb"/>
+                                        <constraint firstItem="RvQ-NO-2b1" firstAttribute="trailing" secondItem="avW-S8-f5o" secondAttribute="trailingMargin" id="WHV-x9-SvH"/>
+                                        <constraint firstItem="RvQ-NO-2b1" firstAttribute="bottom" secondItem="avW-S8-f5o" secondAttribute="bottomMargin" id="kFK-yP-7vI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="RvQ-NO-2b1" id="nLQ-9y-AQf"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Basement Flooded" id="bw0-vW-u71" customClass="BasementFloodedCell" customModule="Ready_Badger">
+                                <rect key="frame" x="0.0" y="1020" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bw0-vW-u71" id="Doe-1N-wJh">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -608,6 +683,9 @@
                                         <constraint firstItem="1BM-4h-CUw" firstAttribute="centerY" secondItem="Doe-1N-wJh" secondAttribute="centerY" id="en8-8x-nhd"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="floodedSwitch" destination="1BM-4h-CUw" id="BLh-jQ-bde"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -678,6 +756,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bed" width="40" height="40"/>
         <image name="Bolt" width="40" height="40"/>
         <image name="Camera" width="40" height="40"/>
         <image name="Check" width="40" height="40"/>
@@ -694,6 +773,7 @@
         <image name="Shield" width="40" height="40"/>
         <image name="Skyscraper" width="40" height="40"/>
         <image name="State" width="40" height="40"/>
+        <image name="Water" width="40" height="40"/>
         <image name="Zip" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>

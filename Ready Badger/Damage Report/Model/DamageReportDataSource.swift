@@ -13,8 +13,15 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
     
     let numberOfSections = 8
     var dateSelectMode = false
+    var floodedMode = false
     var damageReport = DamageReport()
     weak var tableView: UITableView?
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return numberOfSections
@@ -26,6 +33,8 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = cellsFor(section: indexPath.section)[indexPath.row]
+        print(cellType)
+        print(cellType.rawValue)
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue) as? DamageReportCell else {return UITableViewCell() }
         cell.type = cellType
         
@@ -33,6 +42,8 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
             setCellLabel(cell: labelCell)
         } else if let dateCell = cell as? DateCell {
             dateCell.datePicker?.addTarget(self, action: #selector(DamageReportDataSource.datePickerChanged(datePicker:)), for: .valueChanged)
+        } else if let basementFlooded = cell as? BasementFloodedCell {
+            basementFlooded.floodedSwitch.addTarget(self, action: #selector(self.floodSwitchTapped(floodSwitch:)), for: .valueChanged)
         }
         
         return cell
@@ -43,12 +54,24 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
         tableView?.reloadData()
     }
     
+    func floodSwitchTapped(floodSwitch: UISwitch) {
+        floodedMode = floodSwitch.isOn
+        let paths = [IndexPath(row: 1, section: 6), IndexPath(row: 2, section: 6)]
+        tableView?.beginUpdates()
+        if floodedMode {
+            tableView?.insertRows(at: paths, with: .fade)
+        } else {
+            tableView?.deleteRows(at: paths, with: .fade)
+        }
+        tableView?.endUpdates()
+    }
+    
     func setCellLabel(cell: DamageReportLabelCell) {
         switch cell.type {
             case .disasterType:
                 cell.label?.text = damageReport.disasterType?.rawValue
             case .date:
-                cell.label?.text = damageReport.date != nil ? "\(damageReport.date!)" : ""
+                cell.label?.text = damageReport.date != nil ? dateFormatter.string(from: damageReport.date!) : ""
             case .state:
                 cell.label?.text = damageReport.state
             case .ownership :
@@ -76,11 +99,9 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
             case 5:
                 return [.residenceHabitable]
             case 6:
-                return [.basementFlooded]
+                return floodedMode ? [.basementFlooded, .waterInches, .livingInBasement] : [.basementFlooded]
             case 7:
-                return [.description]
-            case 8:
-                return [.photo]
+                return [.description, .photo]
             default:
                 return []
         }

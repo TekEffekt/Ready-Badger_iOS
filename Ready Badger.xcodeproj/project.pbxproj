@@ -18,6 +18,7 @@
 		B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981111DBDF8B200787101 /* DamageReportCellType.swift */; };
 		B61981141DBE135800787101 /* DamageReportLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981131DBE135800787101 /* DamageReportLabelCell.swift */; };
 		B61981161DBE6FF100787101 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981151DBE6FF100787101 /* DateCell.swift */; };
+		B61981181DBEBF8F00787101 /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981171DBEBF8F00787101 /* BasementFloodedCell.swift */; };
 		B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */; };
 		B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */; };
 		B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6A1DAA25B7009EC6FB /* County.swift */; };
@@ -79,6 +80,7 @@
 		B61981111DBDF8B200787101 /* DamageReportCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCellType.swift; sourceTree = "<group>"; };
 		B61981131DBE135800787101 /* DamageReportLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportLabelCell.swift; path = "Damage Report/DamageReportLabelCell.swift"; sourceTree = "<group>"; };
 		B61981151DBE6FF100787101 /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateCell.swift; path = "Damage Report/DateCell.swift"; sourceTree = "<group>"; };
+		B61981171DBEBF8F00787101 /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasementFloodedCell.swift; path = "Damage Report/BasementFloodedCell.swift"; sourceTree = "<group>"; };
 		B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyDataParse.swift; sourceTree = "<group>"; };
 		B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponseParse.swift; sourceTree = "<group>"; };
 		B627DA6A1DAA25B7009EC6FB /* County.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */,
 				B61981131DBE135800787101 /* DamageReportLabelCell.swift */,
 				B61981151DBE6FF100787101 /* DateCell.swift */,
+				B61981171DBEBF8F00787101 /* BasementFloodedCell.swift */,
 				B61981001DBDB9FE00787101 /* Model */,
 			);
 			name = "Damage Report";
@@ -579,6 +582,7 @@
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
 				B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
+				B61981181DBEBF8F00787101 /* BasementFloodedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
