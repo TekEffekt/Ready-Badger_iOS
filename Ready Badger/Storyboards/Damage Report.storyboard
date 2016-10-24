@@ -139,7 +139,10 @@
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-qA-JlW">
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="XEs-Sk-21p"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -242,7 +245,7 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Money" translatesAutoresizingMaskIntoConstraints="NO" id="auM-5c-yif">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Percent" translatesAutoresizingMaskIntoConstraints="NO" id="auM-5c-yif">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="JLB-8T-zkA"/>
                                                 <constraint firstAttribute="width" constant="17" id="tvD-27-whF"/>
@@ -251,7 +254,10 @@
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Percent of Loss" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTL-rb-rbt">
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="iYb-jD-QQj"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -351,6 +357,9 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="n2B-dQ-T9g"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -380,6 +389,9 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="wDi-VY-nEn"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -456,6 +468,9 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="AEJ-tR-QZj"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -481,6 +496,9 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="S6x-bA-ILd"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -511,7 +529,10 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="hbp-Yd-Sf5"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -536,7 +557,10 @@
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Damage Estimate (in dollars)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JfE-q0-QyW">
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="Wc7-Ca-bkb" id="5Ir-08-wnm"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -556,7 +580,7 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Info" translatesAutoresizingMaskIntoConstraints="NO" id="aBz-Ds-Abz">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flood" translatesAutoresizingMaskIntoConstraints="NO" id="aBz-Ds-Abz">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="TBR-eR-wVd"/>
                                                 <constraint firstAttribute="width" constant="17" id="TUX-Gg-0Lw"/>
@@ -589,9 +613,6 @@
                             <color key="tintColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="0RQ-H1-hWA" kind="show" identifier="Show Options" id="CiE-f9-46w"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIG-cC-NGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,7 +639,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="hOe-SU-sgM">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="hOe-SU-sgM">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="19" id="Fdt-Dh-xae"/>
                                                 <constraint firstAttribute="width" constant="19" id="gd6-l5-KxM"/>
@@ -634,6 +655,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="checkmark" destination="hOe-SU-sgM" id="TAF-av-NyJ"/>
                                     <outlet property="optionLabel" destination="XbW-TZ-cb7" id="uR6-sw-xNQ"/>
                                 </connections>
                             </tableViewCell>
@@ -655,10 +677,12 @@
         <image name="Check" width="40" height="40"/>
         <image name="Comment" width="40" height="40"/>
         <image name="Date" width="40" height="40"/>
+        <image name="Flood" width="40" height="40"/>
         <image name="Home" width="40" height="40"/>
         <image name="Info" width="40" height="40"/>
         <image name="Key" width="40" height="40"/>
         <image name="Money" width="40" height="40"/>
+        <image name="Percent" width="40" height="40"/>
         <image name="Person" width="40" height="40"/>
         <image name="Phone" width="40" height="40"/>
         <image name="Shield" width="40" height="40"/>
@@ -666,7 +690,4 @@
         <image name="State" width="40" height="40"/>
         <image name="Zip" width="40" height="40"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="2Aq-hr-T0O"/>
-    </inferredMetricsTieBreakers>
 </document>

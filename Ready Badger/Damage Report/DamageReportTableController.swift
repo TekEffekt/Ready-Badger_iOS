@@ -11,8 +11,7 @@ import UIKit
 class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem {
 
     var menu: HamburgerMenu?
-    @IBOutlet weak var disasterTypeLabel: UILabel!
-    var damageReportDatasource = DamageReportDataSource()
+    let damageReportDatasource = DamageReportDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +50,9 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
             switch segue.identifier! {
                 case DamageReportSegues.DisasterTypeSegue.rawValue:
                     optionVc.options = DamageReportOptions.disasterTypes
-                    optionVc.saveOptions = { [weak self] (options: [String]) in
-                        self?.disasterTypeLabel.text = options.first
+                    optionVc.saveOptions = { [weak self] (option: String) in
+                        self?.damageReportDatasource.damageReport.disasterType = DisasterType(rawValue: option)
+                        self?.tableView.reloadData()
                     }
                 default:
                     break

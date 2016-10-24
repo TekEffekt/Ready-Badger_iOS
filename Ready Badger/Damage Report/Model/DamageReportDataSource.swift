@@ -13,7 +13,7 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
     
     let numberOfSections = 8
     var dateSelectMode = false
-    let damageReport = DamageReport()
+    var damageReport = DamageReport()
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return numberOfSections
