@@ -10,7 +10,8 @@ import UIKit
 
 class OptionTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var optionLabel: UILabel!    
+    @IBOutlet weak var optionLabel: UILabel!
+    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

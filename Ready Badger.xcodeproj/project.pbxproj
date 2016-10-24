@@ -13,6 +13,10 @@
 		B61981061DBDC5C700787101 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981051DBDC5C700787101 /* State.swift */; };
 		B61981081DBDCA2100787101 /* Ownership.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981071DBDCA2100787101 /* Ownership.swift */; };
 		B619810C1DBDCF8B00787101 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810B1DBDCF8B00787101 /* Answer.swift */; };
+		B619810E1DBDF71200787101 /* DamageReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810D1DBDF71200787101 /* DamageReportCell.swift */; };
+		B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810F1DBDF8A500787101 /* DamageReportDataSource.swift */; };
+		B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981111DBDF8B200787101 /* DamageReportCellType.swift */; };
+		B61981141DBE135800787101 /* DamageReportLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981131DBE135800787101 /* DamageReportLabelCell.swift */; };
 		B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */; };
 		B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */; };
 		B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6A1DAA25B7009EC6FB /* County.swift */; };
@@ -70,6 +74,10 @@
 		B61981051DBDC5C700787101 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		B61981071DBDCA2100787101 /* Ownership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ownership.swift; sourceTree = "<group>"; };
 		B619810B1DBDCF8B00787101 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		B619810D1DBDF71200787101 /* DamageReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportCell.swift; path = "Damage Report/DamageReportCell.swift"; sourceTree = "<group>"; };
+		B619810F1DBDF8A500787101 /* DamageReportDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportDataSource.swift; sourceTree = "<group>"; };
+		B61981111DBDF8B200787101 /* DamageReportCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCellType.swift; sourceTree = "<group>"; };
+		B61981131DBE135800787101 /* DamageReportLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportLabelCell.swift; path = "Damage Report/DamageReportLabelCell.swift"; sourceTree = "<group>"; };
 		B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyDataParse.swift; sourceTree = "<group>"; };
 		B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponseParse.swift; sourceTree = "<group>"; };
 		B627DA6A1DAA25B7009EC6FB /* County.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
@@ -152,6 +160,8 @@
 				B61981031DBDBC7800787101 /* DisasterType.swift */,
 				B61981051DBDC5C700787101 /* State.swift */,
 				B61981071DBDCA2100787101 /* Ownership.swift */,
+				B619810F1DBDF8A500787101 /* DamageReportDataSource.swift */,
+				B61981111DBDF8B200787101 /* DamageReportCellType.swift */,
 			);
 			name = Model;
 			path = "Damage Report/Model";
@@ -228,7 +238,9 @@
 				B627DA921DB4B9B7009EC6FB /* OptionController.swift */,
 				B627DA961DB50DD5009EC6FB /* OptionTableViewCell.swift */,
 				B627DA981DB510D6009EC6FB /* DamageReportOptions.swift */,
+				B619810D1DBDF71200787101 /* DamageReportCell.swift */,
 				B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */,
+				B61981131DBE135800787101 /* DamageReportLabelCell.swift */,
 				B61981001DBDB9FE00787101 /* Model */,
 			);
 			name = "Damage Report";
@@ -548,11 +560,13 @@
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
 				B627DA8C1DAB7B33009EC6FB /* HackFeedGather.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
+				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
+				B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
@@ -560,6 +574,8 @@
 				B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */,
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
+				B619810E1DBDF71200787101 /* DamageReportCell.swift in Sources */,
+				B61981141DBE135800787101 /* DamageReportLabelCell.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
 				B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,

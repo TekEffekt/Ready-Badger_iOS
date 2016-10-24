@@ -1,5 +1,5 @@
 //
-//  Answer.swift
+//  DamageReportOptionCell.swift
 //  Ready Badger
 //
 //  Created by Kyle Zawacki on 10/24/16.
@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
-enum Answer: String {
-    case yes = "Yes"
-    case no = "No"
-    case n_a = ""
+class DamageReportLabelCell: DamageReportCell {
+    
+    @IBOutlet weak var label: UILabel?
+    
 }
