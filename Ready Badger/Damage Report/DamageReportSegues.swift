@@ -10,5 +10,7 @@ import Foundation
 
 enum DamageReportSegues: String {
     case DisasterTypeSegue = "Show Disaster Options"
-    
+    case StateSegue = "Show State Options"
+    case OwnershipOptions = "Show Ownership Options"
+    case ResidenceHabitable = "Show Habitable Options"
 }

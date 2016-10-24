@@ -14,6 +14,7 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
     let numberOfSections = 8
     var dateSelectMode = false
     var damageReport = DamageReport()
+    weak var tableView: UITableView?
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return numberOfSections
@@ -30,9 +31,16 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
         
         if let labelCell = cell as? DamageReportLabelCell {
             setCellLabel(cell: labelCell)
+        } else if let dateCell = cell as? DateCell {
+            dateCell.datePicker?.addTarget(self, action: #selector(DamageReportDataSource.datePickerChanged(datePicker:)), for: .valueChanged)
         }
         
         return cell
+    }
+    
+    func datePickerChanged(datePicker: UIDatePicker) {
+        damageReport.date = datePicker.date
+        tableView?.reloadData()
     }
     
     func setCellLabel(cell: DamageReportLabelCell) {
@@ -40,13 +48,13 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
             case .disasterType:
                 cell.label?.text = damageReport.disasterType?.rawValue
             case .date:
-                cell.label?.text = damageReport.date != nil ? "\(damageReport.date)" : ""
+                cell.label?.text = damageReport.date != nil ? "\(damageReport.date!)" : ""
             case .state:
                 cell.label?.text = damageReport.state
             case .ownership :
                 cell.label?.text = damageReport.ownership.rawValue
             case .residenceHabitable:
-                cell.label?.text = damageReport.ownership.rawValue
+                cell.label?.text = damageReport.residenceIsHabitable.rawValue
             case .description:
                 cell.label?.text = damageReport.description
             default: break

@@ -11,7 +11,7 @@ import Foundation
 struct DamageReport {
     
     var disasterType: DisasterType?
-    var date: NSDate?
+    var date: Date?
     var name: String?
     var address: String?
     var state: String?

@@ -16,7 +16,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Description" id="KbV-T5-hgN" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KbV-T5-hgN" id="Eo0-A0-Od6">
                                     <frame key="frameInset" width="342" height="43"/>
@@ -58,7 +58,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="State" id="Vr9-br-jMH" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vr9-br-jMH" id="hls-M6-ded">
                                     <frame key="frameInset" width="342" height="43"/>
@@ -97,10 +97,11 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="label" destination="w42-yu-bH2" id="ZJw-Ci-4el"/>
+                                    <segue destination="0RQ-H1-hWA" kind="show" identifier="Show State Options" id="mhr-12-lSY"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Date Picker" rowHeight="216" id="PR6-rE-1rs" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="143.5" width="375" height="216"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Date Picker" rowHeight="216" id="PR6-rE-1rs" customClass="DateCell" customModule="Ready_Badger" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="144" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PR6-rE-1rs" id="xwU-CC-CIQ">
                                     <frame key="frameInset" width="375" height="215"/>
@@ -122,9 +123,12 @@
                                         <constraint firstAttribute="trailing" secondItem="Zgh-KR-5o8" secondAttribute="trailing" id="wUL-fW-yBj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="datePicker" destination="Zgh-KR-5o8" id="t20-nJ-8uk"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Address" id="Pop-yW-eJq" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="359.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="360" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pop-yW-eJq" id="mTY-hi-xd2">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -156,7 +160,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Residence Habitable" id="2lS-Uv-h9L" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="403.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="404" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2lS-Uv-h9L" id="UUo-9n-VS8">
                                     <frame key="frameInset" width="342" height="43"/>
@@ -197,10 +201,11 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="label" destination="R4g-Ub-REU" id="2fE-2n-FsE"/>
+                                    <segue destination="0RQ-H1-hWA" kind="show" identifier="Show Habitable Options" id="PMP-BP-JN5"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Date" id="TCB-KY-W7H" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="447.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="448" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TCB-KY-W7H" id="4oh-te-7jJ">
                                     <frame key="frameInset" width="342" height="43"/>
@@ -239,7 +244,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Percent Loss" id="zDI-xU-gt2" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="491.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="492" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zDI-xU-gt2" id="88j-Lr-DjL">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -271,7 +276,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Ownership" id="lsh-7S-BaE" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="535.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="536" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lsh-7S-BaE" id="98j-Ay-5Yq">
                                     <frame key="frameInset" width="342" height="43"/>
@@ -311,10 +316,11 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="label" destination="ejp-LB-vB3" id="h0i-YU-8ph"/>
+                                    <segue destination="0RQ-H1-hWA" kind="show" identifier="Show Ownership Options" id="OBK-gK-0lt"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Photo" id="8j4-ux-Sim" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="579.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="580" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8j4-ux-Sim" id="9JO-4I-zhJ">
                                     <frame key="frameInset" width="342" height="43"/>
@@ -341,7 +347,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Phone Number" id="mwe-T5-tnH" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="623.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mwe-T5-tnH" id="Qhz-6E-Aws">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -373,7 +379,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="City" id="N7k-iz-fEU" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="667.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="668" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N7k-iz-fEU" id="iBa-lQ-jAr">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -405,7 +411,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Disaster Type" id="NiC-le-ht0" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="711.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="712" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NiC-le-ht0" id="Stj-SR-2YV">
                                     <frame key="frameInset" width="342" height="43"/>
@@ -450,7 +456,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Zip Code" id="p3X-Q5-VsV" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="755.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="756" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p3X-Q5-VsV" id="VUY-ZR-cmR">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -480,7 +486,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Name" id="nNY-L4-MKJ" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="799.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="800" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nNY-L4-MKJ" id="Oak-CQ-DaT">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -512,7 +518,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Insurance Deductible" id="B9z-0Q-xMF" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="843.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="844" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B9z-0Q-xMF" id="mTL-Gb-RXl">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -542,7 +548,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Damage Estimate" id="BGh-4t-5TT" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="887.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="888" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BGh-4t-5TT" id="miZ-62-mmp">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -574,7 +580,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Basement Flooded" id="bw0-vW-u71" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="931.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="932" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bw0-vW-u71" id="Doe-1N-wJh">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -690,4 +696,7 @@
         <image name="State" width="40" height="40"/>
         <image name="Zip" width="40" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PMP-BP-JN5"/>
+    </inferredMetricsTieBreakers>
 </document>

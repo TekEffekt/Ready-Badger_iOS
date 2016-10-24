@@ -22,6 +22,7 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         super.viewWillAppear(animated)
         applyTheme()
         view.tintColor = UIColor.tint()
+        damageReportDatasource.tableView = tableView
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -49,9 +50,27 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         if let optionVc = segue.destination as? OptionController {
             switch segue.identifier! {
                 case DamageReportSegues.DisasterTypeSegue.rawValue:
-                    optionVc.options = DamageReportOptions.disasterTypes
+                    optionVc.options = DisasterType.getAll().map() {type in return type.rawValue}
                     optionVc.saveOptions = { [weak self] (option: String) in
                         self?.damageReportDatasource.damageReport.disasterType = DisasterType(rawValue: option)
+                        self?.tableView.reloadData()
+                    }
+                case DamageReportSegues.StateSegue.rawValue:
+                    optionVc.options = State.list
+                    optionVc.saveOptions = { [weak self] (option: String) in
+                        self?.damageReportDatasource.damageReport.state = option
+                        self?.tableView.reloadData()
+                }
+                case DamageReportSegues.OwnershipOptions.rawValue:
+                    optionVc.options = Answer.getAll().map() {answer in return answer.rawValue}
+                    optionVc.saveOptions = { [weak self] (option: String) in
+                        self?.damageReportDatasource.damageReport.ownership = Answer(rawValue: option)!
+                        self?.tableView.reloadData()
+                    }
+                case DamageReportSegues.ResidenceHabitable.rawValue:
+                    optionVc.options = Answer.getAll().map() {answer in return answer.rawValue}
+                    optionVc.saveOptions = { [weak self] (option: String) in
+                        self?.damageReportDatasource.damageReport.residenceIsHabitable = Answer(rawValue: option)!
                         self?.tableView.reloadData()
                     }
                 default:

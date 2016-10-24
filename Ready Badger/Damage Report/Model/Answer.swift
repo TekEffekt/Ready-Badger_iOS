@@ -12,4 +12,9 @@ enum Answer: String {
     case yes = "Yes"
     case no = "No"
     case n_a = ""
+    
+    static func getAll() -> [Answer] {
+        return [.yes, .no]
+    }
+    
 }
