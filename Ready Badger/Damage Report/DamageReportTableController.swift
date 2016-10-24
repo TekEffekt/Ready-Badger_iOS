@@ -73,6 +73,12 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
                         self?.damageReportDatasource.damageReport.residenceIsHabitable = Answer(rawValue: option)!
                         self?.tableView.reloadData()
                     }
+                case DamageReportSegues.ShowLivingOptions.rawValue:
+                    optionVc.options = Answer.getAll().map() {answer in return answer.rawValue}
+                    optionVc.saveOptions = { [weak self] (option: String) in
+                        self?.damageReportDatasource.damageReport.personLivingInBasement = Answer(rawValue: option)!
+                        self?.tableView.reloadData()
+                    }
                 default:
                     break
             }

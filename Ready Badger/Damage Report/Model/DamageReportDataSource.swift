@@ -80,6 +80,8 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
                 cell.label?.text = damageReport.residenceIsHabitable.rawValue
             case .description:
                 cell.label?.text = damageReport.description
+            case .livingInBasement:
+                cell.label?.text = damageReport.personLivingInBasement.rawValue
             default: break
         }
     }
