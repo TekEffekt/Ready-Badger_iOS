@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5983BE7C986B54F6CC767372 /* Pods_Ready_Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */; };
+		B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981011DBDBA0B00787101 /* DamageReport.swift */; };
+		B61981041DBDBC7800787101 /* DisasterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981031DBDBC7800787101 /* DisasterType.swift */; };
+		B61981061DBDC5C700787101 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981051DBDC5C700787101 /* State.swift */; };
+		B61981081DBDCA2100787101 /* Ownership.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981071DBDCA2100787101 /* Ownership.swift */; };
+		B619810C1DBDCF8B00787101 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810B1DBDCF8B00787101 /* Answer.swift */; };
 		B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */; };
 		B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */; };
 		B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6A1DAA25B7009EC6FB /* County.swift */; };
@@ -60,6 +65,11 @@
 
 /* Begin PBXFileReference section */
 		9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready_Badger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61981011DBDBA0B00787101 /* DamageReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReport.swift; sourceTree = "<group>"; };
+		B61981031DBDBC7800787101 /* DisasterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterType.swift; sourceTree = "<group>"; };
+		B61981051DBDC5C700787101 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		B61981071DBDCA2100787101 /* Ownership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ownership.swift; sourceTree = "<group>"; };
+		B619810B1DBDCF8B00787101 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyDataParse.swift; sourceTree = "<group>"; };
 		B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponseParse.swift; sourceTree = "<group>"; };
 		B627DA6A1DAA25B7009EC6FB /* County.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
@@ -134,6 +144,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B61981001DBDB9FE00787101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B61981011DBDBA0B00787101 /* DamageReport.swift */,
+				B619810B1DBDCF8B00787101 /* Answer.swift */,
+				B61981031DBDBC7800787101 /* DisasterType.swift */,
+				B61981051DBDC5C700787101 /* State.swift */,
+				B61981071DBDCA2100787101 /* Ownership.swift */,
+			);
+			name = Model;
+			path = "Damage Report/Model";
+			sourceTree = "<group>";
+		};
 		B627DA611DAA21C5009EC6FB /* Parse */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +229,7 @@
 				B627DA961DB50DD5009EC6FB /* OptionTableViewCell.swift */,
 				B627DA981DB510D6009EC6FB /* DamageReportOptions.swift */,
 				B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */,
+				B61981001DBDB9FE00787101 /* Model */,
 			);
 			name = "Damage Report";
 			sourceTree = "<group>";
@@ -495,14 +519,17 @@
 				B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */,
 				B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */,
 				B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */,
+				B61981081DBDCA2100787101 /* Ownership.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
 				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
 				B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */,
+				B61981041DBDBC7800787101 /* DisasterType.swift in Sources */,
 				B627DA911DB4B093009EC6FB /* DamageReportTableController.swift in Sources */,
 				B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */,
 				B67510F31DA24EC700E81CB3 /* FeedTableViewCell.swift in Sources */,
 				B65D261D1DAA086E001A3634 /* AllCountyOperation.swift in Sources */,
 				B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */,
+				B619810C1DBDCF8B00787101 /* Answer.swift in Sources */,
 				B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */,
 				B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */,
 				B627DA9D1DB51EDC009EC6FB /* FormTableViewController.swift in Sources */,
@@ -514,6 +541,7 @@
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B627DA991DB510D6009EC6FB /* DamageReportOptions.swift in Sources */,
 				B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */,
+				B61981061DBDC5C700787101 /* State.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
 				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
 				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
@@ -523,6 +551,7 @@
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
+				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
