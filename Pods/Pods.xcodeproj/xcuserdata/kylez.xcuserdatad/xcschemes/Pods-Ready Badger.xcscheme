@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6A9EB826A9A313FC39C14733'
+               BlueprintIdentifier = '3AF874A6CECE746FCC8A3FAC'
                BlueprintName = 'Pods-Ready Badger'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Ready_Badger.framework'>

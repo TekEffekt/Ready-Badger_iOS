@@ -88,10 +88,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Ready Badger/LGSideMenuController.framework"
   install_framework "Pods-Ready Badger/Realm.framework"
   install_framework "Pods-Ready Badger/RealmSwift.framework"
+  install_framework "Pods-Ready Badger/TGCameraViewController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Ready Badger/JTHamburgerButton.framework"
   install_framework "Pods-Ready Badger/LGSideMenuController.framework"
   install_framework "Pods-Ready Badger/Realm.framework"
   install_framework "Pods-Ready Badger/RealmSwift.framework"
+  install_framework "Pods-Ready Badger/TGCameraViewController.framework"
 fi

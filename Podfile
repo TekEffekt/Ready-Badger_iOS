@@ -8,6 +8,7 @@ pod 'OneSignal'
 pod 'LGSideMenuController'
 pod 'JTHamburgerButton'
 pod 'RealmSwift'
+pod 'TGCameraViewController'
 end
 
 post_install do |installer|
