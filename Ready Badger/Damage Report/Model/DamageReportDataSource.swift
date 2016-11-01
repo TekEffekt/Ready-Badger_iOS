@@ -15,6 +15,7 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
     var dateSelectMode = false
     var floodedMode = false
     var damageReport = DamageReport()
+    var errors: [DamageReportCellType: [String]] = [:]
     weak var tableView: UITableView?
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -31,10 +32,18 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
         return cellsFor(section: section).count
     }
     
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        let types = cellsFor(section: section)
+        for error in errors {
+            if types.contains(error.key) {
+                return error.value.first
+            }
+        }
+        return nil
+    }
+        
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = cellsFor(section: indexPath.section)[indexPath.row]
-        print(cellType)
-        print(cellType.rawValue)
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellType.rawValue) as? DamageReportCell else {return UITableViewCell() }
         cell.type = cellType
         

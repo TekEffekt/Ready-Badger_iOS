@@ -8,6 +8,7 @@ PODS:
   - RealmSwift (2.0.2):
     - Realm (= 2.0.2)
   - TGCameraViewController (2.2.7)
+  - Validator (2.0.0)
 
 DEPENDENCIES:
   - JTHamburgerButton
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - OneSignal
   - RealmSwift
   - TGCameraViewController
+  - Validator
 
 SPEC CHECKSUMS:
   JTHamburgerButton: 9a41c7d051c72590a9d2c18416d84d1b912f12e3
@@ -23,5 +25,6 @@ SPEC CHECKSUMS:
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
   TGCameraViewController: 2e1ca4c286f643df01c70c478422814ed025e4a7
+  Validator: 1e2292640c6d5de15af424ee06ebd778369c0329
 
 COCOAPODS: 0.39.0

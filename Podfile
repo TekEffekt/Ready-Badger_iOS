@@ -9,6 +9,7 @@ pod 'LGSideMenuController'
 pod 'JTHamburgerButton'
 pod 'RealmSwift'
 pod 'TGCameraViewController'
+pod 'Validator'
 end
 
 post_install do |installer|

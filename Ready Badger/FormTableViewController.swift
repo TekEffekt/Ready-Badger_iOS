@@ -39,6 +39,11 @@ class FormTableViewController: UITableViewController, UITextFieldDelegate {
         currentTextField = textField
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("OH")
+        return true
+    }
+    
     // MARK: Textfield Notifications
     func textFieldPressed(sender: NSNotification) {
         let userInfo = sender.userInfo!

@@ -66,6 +66,7 @@
 		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
 		B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C51DA9D2700001D4F8 /* County Settings.storyboard */; };
 		B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */; };
+		B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
 		B69004C51DA9D2700001D4F8 /* County Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "County Settings.storyboard"; sourceTree = "<group>"; };
 		B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySettingsViewController.swift; path = "County Settings/CountySettingsViewController.swift"; sourceTree = "<group>"; };
+		B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportInputValidator.swift; sourceTree = "<group>"; };
 		D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 		B61981001DBDB9FE00787101 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */,
 				B61981011DBDBA0B00787101 /* DamageReport.swift */,
 				B619810B1DBDCF8B00787101 /* Answer.swift */,
 				B61981031DBDBC7800787101 /* DisasterType.swift */,
@@ -570,6 +573,7 @@
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
 				B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */,
+				B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,

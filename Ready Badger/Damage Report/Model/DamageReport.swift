@@ -14,6 +14,7 @@ struct DamageReport {
     var date: Date?
     var name: String?
     var address: String?
+    var city: String?
     var state: String?
     var zipCode: String?
     var phoneNumber: String?

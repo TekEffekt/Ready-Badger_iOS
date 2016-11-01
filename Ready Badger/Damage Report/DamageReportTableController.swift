@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TGCameraViewController
 
 class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem {
 
@@ -33,6 +34,42 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         }
     }
     
+    override func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let userEnteredString = textField.text
+        let newString = (userEnteredString! as NSString).replacingCharacters(in: range, with: string)
+        save(string: newString, forCellType: getCellForTextField(textfield: textField).type)
+        
+        return true
+    }
+    
+    func getCellForTextField(textfield: UITextField) -> DamageReportCell {
+        let containerView = textfield.superview!
+        return containerView.superview! as! DamageReportCell
+    }
+    
+    func save(string: String, forCellType type: DamageReportCellType) {
+        switch type {
+            case .name:
+                damageReportDatasource.damageReport.name = string
+            case .phoneNumber:
+                damageReportDatasource.damageReport.phoneNumber = string
+            case .address:
+                damageReportDatasource.damageReport.address = string
+            case .city:
+                damageReportDatasource.damageReport.city = string
+            case .zipCode:
+                damageReportDatasource.damageReport.zipCode = string
+            case .insuranceDeductible:
+                damageReportDatasource.damageReport.insuranceDeductible = string
+            case .percentLoss:
+                damageReportDatasource.damageReport.percentOfLoss = string
+            case .damageEstimate:
+                damageReportDatasource.damageReport.damageEstimate = string
+            default:
+                break
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 && indexPath.row == 1 {
             damageReportDatasource.dateSelectMode = !damageReportDatasource.dateSelectMode
@@ -43,6 +80,23 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
                 tableView.deleteRows(at:  [IndexPath(row: 2, section: 0)], with: .fade)
             }
             tableView.endUpdates()
+        } else if indexPath.section == 7 {
+            //let cameraController = TGCameraNavigationController()
+            
+        }
+    }
+    
+    @IBAction func sendPressed(_ sender: UIBarButtonItem) {
+        let errors = DamageReportValidator.validate(report: damageReportDatasource.damageReport)
+        if errors.count > 0 {
+            damageReportDatasource.errors = errors
+            tableView.reloadData()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        if let footer = view as? UITableViewHeaderFooterView {
+            footer.textLabel?.textColor = UIColor.red
         }
     }
     
