@@ -16,10 +16,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Description" id="KbV-T5-hgN" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KbV-T5-hgN" id="Eo0-A0-Od6">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="BSo-Fn-gtb">
@@ -55,13 +55,14 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="label" destination="LUM-ji-Afy" id="zVA-Q4-0uQ"/>
+                                    <segue destination="qFT-m4-iTe" kind="show" identifier="Show Description" id="I7Q-hq-dDL"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="State" id="Vr9-br-jMH" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vr9-br-jMH" id="hls-M6-ded">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="State" translatesAutoresizingMaskIntoConstraints="NO" id="8Ww-XQ-mwm">
@@ -101,10 +102,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Date Picker" rowHeight="216" id="PR6-rE-1rs" customClass="DateCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="143.5" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PR6-rE-1rs" id="xwU-CC-CIQ">
-                                    <frame key="frameInset" width="375" height="215.5"/>
+                                    <frame key="frameInset" width="375" height="215"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-KR-5o8">
@@ -128,10 +129,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Address" id="Pop-yW-eJq" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="359.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="360" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pop-yW-eJq" id="mTY-hi-xd2">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="b2P-Hg-4g7">
@@ -160,10 +161,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Residence Habitable" id="2lS-Uv-h9L" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="403.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="404" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2lS-Uv-h9L" id="UUo-9n-VS8">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Info" translatesAutoresizingMaskIntoConstraints="NO" id="fGA-Ng-Zwb">
@@ -205,10 +206,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Date" id="TCB-KY-W7H" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="447.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="448" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TCB-KY-W7H" id="4oh-te-7jJ">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Date" translatesAutoresizingMaskIntoConstraints="NO" id="t7e-1V-IdY">
@@ -244,10 +245,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Percent Loss" id="zDI-xU-gt2" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="491.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="492" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zDI-xU-gt2" id="88j-Lr-DjL">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Percent" translatesAutoresizingMaskIntoConstraints="NO" id="auM-5c-yif">
@@ -276,10 +277,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Ownership" id="lsh-7S-BaE" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="535.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="536" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lsh-7S-BaE" id="98j-Ay-5Yq">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key" translatesAutoresizingMaskIntoConstraints="NO" id="Hy5-6z-F1G">
@@ -320,10 +321,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Photo" id="8j4-ux-Sim" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="579.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="580" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8j4-ux-Sim" id="9JO-4I-zhJ">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="nsF-qR-2cP">
@@ -347,10 +348,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Phone Number" id="mwe-T5-tnH" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="623.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="624" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mwe-T5-tnH" id="Qhz-6E-Aws">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone" translatesAutoresizingMaskIntoConstraints="NO" id="0Pi-jb-UBT">
@@ -379,10 +380,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="City" id="N7k-iz-fEU" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="667.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="668" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N7k-iz-fEU" id="iBa-lQ-jAr">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skyscraper" translatesAutoresizingMaskIntoConstraints="NO" id="bN1-hc-NJJ">
@@ -411,10 +412,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Disaster Type" id="NiC-le-ht0" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="711.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="712" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NiC-le-ht0" id="Stj-SR-2YV">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bolt" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-T9-Rce">
@@ -456,10 +457,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Zip Code" id="p3X-Q5-VsV" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="755.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="756" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p3X-Q5-VsV" id="VUY-ZR-cmR">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zip" translatesAutoresizingMaskIntoConstraints="NO" id="qxk-iA-Tmg">
@@ -486,10 +487,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Name" id="nNY-L4-MKJ" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="799.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="800" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nNY-L4-MKJ" id="Oak-CQ-DaT">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person" translatesAutoresizingMaskIntoConstraints="NO" id="rXk-KY-Ltn">
@@ -518,10 +519,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Insurance Deductible" id="B9z-0Q-xMF" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="843.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="844" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B9z-0Q-xMF" id="mTL-Gb-RXl">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shield" translatesAutoresizingMaskIntoConstraints="NO" id="4Bz-th-pM8">
@@ -548,10 +549,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Damage Estimate" id="BGh-4t-5TT" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="887.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="888" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BGh-4t-5TT" id="miZ-62-mmp">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Money" translatesAutoresizingMaskIntoConstraints="NO" id="ksr-BS-qtP">
@@ -580,10 +581,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Water Inches" id="2Qu-j1-Z2S" customClass="DamageReportCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="931.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="932" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Qu-j1-Z2S" id="fic-jn-eIl">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Water" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-eQ-3jW">
@@ -612,10 +613,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Living In Basement" id="XSY-9K-F94" customClass="DamageReportLabelCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="975.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="976" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XSY-9K-F94" id="avW-S8-f5o">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bed" translatesAutoresizingMaskIntoConstraints="NO" id="bns-MW-Z6u">
@@ -656,10 +657,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Basement Flooded" id="bw0-vW-u71" customClass="BasementFloodedCell" customModule="Ready_Badger">
-                                <rect key="frame" x="0.0" y="1019.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="1020" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bw0-vW-u71" id="Doe-1N-wJh">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flood" translatesAutoresizingMaskIntoConstraints="NO" id="aBz-Ds-Abz">
@@ -706,6 +707,41 @@
             </objects>
             <point key="canvasLocation" x="-210.40000000000001" y="62.518740629685162"/>
         </scene>
+        <!--Description-->
+        <scene sceneID="bCd-y4-Bqi">
+            <objects>
+                <viewController title="Description" id="qFT-m4-iTe" customClass="DescriptionViewController" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fcV-QV-PCk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rai-fr-FVr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TY3-KN-zU7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-OD-nyU">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.85882352939999995" green="0.29803921570000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k6b-OD-nyU" firstAttribute="leading" secondItem="TY3-KN-zU7" secondAttribute="leading" constant="2" id="512-4n-xzK"/>
+                            <constraint firstItem="Rai-fr-FVr" firstAttribute="top" secondItem="k6b-OD-nyU" secondAttribute="bottom" id="SLD-Dy-JHh"/>
+                            <constraint firstAttribute="trailing" secondItem="k6b-OD-nyU" secondAttribute="trailing" constant="2" id="uyt-Qe-u8s"/>
+                            <constraint firstItem="k6b-OD-nyU" firstAttribute="top" secondItem="fcV-QV-PCk" secondAttribute="bottom" constant="8" id="zcM-VI-GP2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="k6b-OD-nyU" id="FAa-Vh-DSN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzR-KO-SN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="-633.73313343328346"/>
+        </scene>
         <!--Option Controller-->
         <scene sceneID="RAt-b6-qfK">
             <objects>
@@ -716,10 +752,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Option Cell" id="QZS-Dd-DlB" customClass="OptionTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QZS-Dd-DlB" id="9eE-q4-nhL">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbW-TZ-cb7">

@@ -136,6 +136,12 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
                 default:
                     break
             }
+        } else if let descriptionVc = segue.destination as? DescriptionViewController {
+            descriptionVc.descriptionString = damageReportDatasource.damageReport.description
+            descriptionVc.completionHandler = { [weak self] (descriptionString: String?) in
+                self?.damageReportDatasource.damageReport.description = descriptionString
+                self?.tableView.reloadData()
+            }
         }
     }
 

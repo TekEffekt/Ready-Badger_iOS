@@ -1,24 +1,21 @@
 //
-//  FormTableViewController.swift
-//  Safety Survey
+//  DescriptionViewController.swift
+//  Ready Badger
 //
-//  Created by Kyle Zawacki on 8/24/16.
+//  Created by Kyle Zawacki on 11/6/16.
 //  Copyright © 2016 App Factory. All rights reserved.
 //
 
 import UIKit
 
-class FormTableViewController: UITableViewController, UITextFieldDelegate {
-    // MARK: Properties
+class DescriptionViewController: UIViewController, UITextViewDelegate {
+
+    @IBOutlet weak var descriptionTextView: UITextView!
     var amountMoved: CGFloat = 0
-    var currentTextField: UITextField?
-    var optionList:[String] = []
-    var chosenOptions:[String] = []
-    var optionIsMulti = true
-    var chosenOptionId: String?
     var dontAdjust = false
+    var descriptionString: String?
+    var completionHandler: ((String?) -> Void)?
     
-    // MARK: Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         subscribeToKeyBoardNotifications()
@@ -29,18 +26,23 @@ class FormTableViewController: UITableViewController, UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(self.textFieldHiding(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    // MARK: Text Field
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        descriptionTextView.text = descriptionString ?? ""
+        descriptionTextView.delegate = self
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        currentTextField = textField
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        descriptionTextView.becomeFirstResponder()
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return true
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if let handler = completionHandler {
+            handler(descriptionTextView.text == "" ? nil : descriptionTextView.text)
+        }
+        descriptionTextView.resignFirstResponder()
     }
     
     // MARK: Textfield Notifications
@@ -83,9 +85,4 @@ class FormTableViewController: UITableViewController, UITextFieldDelegate {
         amountMoved = 0
     }
     
-    // MARK: Deinit
-    override func viewWillDisappear(_ animated: Bool) {
-        currentTextField?.resignFirstResponder()
-    }
-
 }

@@ -16,13 +16,13 @@ class DamageReportValidator {
         
         let generalMinLengthRule = ValidationRuleLength(min: 1, failureError: ValidationError(message: "must have more than 1 character"))
         let generalMaxLengthRule = ValidationRuleLength(max: 100, failureError: ValidationError(message: "must have less than 100 characters"))
-        let digitRule = ValidationRulePattern(pattern: .ContainsNumber, failureError: ValidationError(message: "must have less than 100 characters"))
-        let phoneSizeRule = ValidationRuleLength(min: 10, max: 11, failureError: ValidationError(message: "Your phone number must have between 10 and 11 digits."))
+        let digitRule = ValidationRulePattern(pattern: .ContainsNumber, failureError: ValidationError(message: "must have only digits."))
+        let phoneSizeRule = ValidationRuleLength(min: 10, max: 11, failureError: ValidationError(message: "must have between 10 and 11 digits."))
         let zipCodeRule = ValidationRulePattern(pattern: .UKPostcode, failureError: ValidationError(message: "Invalid zip code"))
         
         let defaultSet = ValidationRuleSet(rules: [generalMinLengthRule, generalMaxLengthRule])
-        var phoneSet = ValidationRuleSet(rules: [digitRule])
-        phoneSet.add(rule: phoneSizeRule)
+        var phoneSet = ValidationRuleSet(rules: [phoneSizeRule])
+        phoneSet.add(rule: digitRule)
         var numberSet = ValidationRuleSet(rules: [generalMinLengthRule, generalMaxLengthRule])
         numberSet.add(rule: digitRule)
         let nameCheck = Validator.validate(input: report.name, rules: defaultSet)
@@ -40,17 +40,17 @@ class DamageReportValidator {
         }
         
         switch phoneCheck {
-        case .invalid(let failures): errorMessages[DamageReportCellType.phoneNumber] = failures.map() {item in return item.message}
+        case .invalid(let failures): errorMessages[DamageReportCellType.phoneNumber] = failures.map() {item in return "Your phone number " + item.message}
         default: break
         }
         
         switch addressCheck {
-        case .invalid(let failures): errorMessages[DamageReportCellType.address] = failures.map() {item in return item.message}
+        case .invalid(let failures): errorMessages[DamageReportCellType.address] = failures.map() {item in return "Your address " +  item.message}
         default: break
         }
         
         switch cityCheck {
-        case .invalid(let failures): errorMessages[DamageReportCellType.city] = failures.map() {item in return item.message}
+        case .invalid(let failures): errorMessages[DamageReportCellType.city] = failures.map() {item in return "Your city " + item.message}
         default: break
         }
         
@@ -60,17 +60,17 @@ class DamageReportValidator {
         }
         
         switch deductibleCheck {
-        case .invalid(let failures): errorMessages[DamageReportCellType.insuranceDeductible] = failures.map() {item in return item.message}
+        case .invalid(let failures): errorMessages[DamageReportCellType.insuranceDeductible] = failures.map() {item in return "Your deductible " + item.message}
         default: break
         }
         
         switch lossCheck {
-        case .invalid(let failures): errorMessages[DamageReportCellType.percentLoss] = failures.map() {item in return item.message}
+        case .invalid(let failures): errorMessages[DamageReportCellType.percentLoss] = failures.map() {item in return "Your percent loss " + item.message}
         default: break
         }
         
         switch estimateCheck {
-        case .invalid(let failures): errorMessages[DamageReportCellType.damageEstimate] = failures.map() {item in return item.message}
+        case .invalid(let failures): errorMessages[DamageReportCellType.damageEstimate] = failures.map() {item in return "Your estimate " + item.message}
         default: break
         }
         

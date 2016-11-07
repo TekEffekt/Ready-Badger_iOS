@@ -13,12 +13,8 @@
 		B61981061DBDC5C700787101 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981051DBDC5C700787101 /* State.swift */; };
 		B61981081DBDCA2100787101 /* Ownership.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981071DBDCA2100787101 /* Ownership.swift */; };
 		B619810C1DBDCF8B00787101 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810B1DBDCF8B00787101 /* Answer.swift */; };
-		B619810E1DBDF71200787101 /* DamageReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810D1DBDF71200787101 /* DamageReportCell.swift */; };
 		B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810F1DBDF8A500787101 /* DamageReportDataSource.swift */; };
 		B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981111DBDF8B200787101 /* DamageReportCellType.swift */; };
-		B61981141DBE135800787101 /* DamageReportLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981131DBE135800787101 /* DamageReportLabelCell.swift */; };
-		B61981161DBE6FF100787101 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981151DBE6FF100787101 /* DateCell.swift */; };
-		B61981181DBEBF8F00787101 /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981171DBEBF8F00787101 /* BasementFloodedCell.swift */; };
 		B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */; };
 		B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */; };
 		B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6A1DAA25B7009EC6FB /* County.swift */; };
@@ -36,11 +32,16 @@
 		B627DA8E1DB47543009EC6FB /* Damage Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */; };
 		B627DA911DB4B093009EC6FB /* DamageReportTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA901DB4B093009EC6FB /* DamageReportTableController.swift */; };
 		B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA921DB4B9B7009EC6FB /* OptionController.swift */; };
-		B627DA971DB50DD5009EC6FB /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA961DB50DD5009EC6FB /* OptionTableViewCell.swift */; };
 		B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */; };
 		B627DA9D1DB51EDC009EC6FB /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */; };
 		B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E735E1DA1D21F00C33683 /* AppDelegate.swift */; };
 		B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62E73651DA1D21F00C33683 /* Assets.xcassets */; };
+		B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E871DD04F4A002B109B /* DescriptionViewController.swift */; };
+		B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */; };
+		B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8B1DD04F72002B109B /* DamageReportCell.swift */; };
+		B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */; };
+		B6469E921DD04F72002B109B /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8D1DD04F72002B109B /* DateCell.swift */; };
+		B6469E931DD04F72002B109B /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */; };
 		B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EB1DAA0615001A3634 /* BackendOperation.swift */; };
 		B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EC1DAA0615001A3634 /* BackendRequest.swift */; };
 		B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */; };
@@ -76,12 +77,8 @@
 		B61981051DBDC5C700787101 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		B61981071DBDCA2100787101 /* Ownership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ownership.swift; sourceTree = "<group>"; };
 		B619810B1DBDCF8B00787101 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		B619810D1DBDF71200787101 /* DamageReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportCell.swift; path = "Damage Report/DamageReportCell.swift"; sourceTree = "<group>"; };
 		B619810F1DBDF8A500787101 /* DamageReportDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportDataSource.swift; sourceTree = "<group>"; };
 		B61981111DBDF8B200787101 /* DamageReportCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCellType.swift; sourceTree = "<group>"; };
-		B61981131DBE135800787101 /* DamageReportLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportLabelCell.swift; path = "Damage Report/DamageReportLabelCell.swift"; sourceTree = "<group>"; };
-		B61981151DBE6FF100787101 /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateCell.swift; path = "Damage Report/DateCell.swift"; sourceTree = "<group>"; };
-		B61981171DBEBF8F00787101 /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasementFloodedCell.swift; path = "Damage Report/BasementFloodedCell.swift"; sourceTree = "<group>"; };
 		B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyDataParse.swift; sourceTree = "<group>"; };
 		B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponseParse.swift; sourceTree = "<group>"; };
 		B627DA6A1DAA25B7009EC6FB /* County.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
@@ -99,13 +96,18 @@
 		B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Damage Report.storyboard"; sourceTree = "<group>"; };
 		B627DA901DB4B093009EC6FB /* DamageReportTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportTableController.swift; path = "Damage Report/DamageReportTableController.swift"; sourceTree = "<group>"; };
 		B627DA921DB4B9B7009EC6FB /* OptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionController.swift; path = "Damage Report/OptionController.swift"; sourceTree = "<group>"; };
-		B627DA961DB50DD5009EC6FB /* OptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionTableViewCell.swift; path = "Damage Report/OptionTableViewCell.swift"; sourceTree = "<group>"; };
 		B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportSegues.swift; path = "Damage Report/DamageReportSegues.swift"; sourceTree = "<group>"; };
 		B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
 		B62E735B1DA1D21F00C33683 /* Ready Badger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ready Badger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62E735E1DA1D21F00C33683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B62E73651DA1D21F00C33683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B62E736A1DA1D21F00C33683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6469E871DD04F4A002B109B /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = "Damage Report/DescriptionViewController.swift"; sourceTree = "<group>"; };
+		B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasementFloodedCell.swift; sourceTree = "<group>"; };
+		B6469E8B1DD04F72002B109B /* DamageReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCell.swift; sourceTree = "<group>"; };
+		B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportLabelCell.swift; sourceTree = "<group>"; };
+		B6469E8D1DD04F72002B109B /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
 		B65D25EB1DAA0615001A3634 /* BackendOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendOperation.swift; sourceTree = "<group>"; };
 		B65D25EC1DAA0615001A3634 /* BackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequest.swift; sourceTree = "<group>"; };
 		B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequestJSONExtension.swift; sourceTree = "<group>"; };
@@ -240,13 +242,10 @@
 			children = (
 				B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */,
 				B627DA901DB4B093009EC6FB /* DamageReportTableController.swift */,
+				B6469E871DD04F4A002B109B /* DescriptionViewController.swift */,
 				B627DA921DB4B9B7009EC6FB /* OptionController.swift */,
-				B627DA961DB50DD5009EC6FB /* OptionTableViewCell.swift */,
-				B619810D1DBDF71200787101 /* DamageReportCell.swift */,
 				B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */,
-				B61981131DBE135800787101 /* DamageReportLabelCell.swift */,
-				B61981151DBE6FF100787101 /* DateCell.swift */,
-				B61981171DBEBF8F00787101 /* BasementFloodedCell.swift */,
+				B6469E891DD04F72002B109B /* Cells */,
 				B61981001DBDB9FE00787101 /* Model */,
 			);
 			name = "Damage Report";
@@ -288,6 +287,19 @@
 				B67510D91DA2271A00E81CB3 /* Hamburger Architecure */,
 			);
 			path = "Ready Badger";
+			sourceTree = "<group>";
+		};
+		B6469E891DD04F72002B109B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */,
+				B6469E8B1DD04F72002B109B /* DamageReportCell.swift */,
+				B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */,
+				B6469E8D1DD04F72002B109B /* DateCell.swift */,
+				B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */,
+			);
+			name = Cells;
+			path = "Damage Report/Cells";
 			sourceTree = "<group>";
 		};
 		B65D25E91DAA0615001A3634 /* Network Layer */ = {
@@ -541,7 +553,6 @@
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
 				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
 				B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */,
-				B61981161DBE6FF100787101 /* DateCell.swift in Sources */,
 				B61981041DBDBC7800787101 /* DisasterType.swift in Sources */,
 				B627DA911DB4B093009EC6FB /* DamageReportTableController.swift in Sources */,
 				B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */,
@@ -549,6 +560,7 @@
 				B65D261D1DAA086E001A3634 /* AllCountyOperation.swift in Sources */,
 				B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */,
 				B619810C1DBDCF8B00787101 /* Answer.swift in Sources */,
+				B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */,
 				B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */,
 				B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */,
 				B627DA9D1DB51EDC009EC6FB /* FormTableViewController.swift in Sources */,
@@ -556,11 +568,11 @@
 				B65D261B1DAA07D0001A3634 /* AllCountyRequest.swift in Sources */,
 				B627DA6F1DAA2660009EC6FB /* CountyWrites.swift in Sources */,
 				B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */,
-				B627DA971DB50DD5009EC6FB /* OptionTableViewCell.swift in Sources */,
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */,
 				B61981061DBDC5C700787101 /* State.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
+				B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */,
 				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
 				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
@@ -568,12 +580,15 @@
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
+				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,
 				B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
+				B6469E931DD04F72002B109B /* OptionTableViewCell.swift in Sources */,
 				B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */,
 				B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */,
+				B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
@@ -581,12 +596,10 @@
 				B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */,
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
-				B619810E1DBDF71200787101 /* DamageReportCell.swift in Sources */,
-				B61981141DBE135800787101 /* DamageReportLabelCell.swift in Sources */,
+				B6469E921DD04F72002B109B /* DateCell.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
 				B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
-				B61981181DBEBF8F00787101 /* BasementFloodedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

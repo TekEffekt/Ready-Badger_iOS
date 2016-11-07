@@ -14,4 +14,5 @@ enum DamageReportSegues: String {
     case OwnershipOptions = "Show Ownership Options"
     case ResidenceHabitable = "Show Habitable Options"
     case ShowLivingOptions = "Show Living Options"
+    case ShowDescription = "Show Description"
 }
