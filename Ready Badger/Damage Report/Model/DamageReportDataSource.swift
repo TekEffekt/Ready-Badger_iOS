@@ -53,6 +53,13 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
             dateCell.datePicker?.addTarget(self, action: #selector(DamageReportDataSource.datePickerChanged(datePicker:)), for: .valueChanged)
         } else if let basementFlooded = cell as? BasementFloodedCell {
             basementFlooded.floodedSwitch.addTarget(self, action: #selector(self.floodSwitchTapped(floodSwitch:)), for: .valueChanged)
+        } else if let pictureCell = cell as? PictureCell {
+            if let picture = damageReport.picture {
+                pictureCell.pictureThumbnail.isHidden = false
+                pictureCell.pictureThumbnail.image = picture
+            } else {
+                pictureCell.pictureThumbnail.isHidden = true
+            }
         }
         
         return cell
@@ -73,6 +80,11 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
             tableView?.deleteRows(at: paths, with: .fade)
         }
         tableView?.endUpdates()
+        if floodedMode {
+            damageReport.basementFlooded = .yes
+        } else {
+            damageReport.basementFlooded = .no
+        }
     }
     
     func setCellLabel(cell: DamageReportLabelCell) {
@@ -80,7 +92,7 @@ class DamageReportDataSource: NSObject, UITableViewDataSource {
             case .disasterType:
                 cell.label?.text = damageReport.disasterType?.rawValue
             case .date:
-                cell.label?.text = damageReport.date != nil ? dateFormatter.string(from: damageReport.date!) : ""
+                cell.label?.text = damageReport.date != nil ? dateFormatter.string(from: damageReport.date) : ""
             case .state:
                 cell.label?.text = damageReport.state
             case .ownership :

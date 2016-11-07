@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct DamageReport {
     
     var disasterType: DisasterType?
-    var date: Date?
+    var date: Date = Date()
     var name: String?
     var address: String?
     var city: String?
@@ -27,5 +28,5 @@ struct DamageReport {
     var personLivingInBasement: Answer = .n_a
     var inchesOfWater: String?
     var description: String?
-    
+    var picture: UIImage?
 }

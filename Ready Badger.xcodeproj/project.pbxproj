@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5983BE7C986B54F6CC767372 /* Pods_Ready_Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */; };
+		B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E5DE1DD0D89B0098D47C /* PictureCell.swift */; };
 		B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981011DBDBA0B00787101 /* DamageReport.swift */; };
 		B61981041DBDBC7800787101 /* DisasterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981031DBDBC7800787101 /* DisasterType.swift */; };
 		B61981061DBDC5C700787101 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981051DBDC5C700787101 /* State.swift */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready_Badger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B612E5DE1DD0D89B0098D47C /* PictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		B61981011DBDBA0B00787101 /* DamageReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReport.swift; sourceTree = "<group>"; };
 		B61981031DBDBC7800787101 /* DisasterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterType.swift; sourceTree = "<group>"; };
 		B61981051DBDC5C700787101 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */,
 				B6469E8D1DD04F72002B109B /* DateCell.swift */,
 				B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */,
+				B612E5DE1DD0D89B0098D47C /* PictureCell.swift */,
 			);
 			name = Cells;
 			path = "Damage Report/Cells";
@@ -578,6 +581,7 @@
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
 				B627DA8C1DAB7B33009EC6FB /* HackFeedGather.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
+				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
 				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,

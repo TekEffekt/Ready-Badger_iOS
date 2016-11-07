@@ -9,7 +9,7 @@
 import UIKit
 import TGCameraViewController
 
-class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem {
+class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem, TGCameraDelegate {
 
     var menu: HamburgerMenu?
     let damageReportDatasource = DamageReportDataSource()
@@ -65,6 +65,8 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
                 damageReportDatasource.damageReport.percentOfLoss = string
             case .damageEstimate:
                 damageReportDatasource.damageReport.damageEstimate = string
+            case .waterInches:
+                damageReportDatasource.damageReport.inchesOfWater = string
             default:
                 break
         }
@@ -80,18 +82,16 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
                 tableView.deleteRows(at:  [IndexPath(row: 2, section: 0)], with: .fade)
             }
             tableView.endUpdates()
-        } else if indexPath.section == 7 {
-            //let cameraController = TGCameraNavigationController()
-            
+        } else if indexPath.section == 7 && indexPath.row == 1 {
+            let cameraController = TGCameraNavigationController.new(with: self)!
+            present(cameraController, animated: true, completion: nil)
         }
     }
     
     @IBAction func sendPressed(_ sender: UIBarButtonItem) {
         let errors = DamageReportValidator.validate(report: damageReportDatasource.damageReport)
-        if errors.count > 0 {
-            damageReportDatasource.errors = errors
-            tableView.reloadData()
-        }
+        damageReportDatasource.errors = errors
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
@@ -105,6 +105,9 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
             switch segue.identifier! {
                 case DamageReportSegues.DisasterTypeSegue.rawValue:
                     optionVc.options = DisasterType.getAll().map() {type in return type.rawValue}
+                    if let type = damageReportDatasource.damageReport.disasterType {
+                        optionVc.selectedRow = DisasterType.getAll().index(of: type)
+                    }
                     optionVc.saveOptions = { [weak self] (option: String) in
                         self?.damageReportDatasource.damageReport.disasterType = DisasterType(rawValue: option)
                         self?.tableView.reloadData()
@@ -143,6 +146,36 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
                 self?.tableView.reloadData()
             }
         }
+    }
+    
+    // MARK: Camera Delegate
+    func cameraDidCancel() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func cameraDidTakePhoto(_ image: UIImage!) {
+        damageReportDatasource.damageReport.picture = image
+        print("Taken")
+        dismiss(animated: true, completion: nil)
+        updateCell(withCellId: .photo)
+    }
+    
+    func cameraDidSelectAlbumPhoto(_ image: UIImage!) {
+        damageReportDatasource.damageReport.picture = image
+        print("Selected")
+        dismiss(animated: true, completion: nil)
+        updateCell(withCellId: .photo)
+    }
+    
+    func updateCell(withCellId id: DamageReportCellType) {
+        tableView.beginUpdates()
+        switch id {
+            case .photo:
+                let path = IndexPath(row: 1, section: 7)
+                tableView.reloadRows(at: [path], with: .none)
+            default: break
+        }
+        tableView.endUpdates()
     }
 
 }

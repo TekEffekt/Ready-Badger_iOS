@@ -35,8 +35,8 @@ class OptionController: UITableViewController, DefaultTheme {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Option Cell") as? OptionTableViewCell else { return UITableViewCell() }
-        let label = cell.subviews.first!.subviews.first as! UILabel
-        label.text = options?[indexPath.row]
+        cell.optionLabel.text = options?[indexPath.row]
+        cell.checkmark.isHidden = !(indexPath.row == selectedRow)
         
         return cell
     }
