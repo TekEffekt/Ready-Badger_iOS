@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DCD5B529A16A7486E8A8E82B'
+               BlueprintIdentifier = '79B17A2E40ED30607578DF69'
                BlueprintName = 'TGCameraViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TGCameraViewController.framework'>

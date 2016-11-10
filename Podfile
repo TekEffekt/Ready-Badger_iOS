@@ -10,6 +10,8 @@ pod 'JTHamburgerButton'
 pod 'RealmSwift'
 pod 'TGCameraViewController'
 pod 'Validator'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'Segmentio', '~> 2.0'
 end
 
 post_install do |installer|

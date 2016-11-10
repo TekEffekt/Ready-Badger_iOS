@@ -155,14 +155,12 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
     
     func cameraDidTakePhoto(_ image: UIImage!) {
         damageReportDatasource.damageReport.picture = image
-        print("Taken")
         dismiss(animated: true, completion: nil)
         updateCell(withCellId: .photo)
     }
     
     func cameraDidSelectAlbumPhoto(_ image: UIImage!) {
         damageReportDatasource.damageReport.picture = image
-        print("Selected")
         dismiss(animated: true, completion: nil)
         updateCell(withCellId: .photo)
     }

@@ -21,7 +21,7 @@ enum MenuLinks: String {
     case MakeAList = "Make A List"
     case BasicKit = "Basic Kit"
     case PlanAhead = "Plan Ahead"
-    case TypesOfDisasters = "Types of Disasters"
+    case DisasterInfo = "Disaster Info"
     case DamageReport = "Damage Report"
     case DisasterResources = "Disaster Resources"
     case SocialMedia = "Social Media"
@@ -41,7 +41,7 @@ enum MenuLinks: String {
     case AboutSection = "About"
     
     
-    static let allValues = [[AlertFeed, RiverMap], [DamageReport, DisasterResources, Connect, EmergencyTone], [MakeAList, BasicKit, PlanAhead, TypesOfDisasters], [AboutUs]]
+    static let allValues = [[AlertFeed, RiverMap], [DamageReport, DisasterResources, Connect, EmergencyTone], [MakeAList, BasicKit, PlanAhead, DisasterInfo], [AboutUs]]
     
     static let allSections = [MonitorSection, RespondSection, PreparedSection, AboutSection]
 }

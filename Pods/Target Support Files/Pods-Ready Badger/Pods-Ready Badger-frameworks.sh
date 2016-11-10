@@ -86,16 +86,20 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Ready Badger/JTHamburgerButton.framework"
   install_framework "Pods-Ready Badger/LGSideMenuController.framework"
+  install_framework "Pods-Ready Badger/MBProgressHUD.framework"
   install_framework "Pods-Ready Badger/Realm.framework"
   install_framework "Pods-Ready Badger/RealmSwift.framework"
+  install_framework "Pods-Ready Badger/Segmentio.framework"
   install_framework "Pods-Ready Badger/TGCameraViewController.framework"
   install_framework "Pods-Ready Badger/Validator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Ready Badger/JTHamburgerButton.framework"
   install_framework "Pods-Ready Badger/LGSideMenuController.framework"
+  install_framework "Pods-Ready Badger/MBProgressHUD.framework"
   install_framework "Pods-Ready Badger/Realm.framework"
   install_framework "Pods-Ready Badger/RealmSwift.framework"
+  install_framework "Pods-Ready Badger/Segmentio.framework"
   install_framework "Pods-Ready Badger/TGCameraViewController.framework"
   install_framework "Pods-Ready Badger/Validator.framework"
 fi

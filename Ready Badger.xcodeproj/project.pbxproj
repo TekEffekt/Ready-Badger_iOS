@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5983BE7C986B54F6CC767372 /* Pods_Ready_Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */; };
 		B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E5DE1DD0D89B0098D47C /* PictureCell.swift */; };
+		B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */; };
+		B612E5E41DD0EB4C0098D47C /* DisasterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E5E31DD0EB4C0098D47C /* DisasterInfoViewController.swift */; };
 		B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981011DBDBA0B00787101 /* DamageReport.swift */; };
 		B61981041DBDBC7800787101 /* DisasterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981031DBDBC7800787101 /* DisasterType.swift */; };
 		B61981061DBDC5C700787101 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981051DBDC5C700787101 /* State.swift */; };
@@ -43,6 +45,18 @@
 		B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */; };
 		B6469E921DD04F72002B109B /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8D1DD04F72002B109B /* DateCell.swift */; };
 		B6469E931DD04F72002B109B /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */; };
+		B655A5CB1DD0F51400401155 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A5CA1DD0F51400401155 /* ColorPalette.swift */; };
+		B655A5CD1DD0F52500401155 /* UIFont+ExampleFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A5CC1DD0F52500401155 /* UIFont+ExampleFonts.swift */; };
+		B655A5D91DD1510600401155 /* bombThreat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* bombThreat.html */; };
+		B655A5DA1DD1510600401155 /* extremeHeat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* extremeHeat.html */; };
+		B655A5DB1DD1510600401155 /* fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* fire.html */; };
+		B655A5DC1DD1510600401155 /* flood.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D21DD1510600401155 /* flood.html */; };
+		B655A5DD1DD1510600401155 /* hazardous.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D31DD1510600401155 /* hazardous.html */; };
+		B655A5DE1DD1510600401155 /* healthEmergency.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D41DD1510600401155 /* healthEmergency.html */; };
+		B655A5DF1DD1510600401155 /* powerOutage.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D51DD1510600401155 /* powerOutage.html */; };
+		B655A5E01DD1510600401155 /* thunderstorm.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D61DD1510600401155 /* thunderstorm.html */; };
+		B655A5E11DD1510600401155 /* tornado.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D71DD1510600401155 /* tornado.html */; };
+		B655A5E21DD1510600401155 /* winterStorm.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D81DD1510600401155 /* winterStorm.html */; };
 		B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EB1DAA0615001A3634 /* BackendOperation.swift */; };
 		B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EC1DAA0615001A3634 /* BackendRequest.swift */; };
 		B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */; };
@@ -74,6 +88,8 @@
 /* Begin PBXFileReference section */
 		9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready_Badger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B612E5DE1DD0D89B0098D47C /* PictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
+		B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Disaster Info.storyboard"; sourceTree = "<group>"; };
+		B612E5E31DD0EB4C0098D47C /* DisasterInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoViewController.swift; sourceTree = "<group>"; };
 		B61981011DBDBA0B00787101 /* DamageReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReport.swift; sourceTree = "<group>"; };
 		B61981031DBDBC7800787101 /* DisasterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterType.swift; sourceTree = "<group>"; };
 		B61981051DBDC5C700787101 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -110,6 +126,18 @@
 		B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportLabelCell.swift; sourceTree = "<group>"; };
 		B6469E8D1DD04F72002B109B /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		B655A5CA1DD0F51400401155 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		B655A5CC1DD0F52500401155 /* UIFont+ExampleFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+ExampleFonts.swift"; sourceTree = "<group>"; };
+		B655A5CF1DD1510600401155 /* bombThreat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bombThreat.html; sourceTree = "<group>"; };
+		B655A5D01DD1510600401155 /* extremeHeat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = extremeHeat.html; sourceTree = "<group>"; };
+		B655A5D11DD1510600401155 /* fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fire.html; sourceTree = "<group>"; };
+		B655A5D21DD1510600401155 /* flood.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = flood.html; sourceTree = "<group>"; };
+		B655A5D31DD1510600401155 /* hazardous.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hazardous.html; sourceTree = "<group>"; };
+		B655A5D41DD1510600401155 /* healthEmergency.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = healthEmergency.html; sourceTree = "<group>"; };
+		B655A5D51DD1510600401155 /* powerOutage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = powerOutage.html; sourceTree = "<group>"; };
+		B655A5D61DD1510600401155 /* thunderstorm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = thunderstorm.html; sourceTree = "<group>"; };
+		B655A5D71DD1510600401155 /* tornado.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tornado.html; sourceTree = "<group>"; };
+		B655A5D81DD1510600401155 /* winterStorm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = winterStorm.html; sourceTree = "<group>"; };
 		B65D25EB1DAA0615001A3634 /* BackendOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendOperation.swift; sourceTree = "<group>"; };
 		B65D25EC1DAA0615001A3634 /* BackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequest.swift; sourceTree = "<group>"; };
 		B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequestJSONExtension.swift; sourceTree = "<group>"; };
@@ -158,6 +186,17 @@
 				9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B612E5E21DD0EB330098D47C /* Disaster Info */ = {
+			isa = PBXGroup;
+			children = (
+				B655A5CE1DD1510600401155 /* Disaster HTML */,
+				B655A5CA1DD0F51400401155 /* ColorPalette.swift */,
+				B612E5E31DD0EB4C0098D47C /* DisasterInfoViewController.swift */,
+				B655A5CC1DD0F52500401155 /* UIFont+ExampleFonts.swift */,
+			);
+			path = "Disaster Info";
 			sourceTree = "<group>";
 		};
 		B61981001DBDB9FE00787101 /* Model */ = {
@@ -278,6 +317,7 @@
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B612E5E21DD0EB330098D47C /* Disaster Info */,
 				B69004BC1DA9CF8E0001D4F8 /* Storyboards */,
 				B627DA661DAA2386009EC6FB /* Persistence Layer */,
 				B65D25E91DAA0615001A3634 /* Network Layer */,
@@ -303,6 +343,23 @@
 			);
 			name = Cells;
 			path = "Damage Report/Cells";
+			sourceTree = "<group>";
+		};
+		B655A5CE1DD1510600401155 /* Disaster HTML */ = {
+			isa = PBXGroup;
+			children = (
+				B655A5CF1DD1510600401155 /* bombThreat.html */,
+				B655A5D01DD1510600401155 /* extremeHeat.html */,
+				B655A5D11DD1510600401155 /* fire.html */,
+				B655A5D21DD1510600401155 /* flood.html */,
+				B655A5D31DD1510600401155 /* hazardous.html */,
+				B655A5D41DD1510600401155 /* healthEmergency.html */,
+				B655A5D51DD1510600401155 /* powerOutage.html */,
+				B655A5D61DD1510600401155 /* thunderstorm.html */,
+				B655A5D71DD1510600401155 /* tornado.html */,
+				B655A5D81DD1510600401155 /* winterStorm.html */,
+			);
+			path = "Disaster HTML";
 			sourceTree = "<group>";
 		};
 		B65D25E91DAA0615001A3634 /* Network Layer */ = {
@@ -399,6 +456,7 @@
 				B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */,
 				B69004C51DA9D2700001D4F8 /* County Settings.storyboard */,
 				B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */,
+				B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -457,7 +515,7 @@
 				TargetAttributes = {
 					B62E735A1DA1D21F00C33683 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9463AL9REH;
+						DevelopmentTeam = 2T9JP2ZYVK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -486,11 +544,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */,
+				B655A5DC1DD1510600401155 /* flood.html in Resources */,
 				B627DA8E1DB47543009EC6FB /* Damage Report.storyboard in Resources */,
+				B655A5D91DD1510600401155 /* bombThreat.html in Resources */,
 				B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */,
 				B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */,
+				B655A5E11DD1510600401155 /* tornado.html in Resources */,
+				B655A5DD1DD1510600401155 /* hazardous.html in Resources */,
+				B655A5DA1DD1510600401155 /* extremeHeat.html in Resources */,
+				B655A5DE1DD1510600401155 /* healthEmergency.html in Resources */,
+				B655A5DF1DD1510600401155 /* powerOutage.html in Resources */,
 				B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */,
 				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
+				B655A5DB1DD1510600401155 /* fire.html in Resources */,
+				B655A5E01DD1510600401155 /* thunderstorm.html in Resources */,
+				B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */,
+				B655A5E21DD1510600401155 /* winterStorm.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,10 +648,12 @@
 				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
 				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
+				B655A5CD1DD0F52500401155 /* UIFont+ExampleFonts.swift in Sources */,
 				B627DA8C1DAB7B33009EC6FB /* HackFeedGather.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
 				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
+				B612E5E41DD0EB4C0098D47C /* DisasterInfoViewController.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,
 				B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */,
@@ -598,6 +669,7 @@
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
 				B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */,
 				B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */,
+				B655A5CB1DD0F51400401155 /* ColorPalette.swift in Sources */,
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
 				B6469E921DD04F72002B109B /* DateCell.swift in Sources */,
@@ -706,7 +778,7 @@
 			baseConfigurationReference = D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9463AL9REH;
+				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
 				INFOPLIST_FILE = "Ready Badger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -721,7 +793,7 @@
 			baseConfigurationReference = F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9463AL9REH;
+				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
 				INFOPLIST_FILE = "Ready Badger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
