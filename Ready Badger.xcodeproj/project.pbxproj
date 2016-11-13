@@ -45,18 +45,16 @@
 		B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */; };
 		B6469E921DD04F72002B109B /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8D1DD04F72002B109B /* DateCell.swift */; };
 		B6469E931DD04F72002B109B /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */; };
-		B655A5CB1DD0F51400401155 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A5CA1DD0F51400401155 /* ColorPalette.swift */; };
-		B655A5CD1DD0F52500401155 /* UIFont+ExampleFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A5CC1DD0F52500401155 /* UIFont+ExampleFonts.swift */; };
-		B655A5D91DD1510600401155 /* bombThreat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* bombThreat.html */; };
-		B655A5DA1DD1510600401155 /* extremeHeat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* extremeHeat.html */; };
-		B655A5DB1DD1510600401155 /* fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* fire.html */; };
-		B655A5DC1DD1510600401155 /* flood.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D21DD1510600401155 /* flood.html */; };
-		B655A5DD1DD1510600401155 /* hazardous.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D31DD1510600401155 /* hazardous.html */; };
-		B655A5DE1DD1510600401155 /* healthEmergency.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D41DD1510600401155 /* healthEmergency.html */; };
-		B655A5DF1DD1510600401155 /* powerOutage.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D51DD1510600401155 /* powerOutage.html */; };
-		B655A5E01DD1510600401155 /* thunderstorm.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D61DD1510600401155 /* thunderstorm.html */; };
-		B655A5E11DD1510600401155 /* tornado.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D71DD1510600401155 /* tornado.html */; };
-		B655A5E21DD1510600401155 /* winterStorm.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D81DD1510600401155 /* winterStorm.html */; };
+		B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* Bomb Threat.html */; };
+		B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* Extreme Heat.html */; };
+		B655A5DB1DD1510600401155 /* Fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* Fire.html */; };
+		B655A5DC1DD1510600401155 /* Flood.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D21DD1510600401155 /* Flood.html */; };
+		B655A5DD1DD1510600401155 /* Hazardous Material.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D31DD1510600401155 /* Hazardous Material.html */; };
+		B655A5DE1DD1510600401155 /* Public Health Emergency.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D41DD1510600401155 /* Public Health Emergency.html */; };
+		B655A5DF1DD1510600401155 /* Power Outage.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D51DD1510600401155 /* Power Outage.html */; };
+		B655A5E01DD1510600401155 /* Thunderstorm.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D61DD1510600401155 /* Thunderstorm.html */; };
+		B655A5E11DD1510600401155 /* Tornado.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D71DD1510600401155 /* Tornado.html */; };
+		B655A5E21DD1510600401155 /* Winter Storm.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D81DD1510600401155 /* Winter Storm.html */; };
 		B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EB1DAA0615001A3634 /* BackendOperation.swift */; };
 		B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25EC1DAA0615001A3634 /* BackendRequest.swift */; };
 		B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */; };
@@ -82,6 +80,8 @@
 		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
 		B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C51DA9D2700001D4F8 /* County Settings.storyboard */; };
 		B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */; };
+		B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */; };
+		B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */; };
 		B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */; };
 /* End PBXBuildFile section */
 
@@ -126,18 +126,16 @@
 		B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportLabelCell.swift; sourceTree = "<group>"; };
 		B6469E8D1DD04F72002B109B /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
-		B655A5CA1DD0F51400401155 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
-		B655A5CC1DD0F52500401155 /* UIFont+ExampleFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+ExampleFonts.swift"; sourceTree = "<group>"; };
-		B655A5CF1DD1510600401155 /* bombThreat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bombThreat.html; sourceTree = "<group>"; };
-		B655A5D01DD1510600401155 /* extremeHeat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = extremeHeat.html; sourceTree = "<group>"; };
-		B655A5D11DD1510600401155 /* fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fire.html; sourceTree = "<group>"; };
-		B655A5D21DD1510600401155 /* flood.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = flood.html; sourceTree = "<group>"; };
-		B655A5D31DD1510600401155 /* hazardous.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hazardous.html; sourceTree = "<group>"; };
-		B655A5D41DD1510600401155 /* healthEmergency.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = healthEmergency.html; sourceTree = "<group>"; };
-		B655A5D51DD1510600401155 /* powerOutage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = powerOutage.html; sourceTree = "<group>"; };
-		B655A5D61DD1510600401155 /* thunderstorm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = thunderstorm.html; sourceTree = "<group>"; };
-		B655A5D71DD1510600401155 /* tornado.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tornado.html; sourceTree = "<group>"; };
-		B655A5D81DD1510600401155 /* winterStorm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = winterStorm.html; sourceTree = "<group>"; };
+		B655A5CF1DD1510600401155 /* Bomb Threat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Bomb Threat.html"; sourceTree = "<group>"; };
+		B655A5D01DD1510600401155 /* Extreme Heat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Extreme Heat.html"; sourceTree = "<group>"; };
+		B655A5D11DD1510600401155 /* Fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fire.html; sourceTree = "<group>"; };
+		B655A5D21DD1510600401155 /* Flood.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Flood.html; sourceTree = "<group>"; };
+		B655A5D31DD1510600401155 /* Hazardous Material.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Hazardous Material.html"; sourceTree = "<group>"; };
+		B655A5D41DD1510600401155 /* Public Health Emergency.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Public Health Emergency.html"; sourceTree = "<group>"; };
+		B655A5D51DD1510600401155 /* Power Outage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Power Outage.html"; sourceTree = "<group>"; };
+		B655A5D61DD1510600401155 /* Thunderstorm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Thunderstorm.html; sourceTree = "<group>"; };
+		B655A5D71DD1510600401155 /* Tornado.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Tornado.html; sourceTree = "<group>"; };
+		B655A5D81DD1510600401155 /* Winter Storm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Winter Storm.html"; sourceTree = "<group>"; };
 		B65D25EB1DAA0615001A3634 /* BackendOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendOperation.swift; sourceTree = "<group>"; };
 		B65D25EC1DAA0615001A3634 /* BackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequest.swift; sourceTree = "<group>"; };
 		B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequestJSONExtension.swift; sourceTree = "<group>"; };
@@ -163,6 +161,8 @@
 		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
 		B69004C51DA9D2700001D4F8 /* County Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "County Settings.storyboard"; sourceTree = "<group>"; };
 		B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySettingsViewController.swift; path = "County Settings/CountySettingsViewController.swift"; sourceTree = "<group>"; };
+		B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoType.swift; sourceTree = "<group>"; };
+		B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoPageController.swift; sourceTree = "<group>"; };
 		B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportInputValidator.swift; sourceTree = "<group>"; };
 		D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,9 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				B655A5CE1DD1510600401155 /* Disaster HTML */,
-				B655A5CA1DD0F51400401155 /* ColorPalette.swift */,
 				B612E5E31DD0EB4C0098D47C /* DisasterInfoViewController.swift */,
-				B655A5CC1DD0F52500401155 /* UIFont+ExampleFonts.swift */,
+				B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */,
+				B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */,
 			);
 			path = "Disaster Info";
 			sourceTree = "<group>";
@@ -348,16 +348,16 @@
 		B655A5CE1DD1510600401155 /* Disaster HTML */ = {
 			isa = PBXGroup;
 			children = (
-				B655A5CF1DD1510600401155 /* bombThreat.html */,
-				B655A5D01DD1510600401155 /* extremeHeat.html */,
-				B655A5D11DD1510600401155 /* fire.html */,
-				B655A5D21DD1510600401155 /* flood.html */,
-				B655A5D31DD1510600401155 /* hazardous.html */,
-				B655A5D41DD1510600401155 /* healthEmergency.html */,
-				B655A5D51DD1510600401155 /* powerOutage.html */,
-				B655A5D61DD1510600401155 /* thunderstorm.html */,
-				B655A5D71DD1510600401155 /* tornado.html */,
-				B655A5D81DD1510600401155 /* winterStorm.html */,
+				B655A5CF1DD1510600401155 /* Bomb Threat.html */,
+				B655A5D01DD1510600401155 /* Extreme Heat.html */,
+				B655A5D11DD1510600401155 /* Fire.html */,
+				B655A5D21DD1510600401155 /* Flood.html */,
+				B655A5D31DD1510600401155 /* Hazardous Material.html */,
+				B655A5D41DD1510600401155 /* Public Health Emergency.html */,
+				B655A5D51DD1510600401155 /* Power Outage.html */,
+				B655A5D61DD1510600401155 /* Thunderstorm.html */,
+				B655A5D71DD1510600401155 /* Tornado.html */,
+				B655A5D81DD1510600401155 /* Winter Storm.html */,
 			);
 			path = "Disaster HTML";
 			sourceTree = "<group>";
@@ -544,22 +544,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */,
-				B655A5DC1DD1510600401155 /* flood.html in Resources */,
+				B655A5DC1DD1510600401155 /* Flood.html in Resources */,
 				B627DA8E1DB47543009EC6FB /* Damage Report.storyboard in Resources */,
-				B655A5D91DD1510600401155 /* bombThreat.html in Resources */,
+				B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */,
 				B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */,
 				B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */,
-				B655A5E11DD1510600401155 /* tornado.html in Resources */,
-				B655A5DD1DD1510600401155 /* hazardous.html in Resources */,
-				B655A5DA1DD1510600401155 /* extremeHeat.html in Resources */,
-				B655A5DE1DD1510600401155 /* healthEmergency.html in Resources */,
-				B655A5DF1DD1510600401155 /* powerOutage.html in Resources */,
+				B655A5E11DD1510600401155 /* Tornado.html in Resources */,
+				B655A5DD1DD1510600401155 /* Hazardous Material.html in Resources */,
+				B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */,
+				B655A5DE1DD1510600401155 /* Public Health Emergency.html in Resources */,
+				B655A5DF1DD1510600401155 /* Power Outage.html in Resources */,
 				B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */,
 				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
-				B655A5DB1DD1510600401155 /* fire.html in Resources */,
-				B655A5E01DD1510600401155 /* thunderstorm.html in Resources */,
+				B655A5DB1DD1510600401155 /* Fire.html in Resources */,
+				B655A5E01DD1510600401155 /* Thunderstorm.html in Resources */,
 				B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */,
-				B655A5E21DD1510600401155 /* winterStorm.html in Resources */,
+				B655A5E21DD1510600401155 /* Winter Storm.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,9 +646,9 @@
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
 				B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */,
 				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
+				B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */,
 				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
-				B655A5CD1DD0F52500401155 /* UIFont+ExampleFonts.swift in Sources */,
 				B627DA8C1DAB7B33009EC6FB /* HackFeedGather.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
@@ -669,13 +669,13 @@
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
 				B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */,
 				B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */,
-				B655A5CB1DD0F51400401155 /* ColorPalette.swift in Sources */,
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
 				B6469E921DD04F72002B109B /* DateCell.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
 				B627DA8A1DAB714A009EC6FB /* FeedItem.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
+				B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
