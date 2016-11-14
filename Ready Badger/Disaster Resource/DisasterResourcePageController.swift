@@ -8,10 +8,8 @@
 
 import UIKit
 
-class DisasterResourcePageController: UITableViewController, MenuItem, DefaultTheme {
-    
-    var menu: HamburgerMenu?
-    
+class DisasterResourcePageController: UITableViewController, DefaultTheme {
+        
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()

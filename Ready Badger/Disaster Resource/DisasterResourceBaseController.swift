@@ -8,28 +8,48 @@
 
 import UIKit
 
-class DisasterResourceBaseController: UIViewController {
+class DisasterResourceBaseController: UIViewController, MenuItem {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var menu: HamburgerMenu?
+    var pageMenu: CAPSPageMenu?
+    var resourcePages: [DisasterResourcePageController] {
+        var pages: [DisasterResourcePageController] = []
+        for type in DisasterResourceType.getAll() {
+            let page = storyboard?.instantiateViewController(withIdentifier: "Resource Page") as! DisasterResourcePageController
+            page.title = type.rawValue
+            pages.append(page)
+        }
+        return pages
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if pageMenu == nil {
+            setupPageMenu()
+        }
     }
-    */
+    
+    private func setupPageMenu() {
+        let parameters: [CAPSPageMenuOption] = [
+            .menuItemSeparatorWidth(4.3),
+            .useMenuLikeSegmentedControl(true),
+            .menuItemSeparatorPercentageHeight(0.1),
+            .scrollMenuBackgroundColor(UIColor.white),
+            .selectedMenuItemLabelColor(UIColor.black),
+            .selectionIndicatorColor(UIColor.tint()),
+            .menuItemFont(UIFont.systemFont(ofSize: 14.6, weight: UIFontWeightMedium)),
+            .menuHeight(40),
+            .menuItemSeparatorColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        ]
+        
+        pageMenu = CAPSPageMenu(viewControllers: resourcePages,
+                                frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height),
+                                pageMenuOptions: parameters)
+        pageMenu!.view.backgroundColor = UIColor.clear
+        
+        self.edgesForExtendedLayout = UIRectEdge()
+        self.view.addSubview(pageMenu!.view)
+        view.addSubview(pageMenu!.view)
+    }
 
 }
