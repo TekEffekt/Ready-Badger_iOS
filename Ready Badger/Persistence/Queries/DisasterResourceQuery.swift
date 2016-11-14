@@ -15,10 +15,19 @@ class DisasterResourceQuery {
         var result = [String: [String: [DisasterResource]]]()
         let realm = try! Realm()
         let resources = realm.objects(DisasterResource.self)
-        print(resources.count)
+        let selectedCounties = CountyQueries.getAllSelectedCounties()
         for resource in resources {
             let type = resource.type
             let county = resource.county
+            var found = false
+            for selected in selectedCounties {
+                if selected.name == county {
+                    found = true
+                }
+            }
+            if !found {
+                continue
+            }
             if result[type] == nil {
                 result[type] = [:]
             }

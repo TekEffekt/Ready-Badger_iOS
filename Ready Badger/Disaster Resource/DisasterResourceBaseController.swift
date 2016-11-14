@@ -14,10 +14,16 @@ class DisasterResourceBaseController: UIViewController, MenuItem {
     var pageMenu: CAPSPageMenu?
     var resourcePages: [DisasterResourcePageController] {
         var pages: [DisasterResourcePageController] = []
-        for type in DisasterResourceQuery.getResources() {
+        let resources = DisasterResourceQuery.getResources()
+        for type in DisasterResourceType.getAll() {
             let page = storyboard?.instantiateViewController(withIdentifier: "Resource Page") as! DisasterResourcePageController
-            page.resources = type.value
-            page.title = type.key
+            let typeData = resources[type.rawValue]
+            page.resources = typeData ?? [:]
+            if type == DisasterResourceType.firedepartment {
+                page.title = "Fire Department"
+            } else {
+                page.title = type.rawValue
+            }
             pages.append(page)
         }
         return pages

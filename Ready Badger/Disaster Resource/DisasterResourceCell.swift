@@ -18,6 +18,9 @@ class DisasterResourceCell: UITableViewCell {
     var mapTap: UITapGestureRecognizer!
     var callTap: UITapGestureRecognizer!
     
+    var mapCallback: ((DisasterResource) -> Void)?
+    var callCallback: ((DisasterResource) -> Void)?
+    
     override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
@@ -28,11 +31,15 @@ class DisasterResourceCell: UITableViewCell {
     }
     
     func mapTapped() {
-        print("Map tapped")
+        if let callback = mapCallback {
+            callback(disasterResource)
+        }
     }
     
     func callTapped() {
-        print("Call tapped")
+        if let callback = callCallback {
+            callback(disasterResource)
+        }
     }
 
 }

@@ -17,6 +17,25 @@ class DisasterResourcePageController: UITableViewController, DefaultTheme {
     }
     var keys: [String] = []
     
+    let callCallback = { (resource: DisasterResource) in
+        let stringArray = resource.phoneNumber.components(
+            separatedBy: NSCharacterSet.decimalDigits.inverted)
+        let digitsOnly = stringArray.joined(separator: "")
+        if let url = URL(string: "tel://\(digitsOnly)") {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
+    let mapCallback = { (resource: DisasterResource) in
+        let baseUrl : String = "http://maps.apple.com/?q="
+        let name = "\(resource.name)"
+        let encodedName = name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let finalUrl = baseUrl + encodedName!
+        
+        let url = URL(string: finalUrl)!
+        UIApplication.shared.openURL(url)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()
@@ -39,10 +58,12 @@ class DisasterResourcePageController: UITableViewController, DefaultTheme {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Resource Cell") as? DisasterResourceCell else { return UITableViewCell() }
         let resource = resources[keys[indexPath.section]]?[indexPath.row]
         cell.nameLabel.text = resource?.name
+        cell.addressLabel.text = "\(resource!.streetAddress), \(resource!.zipCode)"
+        cell.disasterResource = resource
+        cell.mapCallback = self.mapCallback
+        cell.callCallback = self.callCallback
         
         return cell
     }
-    
-    
 
 }
