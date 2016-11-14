@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let cancelButtonAttributes: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
         UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes as? [String : AnyObject], for: UIControlState.normal)
+        
+        NetworkQueue.shared.addOperation(AllCountyOperation(withRequest: AllCountyRequest()))
+        NetworkQueue.shared.addOperation(DisasterResourceOperation(withRequest: DisasterResourceRequest()))
+        
         return true
     }
 

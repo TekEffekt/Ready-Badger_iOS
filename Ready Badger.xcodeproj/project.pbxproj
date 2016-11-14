@@ -39,6 +39,17 @@
 		B627DA9D1DB51EDC009EC6FB /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */; };
 		B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E735E1DA1D21F00C33683 /* AppDelegate.swift */; };
 		B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62E73651DA1D21F00C33683 /* Assets.xcassets */; };
+		B630D5771DD8568C0061F2F4 /* Disaster Resources.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B630D5761DD8568C0061F2F4 /* Disaster Resources.storyboard */; };
+		B630D57A1DD912050061F2F4 /* DisasterResourcePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5791DD912050061F2F4 /* DisasterResourcePageController.swift */; };
+		B630D57C1DD931A60061F2F4 /* DisasterResourceBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D57B1DD931A60061F2F4 /* DisasterResourceBaseController.swift */; };
+		B630D57E1DD939D80061F2F4 /* DisasterResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D57D1DD939D80061F2F4 /* DisasterResourceType.swift */; };
+		B630D5801DD93D0B0061F2F4 /* DisasterResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D57F1DD93D0B0061F2F4 /* DisasterResource.swift */; };
+		B630D5821DD96BEA0061F2F4 /* DisasterResourceParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5811DD96BEA0061F2F4 /* DisasterResourceParse.swift */; };
+		B630D5841DD96C0C0061F2F4 /* DisasterResourceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5831DD96C0C0061F2F4 /* DisasterResourceRequest.swift */; };
+		B630D5861DD96E320061F2F4 /* DisasterResourceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5851DD96E320061F2F4 /* DisasterResourceOperation.swift */; };
+		B630D5881DD97CB40061F2F4 /* DisasterResourceWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */; };
+		B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */; };
+		B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */; };
 		B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E871DD04F4A002B109B /* DescriptionViewController.swift */; };
 		B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */; };
 		B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8B1DD04F72002B109B /* DamageReportCell.swift */; };
@@ -120,6 +131,17 @@
 		B62E735E1DA1D21F00C33683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B62E73651DA1D21F00C33683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B62E736A1DA1D21F00C33683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B630D5761DD8568C0061F2F4 /* Disaster Resources.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Disaster Resources.storyboard"; sourceTree = "<group>"; };
+		B630D5791DD912050061F2F4 /* DisasterResourcePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisasterResourcePageController.swift; path = "Disaster Resource/DisasterResourcePageController.swift"; sourceTree = "<group>"; };
+		B630D57B1DD931A60061F2F4 /* DisasterResourceBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisasterResourceBaseController.swift; path = "Disaster Resource/DisasterResourceBaseController.swift"; sourceTree = "<group>"; };
+		B630D57D1DD939D80061F2F4 /* DisasterResourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisasterResourceType.swift; path = "Disaster Resource/DisasterResourceType.swift"; sourceTree = "<group>"; };
+		B630D57F1DD93D0B0061F2F4 /* DisasterResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResource.swift; sourceTree = "<group>"; };
+		B630D5811DD96BEA0061F2F4 /* DisasterResourceParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceParse.swift; sourceTree = "<group>"; };
+		B630D5831DD96C0C0061F2F4 /* DisasterResourceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceRequest.swift; sourceTree = "<group>"; };
+		B630D5851DD96E320061F2F4 /* DisasterResourceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceOperation.swift; sourceTree = "<group>"; };
+		B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceWrite.swift; sourceTree = "<group>"; };
+		B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceQuery.swift; sourceTree = "<group>"; };
+		B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisasterResourceCell.swift; path = "Disaster Resource/DisasterResourceCell.swift"; sourceTree = "<group>"; };
 		B6469E871DD04F4A002B109B /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = "Damage Report/DescriptionViewController.swift"; sourceTree = "<group>"; };
 		B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasementFloodedCell.swift; sourceTree = "<group>"; };
 		B6469E8B1DD04F72002B109B /* DamageReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCell.swift; sourceTree = "<group>"; };
@@ -219,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */,
+				B630D5811DD96BEA0061F2F4 /* DisasterResourceParse.swift */,
 			);
 			path = Parse;
 			sourceTree = "<group>";
@@ -237,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				B627DA6A1DAA25B7009EC6FB /* County.swift */,
+				B630D57F1DD93D0B0061F2F4 /* DisasterResource.swift */,
 			);
 			name = Objects;
 			path = Persistence/Objects;
@@ -246,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				B627DA701DAA32B4009EC6FB /* CountyQueries.swift */,
+				B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */,
 			);
 			name = Queries;
 			path = Persistence/Queries;
@@ -255,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				B627DA6E1DAA2660009EC6FB /* CountyWrites.swift */,
+				B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */,
 			);
 			name = Writes;
 			path = Persistence/Writes;
@@ -317,6 +343,7 @@
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B630D5781DD911C80061F2F4 /* Disaster Resources */,
 				B612E5E21DD0EB330098D47C /* Disaster Info */,
 				B69004BC1DA9CF8E0001D4F8 /* Storyboards */,
 				B627DA661DAA2386009EC6FB /* Persistence Layer */,
@@ -329,6 +356,17 @@
 				B67510D91DA2271A00E81CB3 /* Hamburger Architecure */,
 			);
 			path = "Ready Badger";
+			sourceTree = "<group>";
+		};
+		B630D5781DD911C80061F2F4 /* Disaster Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B630D57B1DD931A60061F2F4 /* DisasterResourceBaseController.swift */,
+				B630D5791DD912050061F2F4 /* DisasterResourcePageController.swift */,
+				B630D57D1DD939D80061F2F4 /* DisasterResourceType.swift */,
+				B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */,
+			);
+			name = "Disaster Resources";
 			sourceTree = "<group>";
 		};
 		B6469E891DD04F72002B109B /* Cells */ = {
@@ -395,6 +433,7 @@
 			children = (
 				B65D261C1DAA086E001A3634 /* AllCountyOperation.swift */,
 				B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */,
+				B630D5851DD96E320061F2F4 /* DisasterResourceOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -404,6 +443,7 @@
 			children = (
 				B65D261A1DAA07D0001A3634 /* AllCountyRequest.swift */,
 				B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */,
+				B630D5831DD96C0C0061F2F4 /* DisasterResourceRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -457,6 +497,7 @@
 				B69004C51DA9D2700001D4F8 /* County Settings.storyboard */,
 				B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */,
 				B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */,
+				B630D5761DD8568C0061F2F4 /* Disaster Resources.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -545,6 +586,7 @@
 			files = (
 				B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */,
 				B655A5DC1DD1510600401155 /* Flood.html in Resources */,
+				B630D5771DD8568C0061F2F4 /* Disaster Resources.storyboard in Resources */,
 				B627DA8E1DB47543009EC6FB /* Damage Report.storyboard in Resources */,
 				B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */,
 				B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */,
@@ -640,6 +682,7 @@
 				B65D261B1DAA07D0001A3634 /* AllCountyRequest.swift in Sources */,
 				B627DA6F1DAA2660009EC6FB /* CountyWrites.swift in Sources */,
 				B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */,
+				B630D5801DD93D0B0061F2F4 /* DisasterResource.swift in Sources */,
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */,
 				B61981061DBDC5C700787101 /* State.swift in Sources */,
@@ -648,14 +691,18 @@
 				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
 				B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */,
 				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
+				B630D5861DD96E320061F2F4 /* DisasterResourceOperation.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
+				B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */,
 				B627DA8C1DAB7B33009EC6FB /* HackFeedGather.swift in Sources */,
 				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
+				B630D57A1DD912050061F2F4 /* DisasterResourcePageController.swift in Sources */,
 				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
 				B612E5E41DD0EB4C0098D47C /* DisasterInfoViewController.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,
+				B630D5841DD96C0C0061F2F4 /* DisasterResourceRequest.swift in Sources */,
 				B627DA881DAB6C72009EC6FB /* CurrentWeatherItem.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
@@ -665,11 +712,16 @@
 				B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */,
 				B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
+				B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
+				B630D5821DD96BEA0061F2F4 /* DisasterResourceParse.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
 				B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */,
 				B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */,
+				B630D5881DD97CB40061F2F4 /* DisasterResourceWrite.swift in Sources */,
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
+				B630D57C1DD931A60061F2F4 /* DisasterResourceBaseController.swift in Sources */,
+				B630D57E1DD939D80061F2F4 /* DisasterResourceType.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
 				B6469E921DD04F72002B109B /* DateCell.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
