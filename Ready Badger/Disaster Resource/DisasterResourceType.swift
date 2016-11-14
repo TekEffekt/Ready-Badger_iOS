@@ -11,10 +11,11 @@ import Foundation
 enum DisasterResourceType: String {
     case hospital = "Hospital"
     case police = "Police"
-    case fire = "Fire"
+    case fire = "FireDept"
     case shelters = "Shelters"
+    case volunteer = "Volunteer"
     
     static func getAll() -> [DisasterResourceType] {
-        return [hospital, police, fire, shelters]
+        return [hospital, police, fire, shelters, volunteer]
     }
 }

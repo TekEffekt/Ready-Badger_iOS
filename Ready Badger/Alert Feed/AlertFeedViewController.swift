@@ -17,9 +17,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadAlertFeeds()
-        
-        NetworkQueue.shared.addOperation(AllCountyOperation(withRequest: AllCountyRequest()))
+        loadAlertFeeds()        
     }
     
     private func downloadFeedData() {

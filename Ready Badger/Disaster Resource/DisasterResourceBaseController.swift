@@ -14,9 +14,10 @@ class DisasterResourceBaseController: UIViewController, MenuItem {
     var pageMenu: CAPSPageMenu?
     var resourcePages: [DisasterResourcePageController] {
         var pages: [DisasterResourcePageController] = []
-        for type in DisasterResourceType.getAll() {
+        for type in DisasterResourceQuery.getResources() {
             let page = storyboard?.instantiateViewController(withIdentifier: "Resource Page") as! DisasterResourcePageController
-            page.title = type.rawValue
+            page.resources = type.value
+            page.title = type.key
             pages.append(page)
         }
         return pages
@@ -32,14 +33,15 @@ class DisasterResourceBaseController: UIViewController, MenuItem {
     private func setupPageMenu() {
         let parameters: [CAPSPageMenuOption] = [
             .menuItemSeparatorWidth(4.3),
-            .useMenuLikeSegmentedControl(true),
+            .useMenuLikeSegmentedControl(false),
             .menuItemSeparatorPercentageHeight(0.1),
             .scrollMenuBackgroundColor(UIColor.white),
             .selectedMenuItemLabelColor(UIColor.black),
             .selectionIndicatorColor(UIColor.tint()),
             .menuItemFont(UIFont.systemFont(ofSize: 14.6, weight: UIFontWeightMedium)),
             .menuHeight(40),
-            .menuItemSeparatorColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+            .menuItemSeparatorColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
+            .menuItemWidthBasedOnTitleTextWidth(true)
         ]
         
         pageMenu = CAPSPageMenu(viewControllers: resourcePages,

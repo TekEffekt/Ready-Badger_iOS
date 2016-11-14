@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Resource Cell" id="LBp-n6-dus">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Resource Cell" id="LBp-n6-dus" customClass="DisasterResourceCell" customModule="Ready_Badger" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="56" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LBp-n6-dus" id="E5A-cG-BO4">
@@ -53,36 +53,12 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3AI-bq-k9a">
-                                            <rect key="frame" x="317" y="24" width="42" height="42"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone Call" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-1t-LO9">
-                                                    <rect key="frame" x="12" y="0.0" width="19" height="19"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="19" id="VaA-vB-fZh"/>
-                                                        <constraint firstAttribute="height" constant="19" id="lDz-6m-gOj"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7o-C0-cEl">
-                                                    <rect key="frame" x="0.0" y="23" width="42" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="2fP-X1-Gax"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.27450980392156865" green="0.53333333333333333" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="N7o-C0-cEl" firstAttribute="leading" secondItem="3AI-bq-k9a" secondAttribute="leading" id="6IP-eD-cAL"/>
-                                                <constraint firstAttribute="trailing" secondItem="N7o-C0-cEl" secondAttribute="trailing" id="6WP-mU-Bwa"/>
-                                                <constraint firstItem="P1y-1t-LO9" firstAttribute="top" secondItem="3AI-bq-k9a" secondAttribute="top" id="Bua-Kx-gSo"/>
-                                                <constraint firstItem="P1y-1t-LO9" firstAttribute="centerX" secondItem="3AI-bq-k9a" secondAttribute="centerX" id="HIl-Le-XnU"/>
-                                                <constraint firstAttribute="width" constant="42" id="PPz-Xs-ydo"/>
-                                                <constraint firstAttribute="height" constant="42" id="bki-r1-Qey"/>
-                                                <constraint firstAttribute="bottom" secondItem="N7o-C0-cEl" secondAttribute="bottom" constant="-2" id="pwV-V1-bxD"/>
-                                            </constraints>
-                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2817 5 1/2 Mile Road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAs-wh-CQy">
+                                            <rect key="frame" x="8" y="60" width="229" height="17.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
+                                            <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmE-IA-n4I">
                                             <rect key="frame" x="263" y="24" width="42" height="42"/>
                                             <subviews>
@@ -114,12 +90,37 @@
                                                 <constraint firstAttribute="trailing" secondItem="Pak-g3-twF" secondAttribute="trailing" id="cDg-vt-Ewq"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2817 5 1/2 Mile Road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAs-wh-CQy">
-                                            <rect key="frame" x="8" y="60" width="229" height="17.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
-                                            <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3AI-bq-k9a">
+                                            <rect key="frame" x="317" y="24" width="42" height="42"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone Call" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-1t-LO9">
+                                                    <rect key="frame" x="12" y="0.0" width="19" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="19" id="VaA-vB-fZh"/>
+                                                        <constraint firstAttribute="height" constant="19" id="lDz-6m-gOj"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7o-C0-cEl">
+                                                    <rect key="frame" x="0.0" y="23" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="2fP-X1-Gax"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.27450980392156865" green="0.53333333333333333" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="N7o-C0-cEl" firstAttribute="leading" secondItem="3AI-bq-k9a" secondAttribute="leading" id="6IP-eD-cAL"/>
+                                                <constraint firstAttribute="trailing" secondItem="N7o-C0-cEl" secondAttribute="trailing" id="6WP-mU-Bwa"/>
+                                                <constraint firstItem="P1y-1t-LO9" firstAttribute="top" secondItem="3AI-bq-k9a" secondAttribute="top" id="Bua-Kx-gSo"/>
+                                                <constraint firstItem="P1y-1t-LO9" firstAttribute="centerX" secondItem="3AI-bq-k9a" secondAttribute="centerX" id="HIl-Le-XnU"/>
+                                                <constraint firstAttribute="width" constant="42" id="PPz-Xs-ydo"/>
+                                                <constraint firstAttribute="height" constant="42" id="bki-r1-Qey"/>
+                                                <constraint firstAttribute="bottom" secondItem="N7o-C0-cEl" secondAttribute="bottom" constant="-2" id="pwV-V1-bxD"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="vmE-IA-n4I" firstAttribute="leading" secondItem="WeH-Yn-OwQ" secondAttribute="trailing" constant="26" id="BU5-Fn-thI"/>
@@ -135,6 +136,12 @@
                                         <constraint firstItem="3AI-bq-k9a" firstAttribute="leading" secondItem="vmE-IA-n4I" secondAttribute="trailing" constant="12" id="umq-Uh-wwW"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="ZAs-wh-CQy" id="Cor-n4-gHa"/>
+                                    <outlet property="callButton" destination="3AI-bq-k9a" id="hvB-La-pMb"/>
+                                    <outlet property="mapButton" destination="vmE-IA-n4I" id="gcd-l9-LsY"/>
+                                    <outlet property="nameLabel" destination="WeH-Yn-OwQ" id="f0p-LQ-lXO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
