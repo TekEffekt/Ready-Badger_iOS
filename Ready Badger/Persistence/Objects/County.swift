@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 
 class County: Object {
+    dynamic var id = 0
     dynamic var name = ""
     dynamic var region = ""
     dynamic var weatherAlertCode = ""
@@ -21,7 +22,7 @@ class County: Object {
     dynamic var selected = false
     
     override class func primaryKey() -> String? {
-        return "name"
+        return "id"
     }
     
 }

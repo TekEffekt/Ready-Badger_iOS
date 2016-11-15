@@ -11,7 +11,7 @@ import Foundation
 struct AllCountyRequest: BackendRequest {
     
     var endpoint: String {
-        return "counties/index/RB-API-KEY/testhi"
+        return "api/counties"
     }
     
     var method: BackendServiceMethod {
@@ -19,7 +19,7 @@ struct AllCountyRequest: BackendRequest {
     }
     
     var headers: [String : String]? {
-        return nil
+        return ["RB-API-KEY" : "testhi"]
     }
     
     var imageData: NSData? {

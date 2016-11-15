@@ -12,7 +12,7 @@ import RealmSwift
 class CountyWrites {
     
     static func saveCounty(name: String, region: String, weatherAlertCode: String, currentWeatherCode: String,
-                           facebook: String, twitter: String, website: String) {
+                           facebook: String, twitter: String, website: String, id: Int) {
         do {
             let realm = try Realm()
             let county = County()
@@ -23,6 +23,7 @@ class CountyWrites {
             county.facebook = facebook
             county.twitter = twitter
             county.website = website
+            county.id = id
             
             try realm.write {
                 realm.add(county, update: true)

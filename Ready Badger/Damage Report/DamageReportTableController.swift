@@ -91,7 +91,14 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
     @IBAction func sendPressed(_ sender: UIBarButtonItem) {
         let errors = DamageReportValidator.validate(report: damageReportDatasource.damageReport)
         damageReportDatasource.errors = errors
-        tableView.reloadData()
+        
+        if errors.isEmpty {
+            let request = DamageReportRequest(report: damageReportDatasource.damageReport)
+            NetworkQueue.shared.addOperation(DamageReportOperation(withRequest: request))
+        } else {
+            tableView.reloadData()
+            
+        }
     }
     
     override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {

@@ -14,10 +14,21 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     var alertFeeds: [FeedPageViewController]!
     var menu: HamburgerMenu?
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    var emptyState: EmptyState?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAlertFeeds()        
+    }
+    
+    private func setEmptyState(on: Bool) {
+        if emptyState == nil {
+            emptyState = Bundle.loadView(fromNib: "EmptyState", withType: EmptyState.self)
+            emptyState?.center = CGPoint(x: view.center.x, y: 180)
+            view.addSubview(emptyState!)
+        }
+        
+        emptyState?.isHidden = !on
     }
     
     private func downloadFeedData() {
@@ -28,6 +39,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
             typeFeed.feedData = self.splitItemsByType(items: items)
             countyFeed.keyList = Array(countyFeed.feedData.keys)
             typeFeed.keyList = Array(typeFeed.feedData.keys)
+            
             countyFeed.newData = true
             typeFeed.newData = true
             OperationQueue.main.addOperation({ 
