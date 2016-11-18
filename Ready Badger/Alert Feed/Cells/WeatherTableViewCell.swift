@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedTableViewCell: UITableViewCell {
+class WeatherTableViewCell: UITableViewCell {
 
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var countyLabel: UILabel!
