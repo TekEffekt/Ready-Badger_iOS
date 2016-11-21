@@ -32,20 +32,18 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     }
     
     private func downloadFeedData() {
-        HackFeedGather.gather { (items) in
-            let countyFeed = self.alertFeeds[0]
-            let typeFeed = self.alertFeeds[1]
-            countyFeed.feedData = self.splitItemsByCounty(items: items)
-            typeFeed.feedData = self.splitItemsByType(items: items)
-            countyFeed.keyList = Array(countyFeed.feedData.keys)
-            typeFeed.keyList = Array(typeFeed.feedData.keys)
+        print(CountyQueries.getAllSelectedCounties().count)
+        guard CountyQueries.getAllSelectedCounties().count > 0 else { return }
+        NetworkQueue.shared.addOperation(FeedOperation(withRequest: FeedRequest(), completionHandler: { (feedData) in
+            print(feedData)
             
-            countyFeed.newData = true
-            typeFeed.newData = true
-            OperationQueue.main.addOperation({ 
+            OperationQueue.main.addOperation({
                 self.loadingIndicator.stopAnimating()
+                for vc in self.alertFeeds {
+                    vc.feedData = feedData
+                }
             })
-        }
+        }))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,24 +65,9 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         let typeFeed = storyboard?.instantiateViewController(withIdentifier: "AlertFeedPage") as! FeedPageViewController
         countyFeed.title = "County"
         typeFeed.title = "Type"
-        typeFeed.type = .type
-        countyFeed.type = .county
+        typeFeed.type = .byType
+        countyFeed.type = .byCounty
         alertFeeds = [countyFeed, typeFeed]
-    }
-    
-    private func splitItemsByCounty(items: [CurrentWeatherItem]) -> [String: [CurrentWeatherItem]] {
-        var result: [String: [CurrentWeatherItem]] = [:]
-        for item in items {
-            if result[item.countyName] == nil {
-                result[item.countyName] = []
-            }
-            result[item.countyName]?.append(item)
-        }
-        return result
-    }
-    
-    private func splitItemsByType(items: [CurrentWeatherItem]) -> [String: [CurrentWeatherItem]] {
-        return ["Current Weather": items]
     }
     
     private func setupPageMenu() {
