@@ -26,7 +26,7 @@ struct FeedRequest: BackendRequest {
         let selectedCounties = CountyQueries.getAllSelectedCounties()
         var parameters = [String : AnyObject]()
         for county in selectedCounties {
-            parameters["county[]"] = county.id as AnyObject?
+            parameters["\(county.id)"] = "county[]" as AnyObject?
         }
         return parameters
     }

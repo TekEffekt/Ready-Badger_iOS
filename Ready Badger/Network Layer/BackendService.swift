@@ -50,7 +50,7 @@ class BackendService {
     func getQueryStringFor(parameters: [String: AnyObject]) -> String {
         var string = "?"
         for param in parameters {
-            string += "\(param.key)=\(param.value)&"
+            string += "\(param.value)=\(param.key)&"
         }
         return string
     }
