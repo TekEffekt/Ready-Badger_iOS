@@ -13,11 +13,11 @@ struct DamageReportRequest: BackendRequest {
     let report: DamageReport
     
     var endpoint: String {
-        return "Damagereports/index/RB-API-KEY/testhi"
+        return "api/damages"
     }
     
     var headers: [String : String]? {
-        return nil
+        return ["RB-API-KEY" : "testhi"]
     }
     
     var parameters: [String : AnyObject]? {
@@ -40,5 +40,9 @@ struct DamageReportRequest: BackendRequest {
     
     var imageData: NSData? {
         return nil
+    }
+    
+    init(withReport report: DamageReport) {
+        self.report = report
     }
 }

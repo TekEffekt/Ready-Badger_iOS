@@ -93,11 +93,10 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         damageReportDatasource.errors = errors
         
         if errors.isEmpty {
-            let request = DamageReportRequest(report: damageReportDatasource.damageReport)
+            let request = DamageReportRequest(withReport: damageReportDatasource.damageReport)
             NetworkQueue.shared.addOperation(DamageReportOperation(withRequest: request))
         } else {
             tableView.reloadData()
-            
         }
     }
     

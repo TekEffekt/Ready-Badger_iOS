@@ -42,7 +42,7 @@ class BackendService {
             }
         })
         
-        print(urlRequest.url!)
+        print(request.parameters)
         
         networkTask?.resume()
     }
