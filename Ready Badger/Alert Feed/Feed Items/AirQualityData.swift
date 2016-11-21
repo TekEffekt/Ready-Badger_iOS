@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct AirQualityData {
+struct AirQualityData: FeedDataValue {
     let title: String
     let description: String
+    var countyName: String
 }

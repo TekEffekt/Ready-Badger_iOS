@@ -81,7 +81,6 @@
 		B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */; };
 		B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */; };
 		B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */; };
-		B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67510F01DA249F000E81CB3 /* AlertFeedType.swift */; };
 		B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */; };
 		B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */; };
 		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
@@ -104,6 +103,8 @@
 		B6D051381DDED2BE00AB1741 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D051371DDED2BE00AB1741 /* AlertTableViewCell.swift */; };
 		B6D0513A1DDED2C900AB1741 /* RoadIncidentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D051391DDED2C900AB1741 /* RoadIncidentTableViewCell.swift */; };
 		B6D0513C1DDED2DC00AB1741 /* AirQualityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0513B1DDED2DC00AB1741 /* AirQualityTableViewCell.swift */; };
+		B6D0513E1DE293B300AB1741 /* FeedDataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0513D1DE293B300AB1741 /* FeedDataValue.swift */; };
+		B6D051401DE2B3C900AB1741 /* IconFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0513F1DE2B3C900AB1741 /* IconFactory.swift */; };
 		B6DA41F11DDA096C00CEB6E5 /* DamageReportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */; };
 		B6DA41F31DDA123B00CEB6E5 /* DamageReportOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */; };
 		B6DA41F61DDA2F4100CEB6E5 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F51DDA2F4100CEB6E5 /* EmptyState.swift */; };
@@ -188,7 +189,6 @@
 		B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFeedViewController.swift; sourceTree = "<group>"; };
 		B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPageViewController.swift; sourceTree = "<group>"; };
 		B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorAppColors.swift; path = "Ready Badger/UIColorAppColors.swift"; sourceTree = SOURCE_ROOT; };
-		B67510F01DA249F000E81CB3 /* AlertFeedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFeedType.swift; sourceTree = "<group>"; };
 		B69004BD1DA9CF8E0001D4F8 /* Base.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
 		B69004BF1DA9CF8E0001D4F8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
@@ -211,6 +211,8 @@
 		B6D051371DDED2BE00AB1741 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		B6D051391DDED2C900AB1741 /* RoadIncidentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadIncidentTableViewCell.swift; sourceTree = "<group>"; };
 		B6D0513B1DDED2DC00AB1741 /* AirQualityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirQualityTableViewCell.swift; sourceTree = "<group>"; };
+		B6D0513D1DE293B300AB1741 /* FeedDataValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDataValue.swift; sourceTree = "<group>"; };
+		B6D0513F1DE2B3C900AB1741 /* IconFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFactory.swift; sourceTree = "<group>"; };
 		B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportRequest.swift; sourceTree = "<group>"; };
 		B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportOperation.swift; sourceTree = "<group>"; };
 		B6DA41F51DDA2F4100CEB6E5 /* EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyState.swift; path = EmptyState/EmptyState.swift; sourceTree = "<group>"; };
@@ -336,6 +338,8 @@
 				B6D051281DDEC3DC00AB1741 /* RoadData.swift */,
 				B6D0512A1DDEC43C00AB1741 /* AirQualityData.swift */,
 				B6D0512C1DDEC6D300AB1741 /* FeedOrientation.swift */,
+				B6D0513D1DE293B300AB1741 /* FeedDataValue.swift */,
+				B6D0513F1DE2B3C900AB1741 /* IconFactory.swift */,
 			);
 			name = "Feed Model";
 			path = "Feed Items";
@@ -525,7 +529,6 @@
 				B627DA861DAB6C2B009EC6FB /* Feed Model */,
 				B67510EA1DA238BD00E81CB3 /* AlertFeedViewController.swift */,
 				B67510EC1DA238E900E81CB3 /* FeedPageViewController.swift */,
-				B67510F01DA249F000E81CB3 /* AlertFeedType.swift */,
 			);
 			path = "Alert Feed";
 			sourceTree = "<group>";
@@ -728,12 +731,14 @@
 				B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */,
 				B61981081DBDCA2100787101 /* Ownership.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
+				B6D0513E1DE293B300AB1741 /* FeedDataValue.swift in Sources */,
 				B6D051211DDEC2CB00AB1741 /* FeedData.swift in Sources */,
 				B6D051271DDEC35400AB1741 /* WeatherData.swift in Sources */,
 				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
 				B6DA41F11DDA096C00CEB6E5 /* DamageReportRequest.swift in Sources */,
 				B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */,
 				B61981041DBDBC7800787101 /* DisasterType.swift in Sources */,
+				B6D051401DE2B3C900AB1741 /* IconFactory.swift in Sources */,
 				B627DA911DB4B093009EC6FB /* DamageReportTableController.swift in Sources */,
 				B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */,
 				B65D261D1DAA086E001A3634 /* AllCountyOperation.swift in Sources */,
@@ -765,7 +770,6 @@
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
 				B6D051361DDED2B000AB1741 /* WeatherTableViewCell.swift in Sources */,
 				B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */,
-				B67510F11DA249F000E81CB3 /* AlertFeedType.swift in Sources */,
 				B6D051331DDED18000AB1741 /* FeedOperation.swift in Sources */,
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
 				B630D57A1DD912050061F2F4 /* DisasterResourcePageController.swift in Sources */,

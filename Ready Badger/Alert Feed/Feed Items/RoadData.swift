@@ -8,9 +8,12 @@
 
 import Foundation
 
-struct RoadData {
+struct RoadData: FeedDataValue {
     let title: String
     let travelDirection: String
     let location: String
     let roadwayName: String
+    let lanesAffected: String
+    let severity: String
+    var countyName: String
 }

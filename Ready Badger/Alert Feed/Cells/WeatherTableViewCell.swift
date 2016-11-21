@@ -12,7 +12,7 @@ class WeatherTableViewCell: UITableViewCell {
 
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var countyLabel: UILabel!
-    @IBOutlet weak var primaryInfoLabel: UILabel!
-    @IBOutlet weak var secondaryInfoLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 
 }

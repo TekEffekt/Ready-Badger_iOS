@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct WeatherData {
+struct WeatherData: FeedDataValue {
     let title: String
     let description: String
+    var countyName: String
 }

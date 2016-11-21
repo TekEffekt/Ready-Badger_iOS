@@ -74,10 +74,10 @@
                                         <rect key="frame" x="0.0" y="56" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z6z-zV-RoL" id="1dU-zP-WTI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green Bay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMv-0c-N6Y">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMv-0c-N6Y">
                                                     <rect key="frame" x="51" y="15" width="316" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -101,7 +101,7 @@ CDT.</string>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Partly Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-1U-5je">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-1U-5je">
                                                     <rect key="frame" x="14" y="13" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -109,34 +109,34 @@ CDT.</string>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="countyLabel" destination="aMv-0c-N6Y" id="4Ty-nT-47d"/>
-                                            <outlet property="primaryInfoLabel" destination="eNM-Js-z7x" id="048-Md-yEn"/>
-                                            <outlet property="secondaryInfoLabel" destination="yue-RW-54F" id="4Gi-kU-OUZ"/>
+                                            <outlet property="descriptionLabel" destination="yue-RW-54F" id="vgs-YX-Ro3"/>
+                                            <outlet property="titleLabel" destination="eNM-Js-z7x" id="mLT-FX-3P9"/>
                                             <outlet property="weatherIcon" destination="yxS-1U-5je" id="RJX-4K-yMN"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Alert Cell" id="VUF-Te-MCB" customClass="AlertTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="196" width="375" height="140"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Alert Cell" rowHeight="125" id="VUF-Te-MCB" customClass="AlertTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="196" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VUF-Te-MCB" id="X02-mo-6Sa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green Bay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9u-In-Jq8">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9u-In-Jq8">
                                                     <rect key="frame" x="51" y="15" width="316" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny and 63 F at Winona, Winoa Municipal Airport-Max Conrad Field, MN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvp-9x-WdK">
-                                                    <rect key="frame" x="51" y="42" width="316" height="37"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny and 63 F at Winona, Winoa Municipal Airport-Max Conrad Field, MN irport-Max Conrad Field, MN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvp-9x-WdK">
+                                                    <rect key="frame" x="51" y="42" width="316" height="70"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgF-3a-8wC">
-                                                    <rect key="frame" x="51" y="78" width="316" height="58"/>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgF-3a-8wC">
+                                                    <rect key="frame" x="51" y="96" width="316" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Winds are Southeast at 3.5 MH (3 KT). The humidity
  is 88%. Last updated on Sept 23 2016, 11:53 pm 
@@ -145,7 +145,7 @@ CDT.</string>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Partly Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="qfB-iS-5aU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Alert" translatesAutoresizingMaskIntoConstraints="NO" id="qfB-iS-5aU">
                                                     <rect key="frame" x="14" y="13" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -154,67 +154,67 @@ CDT.</string>
                                         <connections>
                                             <outlet property="alertIcon" destination="qfB-iS-5aU" id="6GB-Lm-LNf"/>
                                             <outlet property="countyLabel" destination="Y9u-In-Jq8" id="tqB-y9-VD5"/>
-                                            <outlet property="primaryInfoLabel" destination="Lvp-9x-WdK" id="wOg-H0-EKR"/>
-                                            <outlet property="secondaryInfoLabel" destination="EgF-3a-8wC" id="aaH-Lj-RX6"/>
+                                            <outlet property="descriptionLabel" destination="EgF-3a-8wC" id="jWl-Uh-5xH"/>
                                             <outlet property="titleLabel" destination="Lvp-9x-WdK" id="tgw-eN-j8h"/>
-                                            <outlet property="weatherIcon" destination="qfB-iS-5aU" id="dMa-nk-vO9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Road Incident Cell" id="bMZ-6x-Lad" customClass="RoadIncidentTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="336" width="375" height="140"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Road Incident Cell" rowHeight="130" id="bMZ-6x-Lad" customClass="RoadIncidentTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="321" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bMZ-6x-Lad" id="pYX-w3-0eK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green Bay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-E2-0qf">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Road Incident" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-E2-0qf">
                                                     <rect key="frame" x="51" y="15" width="316" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny and 63 F at Winona, Winoa Municipal Airport-Max Conrad Field, MN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5L-ob-KR6">
-                                                    <rect key="frame" x="51" y="42" width="316" height="37"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunny and 63 F at Winona, Winoa Municipal Airport-Max Conrad Field, MN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5L-ob-KR6">
+                                                    <rect key="frame" x="51" y="42" width="316" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-Gs-fyW">
-                                                    <rect key="frame" x="51" y="78" width="316" height="58"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bad Road" translatesAutoresizingMaskIntoConstraints="NO" id="xct-Ce-9IY">
+                                                    <rect key="frame" x="14" y="13" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <string key="text">Winds are Southeast at 3.5 MH (3 KT). The humidity
- is 88%. Last updated on Sept 23 2016, 11:53 pm 
-CDT.</string>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lanes Affected: Southbound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfd-bY-vtK">
+                                                    <rect key="frame" x="51" y="97" width="316" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Partly Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="xct-Ce-9IY">
-                                                    <rect key="frame" x="14" y="13" width="25" height="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winds are Southeast at 3.5 MH (3 KT). " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-Gs-fyW">
+                                                    <rect key="frame" x="51" y="71" width="316" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="countyLabel" destination="Ab9-E2-0qf" id="L9D-MR-vi0"/>
                                             <outlet property="descriptionLabel" destination="Rqv-Gs-fyW" id="koF-ba-LCv"/>
-                                            <outlet property="primaryInfoLabel" destination="P5L-ob-KR6" id="rz9-RO-aHd"/>
+                                            <outlet property="lanesAffectedLabel" destination="pfd-bY-vtK" id="OPT-at-XYd"/>
                                             <outlet property="roadIcon" destination="xct-Ce-9IY" id="Kuf-IW-KET"/>
-                                            <outlet property="secondaryInfoLabel" destination="Rqv-Gs-fyW" id="BVn-p4-LO2"/>
                                             <outlet property="titleLabel" destination="P5L-ob-KR6" id="ZDx-T5-gqn"/>
-                                            <outlet property="weatherIcon" destination="xct-Ce-9IY" id="MWD-RO-nY7"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Air Quality Cell" id="GAS-9x-G84" customClass="AirQualityTableViewCell" customModule="Ready_Badger" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="476" width="375" height="140"/>
+                                        <rect key="frame" x="0.0" y="451" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GAS-9x-G84" id="DVe-Zf-SE9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green Bay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvL-W9-9Md">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Air Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvL-W9-9Md">
                                                     <rect key="frame" x="51" y="15" width="316" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -238,7 +238,7 @@ CDT.</string>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Partly Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="BjG-Qe-td2">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Good Air Quality" translatesAutoresizingMaskIntoConstraints="NO" id="BjG-Qe-td2">
                                                     <rect key="frame" x="14" y="13" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -248,10 +248,7 @@ CDT.</string>
                                             <outlet property="airIcon" destination="BjG-Qe-td2" id="EgW-Pu-ac7"/>
                                             <outlet property="countyLabel" destination="yvL-W9-9Md" id="2yh-n5-zL9"/>
                                             <outlet property="descriptionLabel" destination="MWG-Qz-3bc" id="vGA-io-tDR"/>
-                                            <outlet property="primaryInfoLabel" destination="nBn-90-p3X" id="4RZ-UT-1xW"/>
-                                            <outlet property="secondaryInfoLabel" destination="MWG-Qz-3bc" id="exN-Vd-1eU"/>
                                             <outlet property="titleLabel" destination="nBn-90-p3X" id="93X-QR-pj9"/>
-                                            <outlet property="weatherIcon" destination="BjG-Qe-td2" id="0Ta-Hb-wns"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -283,7 +280,10 @@ CDT.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Partly Cloudy" width="103" height="103"/>
+        <image name="Alert" width="128" height="128"/>
+        <image name="Bad Road" width="128" height="128"/>
+        <image name="Good Air Quality" width="128" height="128"/>
         <image name="Settings Gear" width="22" height="22"/>
+        <image name="Sunny" width="100" height="100"/>
     </resources>
 </document>

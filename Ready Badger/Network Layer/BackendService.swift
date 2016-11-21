@@ -25,7 +25,12 @@ class BackendService {
         urlRequest.httpMethod = request.method.rawValue
         
         if let params = request.parameters {
-            urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: params, options: [])
+            if request.method == .POST {
+                urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: params, options: [])
+            } else {
+                let newUrlString = "\(urlRequest.url!.absoluteString)\(getQueryStringFor(parameters: params))"
+                urlRequest.url = URL(string: newUrlString)!
+            }
         }
         
         let session = URLSession.shared
@@ -37,13 +42,20 @@ class BackendService {
             }
         })
         
-        print(urlRequest.url)
+        print(urlRequest.url!)
         
         networkTask?.resume()
     }
     
-    func generateBoundaryString() -> String
-    {
+    func getQueryStringFor(parameters: [String: AnyObject]) -> String {
+        var string = "?"
+        for param in parameters {
+            string += "\(param.key)=\(param.value)&"
+        }
+        return string
+    }
+    
+    func generateBoundaryString() -> String {
         return "Boundary-\(NSUUID().uuidString)"
     }
     

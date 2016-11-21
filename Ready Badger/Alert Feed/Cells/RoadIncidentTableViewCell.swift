@@ -14,4 +14,5 @@ class RoadIncidentTableViewCell: UITableViewCell {
     @IBOutlet weak var countyLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var lanesAffectedLabel: UILabel!
 }

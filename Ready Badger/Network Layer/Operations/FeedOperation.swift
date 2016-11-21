@@ -12,12 +12,17 @@ class FeedOperation: Operation, BackendOperation {
     
     var service: BackendService = BackendService(config: BackendConfiguration.shared)
     var request: BackendRequest
+    var completionHandler: ((FeedData) -> Void)
     
     var handleSuccess: ((NSData) -> Void) {
         return { data in
             do {
-                let string = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue)
-                print(string)
+                let json = try JSONSerialization.jsonObject(with: data as Data, options:JSONSerialization.ReadingOptions(rawValue: 0))
+                guard let dictionary = json as? NSDictionary else {
+                    return
+                }
+                let feedData = FeedParse.parse(data: dictionary)
+                self.completionHandler(feedData)
             } catch _ {
                 print("JSON Invalid")
             }
@@ -30,8 +35,9 @@ class FeedOperation: Operation, BackendOperation {
         }
     }
     
-    init(withRequest request: FeedRequest) {
+    init(withRequest request: FeedRequest, completionHandler: @escaping ((FeedData) -> Void)) {
         self.request = request
+        self.completionHandler = completionHandler
         super.init()
     }
     

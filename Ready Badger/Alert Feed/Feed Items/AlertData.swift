@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct AlertData {
+struct AlertData: FeedDataValue {
     let title: String
-    let description: String
+    let description: String?
+    var countyName: String
 }
