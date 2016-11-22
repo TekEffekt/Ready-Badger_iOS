@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basic Kit-->
+        <scene sceneID="5cH-qi-7Yh">
+            <objects>
+                <viewController storyboardIdentifier="Basic Kit" id="Nav-Qo-bXn" customClass="BasicKitViewController" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K9F-rg-j9t"/>
+                        <viewControllerLayoutGuide type="bottom" id="eF1-a8-38z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GAK-2j-Xt4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="680-bm-23W">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="680-bm-23W" secondAttribute="trailing" id="9Ue-oN-vnn"/>
+                            <constraint firstItem="eF1-a8-38z" firstAttribute="top" secondItem="680-bm-23W" secondAttribute="bottom" id="QxP-AH-2zH"/>
+                            <constraint firstItem="680-bm-23W" firstAttribute="top" secondItem="K9F-rg-j9t" secondAttribute="bottom" id="ekH-Jo-T4U"/>
+                            <constraint firstItem="680-bm-23W" firstAttribute="leading" secondItem="GAK-2j-Xt4" secondAttribute="leading" id="g3Z-7A-GhE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Basic Kit" id="9tg-BU-lt5"/>
+                    <connections>
+                        <outlet property="webView" destination="680-bm-23W" id="V5u-3P-Ljf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0N-OC-BBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>

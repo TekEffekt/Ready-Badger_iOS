@@ -99,6 +99,11 @@
 		B69F76AA1DE3FF36000A3166 /* RealmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */; };
 		B69F76AC1DE3FF86000A3166 /* River Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F76AB1DE3FF86000A3166 /* River Map.storyboard */; };
 		B69F76AE1DE40D64000A3166 /* UIImageDownloadedFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76AD1DE40D63000A3166 /* UIImageDownloadedFrom.swift */; };
+		B69F76B01DE428AA000A3166 /* Basic Kit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F76AF1DE428AA000A3166 /* Basic Kit.storyboard */; };
+		B69F76B21DE428B9000A3166 /* Plan Ahead.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F76B11DE428B9000A3166 /* Plan Ahead.storyboard */; };
+		B69F76B51DE429D4000A3166 /* PlanAheadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76B41DE429D4000A3166 /* PlanAheadViewController.swift */; };
+		B69F76B71DE429E3000A3166 /* BasicKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76B61DE429E3000A3166 /* BasicKitViewController.swift */; };
+		B69F76B91DE431F2000A3166 /* Make A List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F76B81DE431F2000A3166 /* Make A List.storyboard */; };
 		B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */; };
 		B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */; };
 		B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */; };
@@ -220,6 +225,11 @@
 		B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUserDefaults.swift; sourceTree = "<group>"; };
 		B69F76AB1DE3FF86000A3166 /* River Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "River Map.storyboard"; sourceTree = "<group>"; };
 		B69F76AD1DE40D63000A3166 /* UIImageDownloadedFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageDownloadedFrom.swift; sourceTree = "<group>"; };
+		B69F76AF1DE428AA000A3166 /* Basic Kit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Basic Kit.storyboard"; sourceTree = "<group>"; };
+		B69F76B11DE428B9000A3166 /* Plan Ahead.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Plan Ahead.storyboard"; sourceTree = "<group>"; };
+		B69F76B41DE429D4000A3166 /* PlanAheadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanAheadViewController.swift; path = "Web Views/PlanAheadViewController.swift"; sourceTree = "<group>"; };
+		B69F76B61DE429E3000A3166 /* BasicKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicKitViewController.swift; path = "Web Views/BasicKitViewController.swift"; sourceTree = "<group>"; };
+		B69F76B81DE431F2000A3166 /* Make A List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Make A List.storyboard"; sourceTree = "<group>"; };
 		B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoType.swift; sourceTree = "<group>"; };
 		B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoPageController.swift; sourceTree = "<group>"; };
 		B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportInputValidator.swift; sourceTree = "<group>"; };
@@ -415,6 +425,7 @@
 		B62E735D1DA1D21F00C33683 /* Ready Badger */ = {
 			isa = PBXGroup;
 			children = (
+				B62E736A1DA1D21F00C33683 /* Info.plist */,
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */,
@@ -423,18 +434,19 @@
 				B69F76A41DE3FF36000A3166 /* Location.swift */,
 				B69F76A51DE3FF36000A3166 /* LocationManager.swift */,
 				B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */,
-				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B65D25E91DAA0615001A3634 /* Network Layer */,
+				B67510E91DA2389B00E81CB3 /* Alert Feed */,
+				B627DA8F1DB4B06A009EC6FB /* Damage Report */,
+				B627DA661DAA2386009EC6FB /* Persistence Layer */,
+				B69F76BA1DE4329D000A3166 /* Make A List */,
+				B69F76B31DE4299A000A3166 /* Web Views */,
 				B69F76941DE3FF2D000A3166 /* River Maps */,
 				B6DA41F41DDA2F1C00CEB6E5 /* Empty State */,
 				B630D5781DD911C80061F2F4 /* Disaster Resources */,
 				B612E5E21DD0EB330098D47C /* Disaster Info */,
 				B69004BC1DA9CF8E0001D4F8 /* Storyboards */,
-				B627DA661DAA2386009EC6FB /* Persistence Layer */,
-				B65D25E91DAA0615001A3634 /* Network Layer */,
 				B627DA7B1DAA4389009EC6FB /* Extensions */,
-				B627DA8F1DB4B06A009EC6FB /* Damage Report */,
 				B69004C71DA9D7B80001D4F8 /* County Settings */,
-				B67510E91DA2389B00E81CB3 /* Alert Feed */,
 				B67510E41DA22C1400E81CB3 /* 3rd Party */,
 				B67510D91DA2271A00E81CB3 /* Hamburger Architecure */,
 			);
@@ -584,6 +596,9 @@
 				B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */,
 				B630D5761DD8568C0061F2F4 /* Disaster Resources.storyboard */,
 				B69F76AB1DE3FF86000A3166 /* River Map.storyboard */,
+				B69F76AF1DE428AA000A3166 /* Basic Kit.storyboard */,
+				B69F76B11DE428B9000A3166 /* Plan Ahead.storyboard */,
+				B69F76B81DE431F2000A3166 /* Make A List.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -611,6 +626,22 @@
 				B69F769B1DE3FF2D000A3166 /* RiversKMLParser.swift */,
 			);
 			path = "River Maps";
+			sourceTree = "<group>";
+		};
+		B69F76B31DE4299A000A3166 /* Web Views */ = {
+			isa = PBXGroup;
+			children = (
+				B69F76B41DE429D4000A3166 /* PlanAheadViewController.swift */,
+				B69F76B61DE429E3000A3166 /* BasicKitViewController.swift */,
+			);
+			name = "Web Views";
+			sourceTree = "<group>";
+		};
+		B69F76BA1DE4329D000A3166 /* Make A List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Make A List";
 			sourceTree = "<group>";
 		};
 		B6D051341DDED2B000AB1741 /* Cells */ = {
@@ -696,6 +727,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69F76B21DE428B9000A3166 /* Plan Ahead.storyboard in Resources */,
 				B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */,
 				B655A5DC1DD1510600401155 /* Flood.html in Resources */,
 				B630D5771DD8568C0061F2F4 /* Disaster Resources.storyboard in Resources */,
@@ -712,10 +744,12 @@
 				B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */,
 				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
 				B655A5DB1DD1510600401155 /* Fire.html in Resources */,
+				B69F76B01DE428AA000A3166 /* Basic Kit.storyboard in Resources */,
 				B655A5E01DD1510600401155 /* Thunderstorm.html in Resources */,
 				B69F76AC1DE3FF86000A3166 /* River Map.storyboard in Resources */,
 				B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */,
 				B655A5E21DD1510600401155 /* Winter Storm.html in Resources */,
+				B69F76B91DE431F2000A3166 /* Make A List.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +861,7 @@
 				B6D051361DDED2B000AB1741 /* WeatherTableViewCell.swift in Sources */,
 				B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */,
 				B6D051331DDED18000AB1741 /* FeedOperation.swift in Sources */,
+				B69F76B51DE429D4000A3166 /* PlanAheadViewController.swift in Sources */,
 				B69F76AA1DE3FF36000A3166 /* RealmUserDefaults.swift in Sources */,
 				B69F76A11DE3FF2D000A3166 /* RiverMapViewController.swift in Sources */,
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
@@ -840,6 +875,7 @@
 				B69F769D1DE3FF2D000A3166 /* CalloutAnnotation.swift in Sources */,
 				B630D5841DD96C0C0061F2F4 /* DisasterResourceRequest.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
+				B69F76B71DE429E3000A3166 /* BasicKitViewController.swift in Sources */,
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
 				B6469E931DD04F72002B109B /* OptionTableViewCell.swift in Sources */,

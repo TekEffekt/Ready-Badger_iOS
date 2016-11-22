@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     
     var pageMenu: CAPSPageMenu?
     var alertFeeds: [FeedPageViewController]!
     var menu: HamburgerMenu?
-    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    var loadingIndicator: MBProgressHUD?
     var emptyState: EmptyState?
     
     override func viewDidLoad() {
@@ -32,13 +33,14 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     }
     
     private func downloadFeedData() {
-        print(CountyQueries.getAllSelectedCounties().count)
         guard CountyQueries.getAllSelectedCounties().count > 0 else { return }
+        loadingIndicator = MBProgressHUD.showAdded(to: navigationController!.view, animated: true)
+        loadingIndicator?.label.text = "Loading.."
+        loadingIndicator?.isUserInteractionEnabled = false
         NetworkQueue.shared.addOperation(FeedOperation(withRequest: FeedRequest(), completionHandler: { (feedData) in
-            print(feedData)
-            
             OperationQueue.main.addOperation({
-                self.loadingIndicator.stopAnimating()
+                self.loadingIndicator?.hide(animated: true)
+
                 for vc in self.alertFeeds {
                     vc.feedData = feedData
                 }
@@ -50,7 +52,6 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         super.viewWillAppear(animated)
         applyTheme()
         downloadFeedData()
-        loadingIndicator.startAnimating()
     }
     
     override func viewWillLayoutSubviews() {
@@ -90,7 +91,6 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         
         self.edgesForExtendedLayout = UIRectEdge()
         self.view.addSubview(pageMenu!.view)
-        view.insertSubview(pageMenu!.view, belowSubview: loadingIndicator)
     }
     
 }
