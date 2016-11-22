@@ -55,6 +55,8 @@ struct FeedData {
             
             dataByCounties[county.countyName] = dataValues
         }
+        
+        dataByAlertKeys = Array(dataByAlert.keys)
     }
     
     func getCellTitle(forRow row: Int, andSection section: Int, withOrientation orient: FeedOrientation) -> String? {
@@ -108,17 +110,7 @@ struct FeedData {
             let county = countyData[section]
             return numTypes(forCounty: county)
         } else {
-            switch section {
-            case 0:
-                return numCountiesWithWeather()
-            case 1:
-                return numCountiesWithAlerts()
-            case 2:
-                return numCountiesWithRoadIncidents()
-            case 3:
-                return numCountiesWithAirQuality()
-            default: return 0
-            }
+            return dataByAlert[dataByAlertKeys[section]]!.count
         }
     }
     
