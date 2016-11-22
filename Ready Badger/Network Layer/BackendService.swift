@@ -33,6 +33,8 @@ class BackendService {
             }
         }
         
+        print(request.parameters)
+        
         let session = URLSession.shared
         networkTask = session.dataTask(with: urlRequest as URLRequest, completionHandler: { (data, response, error) in
             if data != nil && error == nil {
@@ -41,8 +43,6 @@ class BackendService {
                 failure(error! as NSError)
             }
         })
-        
-        print(request.parameters)
         
         networkTask?.resume()
     }
