@@ -86,6 +86,19 @@
 		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
 		B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C51DA9D2700001D4F8 /* County Settings.storyboard */; };
 		B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */; };
+		B69F769C1DE3FF2D000A3166 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76951DE3FF2D000A3166 /* BubbleView.swift */; };
+		B69F769D1DE3FF2D000A3166 /* CalloutAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76961DE3FF2D000A3166 /* CalloutAnnotation.swift */; };
+		B69F769E1DE3FF2D000A3166 /* CalloutAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76971DE3FF2D000A3166 /* CalloutAnnotationView.swift */; };
+		B69F769F1DE3FF2D000A3166 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76981DE3FF2D000A3166 /* CustomAnnotation.swift */; };
+		B69F76A01DE3FF2D000A3166 /* RiverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76991DE3FF2D000A3166 /* RiverItem.swift */; };
+		B69F76A11DE3FF2D000A3166 /* RiverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F769A1DE3FF2D000A3166 /* RiverMapViewController.swift */; };
+		B69F76A21DE3FF2D000A3166 /* RiversKMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F769B1DE3FF2D000A3166 /* RiversKMLParser.swift */; };
+		B69F76A71DE3FF36000A3166 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76A31DE3FF36000A3166 /* Keys.swift */; };
+		B69F76A81DE3FF36000A3166 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76A41DE3FF36000A3166 /* Location.swift */; };
+		B69F76A91DE3FF36000A3166 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76A51DE3FF36000A3166 /* LocationManager.swift */; };
+		B69F76AA1DE3FF36000A3166 /* RealmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */; };
+		B69F76AC1DE3FF86000A3166 /* River Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F76AB1DE3FF86000A3166 /* River Map.storyboard */; };
+		B69F76AE1DE40D64000A3166 /* UIImageDownloadedFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76AD1DE40D63000A3166 /* UIImageDownloadedFrom.swift */; };
 		B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */; };
 		B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */; };
 		B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */; };
@@ -194,6 +207,19 @@
 		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
 		B69004C51DA9D2700001D4F8 /* County Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "County Settings.storyboard"; sourceTree = "<group>"; };
 		B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySettingsViewController.swift; path = "County Settings/CountySettingsViewController.swift"; sourceTree = "<group>"; };
+		B69F76951DE3FF2D000A3166 /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		B69F76961DE3FF2D000A3166 /* CalloutAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutAnnotation.swift; sourceTree = "<group>"; };
+		B69F76971DE3FF2D000A3166 /* CalloutAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutAnnotationView.swift; sourceTree = "<group>"; };
+		B69F76981DE3FF2D000A3166 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		B69F76991DE3FF2D000A3166 /* RiverItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiverItem.swift; sourceTree = "<group>"; };
+		B69F769A1DE3FF2D000A3166 /* RiverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiverMapViewController.swift; sourceTree = "<group>"; };
+		B69F769B1DE3FF2D000A3166 /* RiversKMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiversKMLParser.swift; sourceTree = "<group>"; };
+		B69F76A31DE3FF36000A3166 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B69F76A41DE3FF36000A3166 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B69F76A51DE3FF36000A3166 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUserDefaults.swift; sourceTree = "<group>"; };
+		B69F76AB1DE3FF86000A3166 /* River Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "River Map.storyboard"; sourceTree = "<group>"; };
+		B69F76AD1DE40D63000A3166 /* UIImageDownloadedFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageDownloadedFrom.swift; sourceTree = "<group>"; };
 		B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoType.swift; sourceTree = "<group>"; };
 		B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoPageController.swift; sourceTree = "<group>"; };
 		B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportInputValidator.swift; sourceTree = "<group>"; };
@@ -393,7 +419,12 @@
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
+				B69F76A31DE3FF36000A3166 /* Keys.swift */,
+				B69F76A41DE3FF36000A3166 /* Location.swift */,
+				B69F76A51DE3FF36000A3166 /* LocationManager.swift */,
+				B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B69F76941DE3FF2D000A3166 /* River Maps */,
 				B6DA41F41DDA2F1C00CEB6E5 /* Empty State */,
 				B630D5781DD911C80061F2F4 /* Disaster Resources */,
 				B612E5E21DD0EB330098D47C /* Disaster Info */,
@@ -552,6 +583,7 @@
 				B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */,
 				B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */,
 				B630D5761DD8568C0061F2F4 /* Disaster Resources.storyboard */,
+				B69F76AB1DE3FF86000A3166 /* River Map.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -564,6 +596,21 @@
 				B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */,
 			);
 			name = "County Settings";
+			sourceTree = "<group>";
+		};
+		B69F76941DE3FF2D000A3166 /* River Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B69F76AD1DE40D63000A3166 /* UIImageDownloadedFrom.swift */,
+				B69F76951DE3FF2D000A3166 /* BubbleView.swift */,
+				B69F76961DE3FF2D000A3166 /* CalloutAnnotation.swift */,
+				B69F76971DE3FF2D000A3166 /* CalloutAnnotationView.swift */,
+				B69F76981DE3FF2D000A3166 /* CustomAnnotation.swift */,
+				B69F76991DE3FF2D000A3166 /* RiverItem.swift */,
+				B69F769A1DE3FF2D000A3166 /* RiverMapViewController.swift */,
+				B69F769B1DE3FF2D000A3166 /* RiversKMLParser.swift */,
+			);
+			path = "River Maps";
 			sourceTree = "<group>";
 		};
 		B6D051341DDED2B000AB1741 /* Cells */ = {
@@ -666,6 +713,7 @@
 				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
 				B655A5DB1DD1510600401155 /* Fire.html in Resources */,
 				B655A5E01DD1510600401155 /* Thunderstorm.html in Resources */,
+				B69F76AC1DE3FF86000A3166 /* River Map.storyboard in Resources */,
 				B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */,
 				B655A5E21DD1510600401155 /* Winter Storm.html in Resources */,
 			);
@@ -727,7 +775,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */,
+				B69F76A01DE3FF2D000A3166 /* RiverItem.swift in Sources */,
 				B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */,
+				B69F769E1DE3FF2D000A3166 /* CalloutAnnotationView.swift in Sources */,
+				B69F76A71DE3FF36000A3166 /* Keys.swift in Sources */,
 				B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */,
 				B61981081DBDCA2100787101 /* Ownership.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
@@ -737,7 +788,9 @@
 				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
 				B6DA41F11DDA096C00CEB6E5 /* DamageReportRequest.swift in Sources */,
 				B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */,
+				B69F76A81DE3FF36000A3166 /* Location.swift in Sources */,
 				B61981041DBDBC7800787101 /* DisasterType.swift in Sources */,
+				B69F76A21DE3FF2D000A3166 /* RiversKMLParser.swift in Sources */,
 				B6D051401DE2B3C900AB1741 /* IconFactory.swift in Sources */,
 				B627DA911DB4B093009EC6FB /* DamageReportTableController.swift in Sources */,
 				B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */,
@@ -755,9 +808,12 @@
 				B627DA6F1DAA2660009EC6FB /* CountyWrites.swift in Sources */,
 				B6D051291DDEC3DC00AB1741 /* RoadData.swift in Sources */,
 				B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */,
+				B69F76AE1DE40D64000A3166 /* UIImageDownloadedFrom.swift in Sources */,
 				B630D5801DD93D0B0061F2F4 /* DisasterResource.swift in Sources */,
+				B69F769C1DE3FF2D000A3166 /* BubbleView.swift in Sources */,
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */,
+				B69F76A91DE3FF36000A3166 /* LocationManager.swift in Sources */,
 				B61981061DBDC5C700787101 /* State.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
 				B6DA41F31DDA123B00CEB6E5 /* DamageReportOperation.swift in Sources */,
@@ -771,6 +827,8 @@
 				B6D051361DDED2B000AB1741 /* WeatherTableViewCell.swift in Sources */,
 				B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */,
 				B6D051331DDED18000AB1741 /* FeedOperation.swift in Sources */,
+				B69F76AA1DE3FF36000A3166 /* RealmUserDefaults.swift in Sources */,
+				B69F76A11DE3FF2D000A3166 /* RiverMapViewController.swift in Sources */,
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
 				B630D57A1DD912050061F2F4 /* DisasterResourcePageController.swift in Sources */,
 				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
@@ -779,6 +837,7 @@
 				B6D051311DDECFA500AB1741 /* FeedRequest.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,
+				B69F769D1DE3FF2D000A3166 /* CalloutAnnotation.swift in Sources */,
 				B630D5841DD96C0C0061F2F4 /* DisasterResourceRequest.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
@@ -809,6 +868,7 @@
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
 				B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */,
+				B69F769F1DE3FF2D000A3166 /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

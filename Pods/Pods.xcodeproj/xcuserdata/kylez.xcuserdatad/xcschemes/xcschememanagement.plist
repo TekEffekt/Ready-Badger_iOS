@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AEXML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JTHamburgerButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TGCameraViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>13B1C996A17196DC7B133E83476221E0</key>
+		<key>2CB8A0AA819AEA2376A4E96798A25C2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,37 +82,47 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>560C72C26660A112C2CC7C6BC7D5E111</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>562E6B62A6CF2C2512D5485BCAA1CE0C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>700FD4BBF518E874E2DA0FE0FB311B88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>713F15AE112AA6432A4ACF8DB0E15561</key>
+		<key>7D014C40327243F9035FDCFA14630F79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>801B939C1AF6E3A4CDEB15CD3C6A2D95</key>
+		<key>88C257C954247EE49E09C66A8B19E56A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98C44C30D5018FC1D2CF69F3F7273792</key>
+		<key>AC5337BF9ED7481DBA3268D710CC8743</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A62106D7EB3DED222ECE6FF1225F3E6B</key>
+		<key>AF7EEEA43E3D6F17A50489122990D295</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9AB6AD95A543018E6E7A02E7C55837E</key>
+		<key>EC692C3199C65751E000610BF0CD1F4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC527FC4A1C1C28EB3E6BCE43BFD22DF</key>
+		<key>F6CFF232BD68B482BD9CC369BCA8B3FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

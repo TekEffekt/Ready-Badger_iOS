@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--River Map-->
+        <scene sceneID="sb0-am-PLO">
+            <objects>
+                <viewController storyboardIdentifier="River Map" title="River Map" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n5Q-kK-dUH" customClass="RiverMapViewController" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ine-Jv-3p8"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vo-Ez-h25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TyL-xo-27d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xcy-Ol-ShA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7vo-Ez-h25" firstAttribute="top" secondItem="Xcy-Ol-ShA" secondAttribute="bottom" id="6wc-Xn-btm"/>
+                            <constraint firstItem="Xcy-Ol-ShA" firstAttribute="top" secondItem="Ine-Jv-3p8" secondAttribute="bottom" id="MKZ-f5-M0k"/>
+                            <constraint firstItem="Xcy-Ol-ShA" firstAttribute="leading" secondItem="TyL-xo-27d" secondAttribute="leading" id="djF-IL-SyB"/>
+                            <constraint firstAttribute="trailing" secondItem="Xcy-Ol-ShA" secondAttribute="trailing" id="wWp-UP-uMO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Xcy-Ol-ShA" id="N3Z-f0-7tM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8m-bJ-aVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487.1999999999998" y="-5162.0689655172418"/>
+        </scene>
+    </scenes>
+</document>

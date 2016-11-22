@@ -12,6 +12,8 @@ pod 'TGCameraViewController'
 pod 'Validator'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'Segmentio', '~> 2.0'
+pod 'AEXML'
+pod 'SwiftyJSON'
 end
 
 post_install do |installer|
