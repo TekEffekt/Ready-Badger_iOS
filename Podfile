@@ -7,11 +7,13 @@ target 'Ready Badger' do
 pod 'OneSignal'
 pod 'LGSideMenuController'
 pod 'JTHamburgerButton'
-pod 'RealmSwift'
 pod 'TGCameraViewController'
+pod 'RealmSwift'
 pod 'Validator'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'Segmentio', '~> 2.0'
+pod 'SwiftyJSON'
+pod 'AEXML'
 end
 
 post_install do |installer|

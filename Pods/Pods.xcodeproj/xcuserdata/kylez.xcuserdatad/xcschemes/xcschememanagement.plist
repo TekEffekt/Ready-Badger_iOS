@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AEXML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JTHamburgerButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TGCameraViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,52 +67,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1414CB165EAAB3D604461F795EC2AF41</key>
+		<key>017EADE162177B6848C6BAC9FD24260D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3B21653A141DD4F673FFE8C80B0950CA</key>
+		<key>2CB8A0AA819AEA2376A4E96798A25C2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3FFF5C2E9F7F238ECA824A07A1609878</key>
+		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43102F49D3C7AFA965B00D832D945CDE</key>
+		<key>560C72C26660A112C2CC7C6BC7D5E111</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D50DAACF7C19A712ED7A63538A1A4C8</key>
+		<key>562E6B62A6CF2C2512D5485BCAA1CE0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8842E0393E67D9A7475CF870A02C1536</key>
+		<key>700FD4BBF518E874E2DA0FE0FB311B88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D60E1FBD51FDF2B76B9882F746E53F3D</key>
+		<key>7D014C40327243F9035FDCFA14630F79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DBA6001481CEA0EBA031CC5C94508FAA</key>
+		<key>88C257C954247EE49E09C66A8B19E56A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E69B92A33BF0DA69766632232536DFFD</key>
+		<key>AC5337BF9ED7481DBA3268D710CC8743</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F06C5CCA75DD670B3EA789D195FB6322</key>
+		<key>AF7EEEA43E3D6F17A50489122990D295</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC692C3199C65751E000610BF0CD1F4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6CFF232BD68B482BD9CC369BCA8B3FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -18,7 +18,7 @@ class DamageReportValidator {
         let generalMaxLengthRule = ValidationRuleLength(max: 100, failureError: ValidationError(message: "must have less than 100 characters"))
         let digitRule = ValidationRulePattern(pattern: .ContainsNumber, failureError: ValidationError(message: "must have only digits."))
         let phoneSizeRule = ValidationRuleLength(min: 10, max: 11, failureError: ValidationError(message: "must have between 10 and 11 digits."))
-        let zipCodeRule = ValidationRulePattern(pattern: .USPostcode, failureError: ValidationError(message: "Invalid zip code"))
+        let zipCodeRule = ValidationRulePattern(pattern: ValidationPattern.USPostcode, failureError: ValidationError(message: "Invalid zip code"))
         
         let defaultSet = ValidationRuleSet(rules: [generalMinLengthRule, generalMaxLengthRule])
         var phoneSet = ValidationRuleSet(rules: [phoneSizeRule])

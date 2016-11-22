@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5983BE7C986B54F6CC767372 /* Pods_Ready_Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */; };
+		5B13386B8DC97DE257B1EAA7 /* Pods_Ready_Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57385953FCBB4D05D2ABB25B /* Pods_Ready_Badger.framework */; };
 		B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E5DE1DD0D89B0098D47C /* PictureCell.swift */; };
 		B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */; };
 		B612E5E41DD0EB4C0098D47C /* DisasterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612E5E31DD0EB4C0098D47C /* DisasterInfoViewController.swift */; };
@@ -86,6 +86,18 @@
 		B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */; };
 		B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69004C51DA9D2700001D4F8 /* County Settings.storyboard */; };
 		B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */; };
+		B699D8B51DE378A5003F3C77 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D8AF1DE378A5003F3C77 /* BubbleView.swift */; };
+		B699D8B61DE378A5003F3C77 /* CalloutAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D8B01DE378A5003F3C77 /* CalloutAnnotation.swift */; };
+		B699D8B71DE378A5003F3C77 /* CalloutAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D8B11DE378A5003F3C77 /* CalloutAnnotationView.swift */; };
+		B699D8B81DE378A5003F3C77 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D8B21DE378A5003F3C77 /* CustomAnnotation.swift */; };
+		B699D8B91DE378A5003F3C77 /* RiverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D8B31DE378A5003F3C77 /* RiverMapViewController.swift */; };
+		B699D8BA1DE378A5003F3C77 /* RiversKMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699D8B41DE378A5003F3C77 /* RiversKMLParser.swift */; };
+		B699D8BC1DE378C0003F3C77 /* River Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B699D8BB1DE378C0003F3C77 /* River Map.storyboard */; };
+		B69F768B1DE3B8E8000A3166 /* RiverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F768A1DE3B8E8000A3166 /* RiverItem.swift */; };
+		B69F768D1DE3B928000A3166 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F768C1DE3B928000A3166 /* LocationManager.swift */; };
+		B69F768F1DE3B944000A3166 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F768E1DE3B944000A3166 /* Keys.swift */; };
+		B69F76911DE3BB7E000A3166 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76901DE3BB7E000A3166 /* Location.swift */; };
+		B69F76931DE3BB98000A3166 /* RealmUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F76921DE3BB98000A3166 /* RealmUserDefaults.swift */; };
 		B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */; };
 		B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */; };
 		B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */; };
@@ -113,7 +125,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready_Badger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E2EE0F6FE9EB773DFF1149 /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
+		57385953FCBB4D05D2ABB25B /* Pods_Ready_Badger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready_Badger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B612E5DE1DD0D89B0098D47C /* PictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Disaster Info.storyboard"; sourceTree = "<group>"; };
 		B612E5E31DD0EB4C0098D47C /* DisasterInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +207,18 @@
 		B69004C01DA9CF8E0001D4F8 /* Alert Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Alert Feed.storyboard"; sourceTree = "<group>"; };
 		B69004C51DA9D2700001D4F8 /* County Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "County Settings.storyboard"; sourceTree = "<group>"; };
 		B69004C81DA9D8010001D4F8 /* CountySettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySettingsViewController.swift; path = "County Settings/CountySettingsViewController.swift"; sourceTree = "<group>"; };
+		B699D8AF1DE378A5003F3C77 /* BubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		B699D8B01DE378A5003F3C77 /* CalloutAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutAnnotation.swift; sourceTree = "<group>"; };
+		B699D8B11DE378A5003F3C77 /* CalloutAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutAnnotationView.swift; sourceTree = "<group>"; };
+		B699D8B21DE378A5003F3C77 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		B699D8B31DE378A5003F3C77 /* RiverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiverMapViewController.swift; sourceTree = "<group>"; };
+		B699D8B41DE378A5003F3C77 /* RiversKMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiversKMLParser.swift; sourceTree = "<group>"; };
+		B699D8BB1DE378C0003F3C77 /* River Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "River Map.storyboard"; sourceTree = "<group>"; };
+		B69F768A1DE3B8E8000A3166 /* RiverItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiverItem.swift; sourceTree = "<group>"; };
+		B69F768C1DE3B928000A3166 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B69F768E1DE3B944000A3166 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B69F76901DE3BB7E000A3166 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B69F76921DE3BB98000A3166 /* RealmUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUserDefaults.swift; sourceTree = "<group>"; };
 		B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoType.swift; sourceTree = "<group>"; };
 		B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoPageController.swift; sourceTree = "<group>"; };
 		B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportInputValidator.swift; sourceTree = "<group>"; };
@@ -218,8 +243,7 @@
 		B6DA41F51DDA2F4100CEB6E5 /* EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyState.swift; path = EmptyState/EmptyState.swift; sourceTree = "<group>"; };
 		B6DA41F71DDA2F5900CEB6E5 /* EmptyState.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmptyState.xib; path = EmptyState/EmptyState.xib; sourceTree = "<group>"; };
 		B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
-		F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
+		FAE80FE5D11B78055FD81DC7 /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,21 +251,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5983BE7C986B54F6CC767372 /* Pods_Ready_Badger.framework in Frameworks */,
+				5B13386B8DC97DE257B1EAA7 /* Pods_Ready_Badger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8466176ADF10B04C5C58A682 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9D7834EC459AC1F32B750D9A /* Pods_Ready_Badger.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B612E5E21DD0EB330098D47C /* Disaster Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,8 +380,8 @@
 			children = (
 				B62E735D1DA1D21F00C33683 /* Ready Badger */,
 				B62E735C1DA1D21F00C33683 /* Products */,
-				F88612A4C2267C204843D71B /* Pods */,
-				8466176ADF10B04C5C58A682 /* Frameworks */,
+				F4EECD901DC93F3C4CDC678E /* Pods */,
+				E52059BA0B96AD1E5AF0F995 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -381,10 +397,15 @@
 			isa = PBXGroup;
 			children = (
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
+				B69F768E1DE3B944000A3166 /* Keys.swift */,
+				B69F76901DE3BB7E000A3166 /* Location.swift */,
+				B69F76921DE3BB98000A3166 /* RealmUserDefaults.swift */,
+				B69F768C1DE3B928000A3166 /* LocationManager.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B699D8AE1DE378A5003F3C77 /* River Maps */,
 				B6DA41F41DDA2F1C00CEB6E5 /* Empty State */,
 				B630D5781DD911C80061F2F4 /* Disaster Resources */,
 				B612E5E21DD0EB330098D47C /* Disaster Info */,
@@ -543,6 +564,7 @@
 				B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */,
 				B612E5E01DD0EB0E0098D47C /* Disaster Info.storyboard */,
 				B630D5761DD8568C0061F2F4 /* Disaster Resources.storyboard */,
+				B699D8BB1DE378C0003F3C77 /* River Map.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -555,6 +577,20 @@
 				B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */,
 			);
 			name = "County Settings";
+			sourceTree = "<group>";
+		};
+		B699D8AE1DE378A5003F3C77 /* River Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B69F768A1DE3B8E8000A3166 /* RiverItem.swift */,
+				B699D8AF1DE378A5003F3C77 /* BubbleView.swift */,
+				B699D8B01DE378A5003F3C77 /* CalloutAnnotation.swift */,
+				B699D8B11DE378A5003F3C77 /* CalloutAnnotationView.swift */,
+				B699D8B21DE378A5003F3C77 /* CustomAnnotation.swift */,
+				B699D8B31DE378A5003F3C77 /* RiverMapViewController.swift */,
+				B699D8B41DE378A5003F3C77 /* RiversKMLParser.swift */,
+			);
+			path = "River Maps";
 			sourceTree = "<group>";
 		};
 		B6D051341DDED2B000AB1741 /* Cells */ = {
@@ -577,11 +613,19 @@
 			name = "Empty State";
 			sourceTree = "<group>";
 		};
-		F88612A4C2267C204843D71B /* Pods */ = {
+		E52059BA0B96AD1E5AF0F995 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */,
-				F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */,
+				57385953FCBB4D05D2ABB25B /* Pods_Ready_Badger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4EECD901DC93F3C4CDC678E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAE80FE5D11B78055FD81DC7 /* Pods-Ready Badger.debug.xcconfig */,
+				42E2EE0F6FE9EB773DFF1149 /* Pods-Ready Badger.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -593,12 +637,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B62E736D1DA1D21F00C33683 /* Build configuration list for PBXNativeTarget "Ready Badger" */;
 			buildPhases = (
-				2EB88EA26C5A424E79D52FAC /* Check Pods Manifest.lock */,
+				3B9BAD1048E55054AB3EB650 /* [CP] Check Pods Manifest.lock */,
 				B62E73571DA1D21F00C33683 /* Sources */,
 				B62E73581DA1D21F00C33683 /* Frameworks */,
 				B62E73591DA1D21F00C33683 /* Resources */,
-				5F9F381405E06788E254C3B9 /* Embed Pods Frameworks */,
-				B8FEF0FECFE07F2420334320 /* Copy Pods Resources */,
+				E22EEAD52BECFB0CA7B34DF3 /* [CP] Embed Pods Frameworks */,
+				685031371AED11025369E0F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -666,6 +710,7 @@
 				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
 				B655A5DB1DD1510600401155 /* Fire.html in Resources */,
 				B655A5E01DD1510600401155 /* Thunderstorm.html in Resources */,
+				B699D8BC1DE378C0003F3C77 /* River Map.storyboard in Resources */,
 				B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */,
 				B655A5E21DD1510600401155 /* Winter Storm.html in Resources */,
 			);
@@ -674,49 +719,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EB88EA26C5A424E79D52FAC /* Check Pods Manifest.lock */ = {
+		3B9BAD1048E55054AB3EB650 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5F9F381405E06788E254C3B9 /* Embed Pods Frameworks */ = {
+		685031371AED11025369E0F3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8FEF0FECFE07F2420334320 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E22EEAD52BECFB0CA7B34DF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -728,6 +773,7 @@
 			files = (
 				B65D26051DAA0615001A3634 /* BackendRequest.swift in Sources */,
 				B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */,
+				B699D8B71DE378A5003F3C77 /* CalloutAnnotationView.swift in Sources */,
 				B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */,
 				B61981081DBDCA2100787101 /* Ownership.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
@@ -753,36 +799,43 @@
 				B627DA811DAAC6A5009EC6FB /* CountySearchLogic.swift in Sources */,
 				B65D261B1DAA07D0001A3634 /* AllCountyRequest.swift in Sources */,
 				B627DA6F1DAA2660009EC6FB /* CountyWrites.swift in Sources */,
+				B69F76911DE3BB7E000A3166 /* Location.swift in Sources */,
 				B6D051291DDEC3DC00AB1741 /* RoadData.swift in Sources */,
 				B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */,
 				B630D5801DD93D0B0061F2F4 /* DisasterResource.swift in Sources */,
+				B699D8B51DE378A5003F3C77 /* BubbleView.swift in Sources */,
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */,
 				B61981061DBDC5C700787101 /* State.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
 				B6DA41F31DDA123B00CEB6E5 /* DamageReportOperation.swift in Sources */,
 				B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */,
+				B69F768D1DE3B928000A3166 /* LocationManager.swift in Sources */,
 				B6D051231DDEC2EB00AB1741 /* CountyData.swift in Sources */,
 				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
 				B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */,
 				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
 				B630D5861DD96E320061F2F4 /* DisasterResourceOperation.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
+				B699D8B91DE378A5003F3C77 /* RiverMapViewController.swift in Sources */,
 				B6D051361DDED2B000AB1741 /* WeatherTableViewCell.swift in Sources */,
 				B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */,
 				B6D051331DDED18000AB1741 /* FeedOperation.swift in Sources */,
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
 				B630D57A1DD912050061F2F4 /* DisasterResourcePageController.swift in Sources */,
+				B69F76931DE3BB98000A3166 /* RealmUserDefaults.swift in Sources */,
 				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
 				B612E5E41DD0EB4C0098D47C /* DisasterInfoViewController.swift in Sources */,
 				B6DA41FA1DDA313A00CEB6E5 /* BundleExtension.swift in Sources */,
 				B6D051311DDECFA500AB1741 /* FeedRequest.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,
+				B699D8B61DE378A5003F3C77 /* CalloutAnnotation.swift in Sources */,
 				B630D5841DD96C0C0061F2F4 /* DisasterResourceRequest.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
+				B69F768B1DE3B8E8000A3166 /* RiverItem.swift in Sources */,
 				B6469E931DD04F72002B109B /* OptionTableViewCell.swift in Sources */,
 				B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */,
 				B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */,
@@ -793,6 +846,7 @@
 				B630D5821DD96BEA0061F2F4 /* DisasterResourceParse.swift in Sources */,
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
 				B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */,
+				B69F768F1DE3B944000A3166 /* Keys.swift in Sources */,
 				B6D0512F1DDECF4C00AB1741 /* FeedParse.swift in Sources */,
 				B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */,
 				B6D0513A1DDED2C900AB1741 /* RoadIncidentTableViewCell.swift in Sources */,
@@ -805,10 +859,12 @@
 				B630D57E1DD939D80061F2F4 /* DisasterResourceType.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
 				B6469E921DD04F72002B109B /* DateCell.swift in Sources */,
+				B699D8BA1DE378A5003F3C77 /* RiversKMLParser.swift in Sources */,
 				B6D0513C1DDED2DC00AB1741 /* AirQualityTableViewCell.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
 				B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */,
+				B699D8B81DE378A5003F3C77 /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,7 +964,7 @@
 		};
 		B62E736E1DA1D21F00C33683 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9439CBC11D5EC835A474E9F /* Pods-Ready Badger.debug.xcconfig */;
+			baseConfigurationReference = FAE80FE5D11B78055FD81DC7 /* Pods-Ready Badger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
@@ -923,7 +979,7 @@
 		};
 		B62E736F1DA1D21F00C33683 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9D6F4B5943EE90328733F7E /* Pods-Ready Badger.release.xcconfig */;
+			baseConfigurationReference = 42E2EE0F6FE9EB773DFF1149 /* Pods-Ready Badger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
