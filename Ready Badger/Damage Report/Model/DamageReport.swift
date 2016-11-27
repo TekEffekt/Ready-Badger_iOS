@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 struct DamageReport {
-    
     var disasterType: DisasterType?
     var date: Date = Date()
     var name: String?

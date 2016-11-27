@@ -47,6 +47,7 @@
 		B630D5881DD97CB40061F2F4 /* DisasterResourceWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */; };
 		B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */; };
 		B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */; };
+		B63BFF091DEA5786004C2398 /* CameraActionSheetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF081DEA5786004C2398 /* CameraActionSheetFactory.swift */; };
 		B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E871DD04F4A002B109B /* DescriptionViewController.swift */; };
 		B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */; };
 		B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8B1DD04F72002B109B /* DamageReportCell.swift */; };
@@ -173,6 +174,7 @@
 		B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceWrite.swift; sourceTree = "<group>"; };
 		B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceQuery.swift; sourceTree = "<group>"; };
 		B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisasterResourceCell.swift; path = "Disaster Resource/DisasterResourceCell.swift"; sourceTree = "<group>"; };
+		B63BFF081DEA5786004C2398 /* CameraActionSheetFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraActionSheetFactory.swift; path = "Damage Report/CameraActionSheetFactory.swift"; sourceTree = "<group>"; };
 		B6469E871DD04F4A002B109B /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = "Damage Report/DescriptionViewController.swift"; sourceTree = "<group>"; };
 		B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasementFloodedCell.swift; sourceTree = "<group>"; };
 		B6469E8B1DD04F72002B109B /* DamageReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCell.swift; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 				B6469E871DD04F4A002B109B /* DescriptionViewController.swift */,
 				B627DA921DB4B9B7009EC6FB /* OptionController.swift */,
 				B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */,
+				B63BFF081DEA5786004C2398 /* CameraActionSheetFactory.swift */,
 				B6469E891DD04F72002B109B /* Cells */,
 				B61981001DBDB9FE00787101 /* Model */,
 			);
@@ -882,6 +885,7 @@
 				B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */,
 				B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */,
 				B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */,
+				B63BFF091DEA5786004C2398 /* CameraActionSheetFactory.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,

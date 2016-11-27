@@ -7,16 +7,17 @@
 //
 
 import UIKit
-import TGCameraViewController
 
-class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem, TGCameraDelegate {
+class DamageReportTableController: FormTableViewController, DefaultTheme, MenuItem, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var menu: HamburgerMenu?
     let damageReportDatasource = DamageReportDataSource()
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = damageReportDatasource
+        imagePicker.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,8 +84,14 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
             }
             tableView.endUpdates()
         } else if indexPath.section == 7 && indexPath.row == 1 {
-            let cameraController = TGCameraNavigationController.new(with: self)!
-            present(cameraController, animated: true, completion: nil)
+            let sheet = CameraActionSheetFactory.create(cameraAction: { (action) in
+                self.launchCamera()
+            }, libraryAction: { (action) in
+                self.openCameraLibrary()
+            }, removeAction: { (action) in
+                self.removeImage()
+            })
+            present(sheet, animated: true, completion: nil)
         }
     }
     
@@ -154,32 +161,58 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         }
     }
     
-    // MARK: Camera Delegate
-    func cameraDidCancel() {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func cameraDidTakePhoto(_ image: UIImage!) {
-        damageReportDatasource.damageReport.picture = image
-        dismiss(animated: true, completion: nil)
-        updateCell(withCellId: .photo)
-    }
-    
-    func cameraDidSelectAlbumPhoto(_ image: UIImage!) {
-        damageReportDatasource.damageReport.picture = image
-        dismiss(animated: true, completion: nil)
-        updateCell(withCellId: .photo)
-    }
-    
-    func updateCell(withCellId id: DamageReportCellType) {
-        tableView.beginUpdates()
-        switch id {
-            case .photo:
-                let path = IndexPath(row: 1, section: 7)
-                tableView.reloadRows(at: [path], with: .none)
-            default: break
+    // MARK: Camera
+    func launchCamera() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePicker.allowsEditing = false
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            imagePicker.cameraCaptureMode = .photo
+            imagePicker.modalPresentationStyle = .fullScreen
+            present(imagePicker,animated: true,completion: nil)
+        } else {
+            noCamera()
         }
-        tableView.endUpdates()
+    }
+    
+    func noCamera(){
+        let alertVC = UIAlertController(
+            title: "No Camera",
+            message: "Sorry, this device has no camera",
+            preferredStyle: .alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style:.default,
+            handler: nil)
+        alertVC.addAction(okAction)
+        present(
+            alertVC,
+            animated: true,
+            completion: nil)
+    }
+    
+    func openCameraLibrary() {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        imagePicker.modalPresentationStyle = .fullScreen
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func removeImage() {
+        damageReportDatasource.damageReport.picture = nil
+        tableView.reloadData()
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        var  chosenImage = UIImage()
+        chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        damageReportDatasource.damageReport.picture = chosenImage
+        dismiss(animated:true, completion: nil)
+        tableView.reloadData()
     }
 
 }
