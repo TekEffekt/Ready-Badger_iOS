@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class CameraActionSheetFactory {
+class AlertFactory {
     
-    static func create(cameraAction: @escaping ((UIAlertAction) -> Void), libraryAction: @escaping ((UIAlertAction) -> Void), removeAction: @escaping ((UIAlertAction) -> Void)) -> UIAlertController {
+    static func createActionSheet(cameraAction: @escaping ((UIAlertAction) -> Void), libraryAction: @escaping ((UIAlertAction) -> Void), removeAction: @escaping ((UIAlertAction) -> Void)) -> UIAlertController {
         let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let cameraAction = UIAlertAction(title: "Take Photo", style: .default, handler: cameraAction)
         let libraryAction = UIAlertAction(title: "Choose From Library", style: .default, handler: libraryAction)

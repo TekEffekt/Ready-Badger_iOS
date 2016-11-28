@@ -84,7 +84,7 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
             }
             tableView.endUpdates()
         } else if indexPath.section == 7 && indexPath.row == 1 {
-            let sheet = CameraActionSheetFactory.create(cameraAction: { (action) in
+            let sheet = AlertFactory.createActionSheet(cameraAction: { (action) in
                 self.launchCamera()
             }, libraryAction: { (action) in
                 self.openCameraLibrary()
@@ -100,8 +100,13 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         damageReportDatasource.errors = errors
         
         if errors.isEmpty {
-            let request = DamageReportRequest(withReport: damageReportDatasource.damageReport)
-            NetworkQueue.shared.addOperation(DamageReportOperation(withRequest: request))
+            if let image = damageReportDatasource.damageReport.picture {
+                guard let imageData = UIImageJPEGRepresentation(image, 1) else { return }
+                let request = ImageAlbumRequest(withImageData: imageData)
+                NetworkQueue.shared.addOperation(ImageAlbumOperation(withRequest: request, andDamageReport: damageReportDatasource.damageReport))
+            } else {
+                
+            }
         } else {
             tableView.reloadData()
         }

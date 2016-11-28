@@ -47,13 +47,18 @@
 		B630D5881DD97CB40061F2F4 /* DisasterResourceWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */; };
 		B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */; };
 		B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */; };
-		B63BFF091DEA5786004C2398 /* CameraActionSheetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF081DEA5786004C2398 /* CameraActionSheetFactory.swift */; };
+		B63BFF091DEA5786004C2398 /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF081DEA5786004C2398 /* AlertFactory.swift */; };
 		B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E871DD04F4A002B109B /* DescriptionViewController.swift */; };
 		B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */; };
 		B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8B1DD04F72002B109B /* DamageReportCell.swift */; };
 		B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */; };
 		B6469E921DD04F72002B109B /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8D1DD04F72002B109B /* DateCell.swift */; };
 		B6469E931DD04F72002B109B /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */; };
+		B646B2AD1DEACE0E00F57419 /* ImageAlbumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2AC1DEACE0E00F57419 /* ImageAlbumRequest.swift */; };
+		B646B2AF1DEAD53500F57419 /* DamageReportImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2AE1DEAD53500F57419 /* DamageReportImageRequest.swift */; };
+		B646B2B11DEB893A00F57419 /* ImageAlbumOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2B01DEB893A00F57419 /* ImageAlbumOperation.swift */; };
+		B646B2B31DEC101500F57419 /* DamageReportImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2B21DEC101500F57419 /* DamageReportImageOperation.swift */; };
+		B646B2B51DEC1B1200F57419 /* BoundaryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2B41DEC1B1200F57419 /* BoundaryString.swift */; };
 		B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* Bomb Threat.html */; };
 		B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* Extreme Heat.html */; };
 		B655A5DB1DD1510600401155 /* Fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* Fire.html */; };
@@ -174,13 +179,18 @@
 		B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceWrite.swift; sourceTree = "<group>"; };
 		B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceQuery.swift; sourceTree = "<group>"; };
 		B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisasterResourceCell.swift; path = "Disaster Resource/DisasterResourceCell.swift"; sourceTree = "<group>"; };
-		B63BFF081DEA5786004C2398 /* CameraActionSheetFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraActionSheetFactory.swift; path = "Damage Report/CameraActionSheetFactory.swift"; sourceTree = "<group>"; };
+		B63BFF081DEA5786004C2398 /* AlertFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertFactory.swift; path = "Damage Report/AlertFactory.swift"; sourceTree = "<group>"; };
 		B6469E871DD04F4A002B109B /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = "Damage Report/DescriptionViewController.swift"; sourceTree = "<group>"; };
 		B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasementFloodedCell.swift; sourceTree = "<group>"; };
 		B6469E8B1DD04F72002B109B /* DamageReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCell.swift; sourceTree = "<group>"; };
 		B6469E8C1DD04F72002B109B /* DamageReportLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportLabelCell.swift; sourceTree = "<group>"; };
 		B6469E8D1DD04F72002B109B /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		B6469E8E1DD04F72002B109B /* OptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		B646B2AC1DEACE0E00F57419 /* ImageAlbumRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAlbumRequest.swift; sourceTree = "<group>"; };
+		B646B2AE1DEAD53500F57419 /* DamageReportImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportImageRequest.swift; sourceTree = "<group>"; };
+		B646B2B01DEB893A00F57419 /* ImageAlbumOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAlbumOperation.swift; sourceTree = "<group>"; };
+		B646B2B21DEC101500F57419 /* DamageReportImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportImageOperation.swift; sourceTree = "<group>"; };
+		B646B2B41DEC1B1200F57419 /* BoundaryString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundaryString.swift; path = "Ready Badger/Network Layer/BoundaryString.swift"; sourceTree = SOURCE_ROOT; };
 		B655A5CF1DD1510600401155 /* Bomb Threat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Bomb Threat.html"; sourceTree = "<group>"; };
 		B655A5D01DD1510600401155 /* Extreme Heat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Extreme Heat.html"; sourceTree = "<group>"; };
 		B655A5D11DD1510600401155 /* Fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fire.html; sourceTree = "<group>"; };
@@ -400,7 +410,7 @@
 				B6469E871DD04F4A002B109B /* DescriptionViewController.swift */,
 				B627DA921DB4B9B7009EC6FB /* OptionController.swift */,
 				B627DA9A1DB513CA009EC6FB /* DamageReportSegues.swift */,
-				B63BFF081DEA5786004C2398 /* CameraActionSheetFactory.swift */,
+				B63BFF081DEA5786004C2398 /* AlertFactory.swift */,
 				B6469E891DD04F72002B109B /* Cells */,
 				B61981001DBDB9FE00787101 /* Model */,
 			);
@@ -505,6 +515,7 @@
 				B65D25F11DAA0615001A3634 /* BackendConfiguration.swift */,
 				B65D25F21DAA0615001A3634 /* BackendService.swift */,
 				B65D25F31DAA0615001A3634 /* NetworkQueue.swift */,
+				B646B2B41DEC1B1200F57419 /* BoundaryString.swift */,
 				B627DA611DAA21C5009EC6FB /* Parse */,
 				B65D25F41DAA0615001A3634 /* Operations */,
 				B65D25FA1DAA0615001A3634 /* Requests */,
@@ -533,6 +544,8 @@
 				B630D5851DD96E320061F2F4 /* DisasterResourceOperation.swift */,
 				B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */,
 				B6D051321DDED18000AB1741 /* FeedOperation.swift */,
+				B646B2B01DEB893A00F57419 /* ImageAlbumOperation.swift */,
+				B646B2B21DEC101500F57419 /* DamageReportImageOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -545,6 +558,8 @@
 				B630D5831DD96C0C0061F2F4 /* DisasterResourceRequest.swift */,
 				B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */,
 				B6D051301DDECFA500AB1741 /* FeedRequest.swift */,
+				B646B2AC1DEACE0E00F57419 /* ImageAlbumRequest.swift */,
+				B646B2AE1DEAD53500F57419 /* DamageReportImageRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -833,6 +848,7 @@
 				B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */,
 				B65D261D1DAA086E001A3634 /* AllCountyOperation.swift in Sources */,
 				B6D051381DDED2BE00AB1741 /* AlertTableViewCell.swift in Sources */,
+				B646B2AF1DEAD53500F57419 /* DamageReportImageRequest.swift in Sources */,
 				B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */,
 				B619810C1DBDCF8B00787101 /* Answer.swift in Sources */,
 				B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */,
@@ -878,6 +894,8 @@
 				B69F769D1DE3FF2D000A3166 /* CalloutAnnotation.swift in Sources */,
 				B630D5841DD96C0C0061F2F4 /* DisasterResourceRequest.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
+				B646B2B51DEC1B1200F57419 /* BoundaryString.swift in Sources */,
+				B646B2B31DEC101500F57419 /* DamageReportImageOperation.swift in Sources */,
 				B69F76B71DE429E3000A3166 /* BasicKitViewController.swift in Sources */,
 				B61981021DBDBA0B00787101 /* DamageReport.swift in Sources */,
 				B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */,
@@ -885,7 +903,7 @@
 				B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */,
 				B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */,
 				B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */,
-				B63BFF091DEA5786004C2398 /* CameraActionSheetFactory.swift in Sources */,
+				B63BFF091DEA5786004C2398 /* AlertFactory.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
 				B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
@@ -907,8 +925,10 @@
 				B6D0513C1DDED2DC00AB1741 /* AirQualityTableViewCell.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,
 				B627DA731DAA4056009EC6FB /* CountyTableViewCell.swift in Sources */,
+				B646B2AD1DEACE0E00F57419 /* ImageAlbumRequest.swift in Sources */,
 				B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */,
 				B69F769F1DE3FF2D000A3166 /* CustomAnnotation.swift in Sources */,
+				B646B2B11DEB893A00F57419 /* ImageAlbumOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

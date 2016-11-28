@@ -26,7 +26,11 @@ struct DisasterResourceRequest: BackendRequest {
         return ["RB-API-KEY" : "testhi"]
     }
     
-    var imageData: NSData? {
+    var imageData: Data? {
+        return nil
+    }
+    
+    var alernativeUrl: URL? {
         return nil
     }
     

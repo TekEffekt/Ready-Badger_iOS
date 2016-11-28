@@ -22,11 +22,15 @@ struct AllCountyRequest: BackendRequest {
         return ["RB-API-KEY" : "testhi"]
     }
     
-    var imageData: NSData? {
+    var imageData: Data? {
         return nil
     }
     
     var parameters: [String : AnyObject]? {
+        return nil
+    }
+    
+    var alernativeUrl: URL? {
         return nil
     }
     

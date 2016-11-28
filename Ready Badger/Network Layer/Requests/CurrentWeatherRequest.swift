@@ -28,7 +28,11 @@ struct CurrentWeatherRequest: BackendRequest {
         return nil
     }
     
-    var imageData: NSData? {
+    var imageData: Data? {
+        return nil
+    }
+    
+    var alernativeUrl: URL? {
         return nil
     }
     

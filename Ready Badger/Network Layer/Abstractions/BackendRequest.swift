@@ -13,5 +13,6 @@ protocol BackendRequest {
     var method: BackendServiceMethod { get }
     var parameters: [String: AnyObject]? { get }
     var headers: [String: String]? { get }
-    var imageData: NSData? { get }
+    var imageData: Data? { get }
+    var alernativeUrl: URL? { get }
 }
