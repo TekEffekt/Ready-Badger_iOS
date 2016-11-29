@@ -10,8 +10,9 @@ import Foundation
 
 class BoundaryString {
     
-    static func get() -> String{
-        return "Boundary-\(NSUUID().uuidString)"
+    static func get() -> String {
+        let string = "Boundary-\(NSUUID().uuidString)"
+        return "BOUNDARY HERE"
     }
     
 }

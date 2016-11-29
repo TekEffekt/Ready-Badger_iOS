@@ -22,6 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetworkQueue.shared.addOperation(AllCountyOperation(withRequest: AllCountyRequest()))
         NetworkQueue.shared.addOperation(DisasterResourceOperation(withRequest: DisasterResourceRequest()))
         
+//        let url = URL(string: "http://imageserver.appfactoryuwp.com/images")
+//        var urlRequest = URLRequest(url: url!)
+//        urlRequest.httpMethod = "POST"
+//        urlRequest.allHTTPHeaderFields = ["X-API-KEY": "c7crds7c3b2xqzdx0g4dnnld2tvr76re", "Accept": "applications/json", "Content-Type": "application/json"]
+//        let params = ["title": "test" as AnyObject, "description": "Test Description" as AnyObject, "albumid": 10 as  AnyObject] as [String: AnyObject]
+//        urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: params, options: [])
+//        print(NSString(data: urlRequest.httpBody!, encoding: String.Encoding.utf8.rawValue))
+//        let urlSession = URLSession.shared
+//        let task = urlSession.dataTask(with: urlRequest, completionHandler: {(data, error, other) in
+//            print(NSString(data: data!, encoding: String.Encoding.utf8.rawValue)!)
+//        })
+//        task.resume()
+        
         return true
     }
 

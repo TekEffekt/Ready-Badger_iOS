@@ -64,10 +64,10 @@ class BackendService {
     
     func httpBodyWithParameters(parameters: [String: AnyObject]?, imageData: Data, boundary: String) -> Data {
         let body = NSMutableData()
-        
-        // create a line for each paraneter
-        if parameters != nil {
-            for (key, value) in parameters! {
+                
+        // create a line for each parameter
+        if let params = parameters {
+            for (key, value) in params {
                 body.appendString(string: "--\(boundary)\r\n")
                 body.appendString(string: "Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n")
                 body.appendString(string: "\(value)\r\n")
@@ -82,7 +82,7 @@ class BackendService {
         body.appendString(string: "--\(boundary)\r\n")
         body.appendString(string: "Content-Disposition: form-data; name=\"image\"; filename=\"\(filename)\"\r\n")
         body.appendString(string: "Content-Type: \(mimetype)\r\n\r\n")
-        body.append(imageData as Data)
+        body.append(imageData)
         body.appendString(string: "\r\n")
         
         body.appendString(string: "--\(boundary)--\r\n")

@@ -31,8 +31,10 @@ struct DamageReportImageRequest: BackendRequest {
     }
     
     var parameters: [String : AnyObject]? {
-        return ["albumid": albumId as AnyObject, "title": "NULL" as AnyObject, "description": "NULL" as AnyObject]
+        return ["albumid": albumId as AnyObject]
     }
+    
+    //, "title": "NULL" as AnyObject, "description": "NULL" as AnyObject
     
     init(imageData: Data, albumId: String) {
         self.imageData = imageData

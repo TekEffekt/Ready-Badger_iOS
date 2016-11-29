@@ -101,7 +101,7 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         
         if errors.isEmpty {
             if let image = damageReportDatasource.damageReport.picture {
-                guard let imageData = UIImageJPEGRepresentation(image, 1) else { return }
+                guard let imageData = UIImageJPEGRepresentation(image, 0.6) else { return }
                 let request = ImageAlbumRequest(withImageData: imageData)
                 NetworkQueue.shared.addOperation(ImageAlbumOperation(withRequest: request, andDamageReport: damageReportDatasource.damageReport))
             } else {
