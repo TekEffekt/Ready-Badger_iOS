@@ -21,20 +21,35 @@ struct DamageReportRequest: BackendRequest {
         return ["RB-API-KEY" : "testhi", "Content-Type": "application/json"]
     }
     
-    var parameters: [String : AnyObject]? {
+    var parameters: [Parameter]? {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         let type = DisasterType.getAll().index(of: report.disasterType!) as AnyObject
+        let dateString = formatter.string(from: report.date) as AnyObject
+        let name = report.name as AnyObject
+        let address = report.address as AnyObject
+        let city = report.city as AnyObject
+        let state = report.state as AnyObject
+        let zipCode = Int(report.zipCode ?? "") as AnyObject
+        let phoneNumber = Int(report.phoneNumber ?? "") as AnyObject
         let ownership = (report.ownership == .yes ? 1 : 0) as AnyObject
+        let insuranceCoverage = report.percentOfLoss as AnyObject
+        let insuranceDeductible = report.insuranceDeductible as AnyObject
+        let lossEstimate = report.damageEstimate as AnyObject
         let habitable = (report.residenceIsHabitable == .yes ? 1 : 0) as AnyObject
         let basementWater = (report.basementFlooded == .yes ? 1 : 0) as AnyObject
         let basementOccupant = (report.personLivingInBasement == .yes ? 1 : 0) as AnyObject
-        let dateString = formatter.string(from: report.date) as AnyObject
         let description = (report.description == nil ? "" : report.description) as AnyObject
         let waterDepth = (report.inchesOfWater == nil ? "0" : report.inchesOfWater) as AnyObject
         let albumID = ((albumId == nil) ? "NULL": albumId) as AnyObject
+        let latitude =  50.72 as AnyObject
+        let longitude = 21.825 as AnyObject
+        let deviceId = "Unknown" as AnyObject
         
-        return ["date" : dateString, "type" : type, "reporterName": report.name as AnyObject, "address": report.address as AnyObject, "city": report.city as AnyObject, "state": report.state as AnyObject, "zipcode": Int(report.zipCode ?? "") as AnyObject, "reporterPhone": Int(report.phoneNumber ?? "") as AnyObject, "owned": ownership, "description": description, "lossEstimation": report.damageEstimate as AnyObject, "insuranceCoverage": report.percentOfLoss as AnyObject, "insuranceDeductible": report.insuranceDeductible as AnyObject, "habitable": habitable, "basementWater": basementWater, "basementOccupant": basementOccupant, "latitude": 50.72 as AnyObject, "longitude": 21.825 as AnyObject, "images": albumID, "waterDepth": waterDepth, "deviceID": "Unknown" as AnyObject]
+        let keyValueList = ["date" : dateString, "type" : type, "reporterName": name, "address": address, "city": city, "state": state, "zipcode": zipCode, "reporterPhone": phoneNumber, "owned": ownership, "description": description, "lossEstimation": lossEstimate, "insuranceCoverage": insuranceCoverage, "insuranceDeductible": insuranceDeductible, "habitable": habitable, "basementWater": basementWater, "basementOccupant": basementOccupant, "latitude": latitude, "longitude": longitude, "images": albumID, "waterDepth": waterDepth, "deviceID": deviceId]
+        let params = keyValueList.map() {(key, value) in return Parameter(Key: key, Value: value)}
+        
+        return params
     }
     
     var method: BackendServiceMethod {

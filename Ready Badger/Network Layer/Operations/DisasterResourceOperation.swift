@@ -22,6 +22,7 @@ class DisasterResourceOperation: Operation, BackendOperation {
                 }
                 
                 DisasterResourceParse.parse(data: array)
+                UserDefaults.standard.set(true, forKey: "Resources Downloaded")
             } catch _ {
                 print("JSON Invalid")
             }

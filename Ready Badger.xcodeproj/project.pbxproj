@@ -59,6 +59,8 @@
 		B646B2B11DEB893A00F57419 /* ImageAlbumOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2B01DEB893A00F57419 /* ImageAlbumOperation.swift */; };
 		B646B2B31DEC101500F57419 /* DamageReportImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2B21DEC101500F57419 /* DamageReportImageOperation.swift */; };
 		B646B2B51DEC1B1200F57419 /* BoundaryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2B41DEC1B1200F57419 /* BoundaryString.swift */; };
+		B64B83001DED49770011CAA9 /* DataInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B82FF1DED49770011CAA9 /* DataInitialization.swift */; };
+		B64B83041DEDF6720011CAA9 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83031DEDF6720011CAA9 /* Parameter.swift */; };
 		B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* Bomb Threat.html */; };
 		B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* Extreme Heat.html */; };
 		B655A5DB1DD1510600401155 /* Fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* Fire.html */; };
@@ -191,6 +193,8 @@
 		B646B2B01DEB893A00F57419 /* ImageAlbumOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAlbumOperation.swift; sourceTree = "<group>"; };
 		B646B2B21DEC101500F57419 /* DamageReportImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportImageOperation.swift; sourceTree = "<group>"; };
 		B646B2B41DEC1B1200F57419 /* BoundaryString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundaryString.swift; path = "Ready Badger/Network Layer/BoundaryString.swift"; sourceTree = SOURCE_ROOT; };
+		B64B82FF1DED49770011CAA9 /* DataInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInitialization.swift; sourceTree = "<group>"; };
+		B64B83031DEDF6720011CAA9 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		B655A5CF1DD1510600401155 /* Bomb Threat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Bomb Threat.html"; sourceTree = "<group>"; };
 		B655A5D01DD1510600401155 /* Extreme Heat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Extreme Heat.html"; sourceTree = "<group>"; };
 		B655A5D11DD1510600401155 /* Fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fire.html; sourceTree = "<group>"; };
@@ -440,6 +444,7 @@
 			children = (
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
+				B64B82FF1DED49770011CAA9 /* DataInitialization.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */,
 				B62E73651DA1D21F00C33683 /* Assets.xcassets */,
@@ -527,6 +532,7 @@
 		B65D25EA1DAA0615001A3634 /* Abstractions */ = {
 			isa = PBXGroup;
 			children = (
+				B64B83031DEDF6720011CAA9 /* Parameter.swift */,
 				B65D25EB1DAA0615001A3634 /* BackendOperation.swift */,
 				B65D25EC1DAA0615001A3634 /* BackendRequest.swift */,
 				B65D25ED1DAA0615001A3634 /* BackendRequestJSONExtension.swift */,
@@ -905,6 +911,7 @@
 				B6469E911DD04F72002B109B /* DamageReportLabelCell.swift in Sources */,
 				B63BFF091DEA5786004C2398 /* AlertFactory.swift in Sources */,
 				B67510ED1DA238E900E81CB3 /* FeedPageViewController.swift in Sources */,
+				B64B83001DED49770011CAA9 /* DataInitialization.swift in Sources */,
 				B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */,
 				B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */,
 				B630D5821DD96BEA0061F2F4 /* DisasterResourceParse.swift in Sources */,
@@ -921,6 +928,7 @@
 				B6D051251DDEC30C00AB1741 /* AlertData.swift in Sources */,
 				B630D57E1DD939D80061F2F4 /* DisasterResourceType.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,
+				B64B83041DEDF6720011CAA9 /* Parameter.swift in Sources */,
 				B6469E921DD04F72002B109B /* DateCell.swift in Sources */,
 				B6D0513C1DDED2DC00AB1741 /* AirQualityTableViewCell.swift in Sources */,
 				B67510E81DA2381700E81CB3 /* CAPSPageMenu.swift in Sources */,

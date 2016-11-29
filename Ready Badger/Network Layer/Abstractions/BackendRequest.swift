@@ -11,7 +11,7 @@ import Foundation
 protocol BackendRequest {
     var endpoint: String { get }
     var method: BackendServiceMethod { get }
-    var parameters: [String: AnyObject]? { get }
+    var parameters: [Parameter]? { get }
     var headers: [String: String]? { get }
     var imageData: Data? { get }
     var alernativeUrl: URL? { get }

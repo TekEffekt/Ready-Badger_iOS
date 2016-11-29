@@ -29,7 +29,7 @@ struct ImageAlbumRequest: BackendRequest {
         return URL(string: "http://imageserver.appfactoryuwp.com")
     }
     
-    var parameters: [String : AnyObject]? {
+    var parameters: [Parameter]? {
         return nil
     }
     

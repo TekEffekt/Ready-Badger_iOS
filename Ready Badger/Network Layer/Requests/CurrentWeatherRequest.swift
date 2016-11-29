@@ -20,7 +20,7 @@ struct CurrentWeatherRequest: BackendRequest {
         return .GET
     }
     
-    var parameters: [String : AnyObject]? {
+    var parameters: [Parameter]? {
         return nil
     }
     

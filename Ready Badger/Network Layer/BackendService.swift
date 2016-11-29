@@ -34,7 +34,7 @@ class BackendService {
                 if let imageData = request.imageData {
                     urlRequest.httpBody = httpBodyWithParameters(parameters: params, imageData: imageData as Data, boundary: BoundaryString.get())
                 } else {
-                    urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: params, options: [])
+                    urlRequest.httpBody = buildJson(withParameters: params)
                 }
             } else {
                 let newUrlString = "\(urlRequest.url!.absoluteString)\(getQueryStringFor(parameters: params))"
@@ -54,23 +54,38 @@ class BackendService {
         networkTask?.resume()
     }
     
-    func getQueryStringFor(parameters: [String: AnyObject]) -> String {
+    func buildJson(withParameters parameters: [Parameter]) -> Data {
+        let jsonData = NSMutableData()
+        jsonData.appendString(string: "{")
+        var mutable = parameters
+        let first = mutable.removeFirst()
+        jsonData.appendString(string: "\"\(first.Key)\": \"\(first.Value)\"")
+        for param in mutable {
+            jsonData.appendString(string: ",\"\(param.Key)\": \"\(param.Value)\"")
+        }
+        jsonData.appendString(string: "}")
+        print(NSString(data: jsonData as Data, encoding: String.Encoding.utf8.rawValue))
+        
+        return jsonData as Data
+    }
+    
+    func getQueryStringFor(parameters: [Parameter]) -> String {
         var string = "?"
         for param in parameters {
-            string += "\(param.value)=\(param.key)&"
+            string += "\(param.Key)=\(param.Value)&"
         }
         return string
     }
     
-    func httpBodyWithParameters(parameters: [String: AnyObject]?, imageData: Data, boundary: String) -> Data {
+    func httpBodyWithParameters(parameters: [Parameter]?, imageData: Data, boundary: String) -> Data {
         let body = NSMutableData()
                 
         // create a line for each parameter
         if let params = parameters {
-            for (key, value) in params {
+            for param in params {
                 body.appendString(string: "--\(boundary)\r\n")
-                body.appendString(string: "Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n")
-                body.appendString(string: "\(value)\r\n")
+                body.appendString(string: "Content-Disposition: form-data; name=\"\(param.Key)\"\r\n\r\n")
+                body.appendString(string: "\(param.Value)\r\n")
             }
         }
         

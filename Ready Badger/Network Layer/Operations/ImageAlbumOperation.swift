@@ -30,7 +30,6 @@ class ImageAlbumOperation: Operation, BackendOperation {
                 }
                 
                 NetworkQueue.shared.addOperation(DamageReportOperation(withRequest: DamageReportRequest(withReport: self.damageReport, andAlbumId: albumId)))
-                
             } catch _ {
                 print("JSON Invalid")
             }

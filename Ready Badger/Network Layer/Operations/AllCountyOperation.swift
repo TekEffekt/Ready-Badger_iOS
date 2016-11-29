@@ -22,6 +22,7 @@ class AllCountyOperation: Operation, BackendOperation {
                 }
                 
                 CountyDataParse.parse(data: array)
+                UserDefaults.standard.set(true, forKey: "Counties Downloaded")
             } catch _ {
                 print("JSON Invalid")
             }

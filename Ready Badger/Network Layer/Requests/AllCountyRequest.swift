@@ -26,7 +26,7 @@ struct AllCountyRequest: BackendRequest {
         return nil
     }
     
-    var parameters: [String : AnyObject]? {
+    var parameters: [Parameter]? {
         return nil
     }
     

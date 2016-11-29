@@ -11,19 +11,19 @@ import Foundation
 struct DisasterResourceRequest: BackendRequest {
     
     var endpoint: String {
-        return "locations"
+        return "api/index.php/locations"
     }
     
     var method: BackendServiceMethod {
         return .GET
     }
     
-    var parameters: [String : AnyObject]? {
-        return nil
+    var parameters: [Parameter]? {
+        return [(Key: "RB-API-KEY", Value: "testhi" as AnyObject)]
     }
     
     var headers: [String : String]? {
-        return ["RB-API-KEY" : "testhi"]
+        return nil
     }
     
     var imageData: Data? {
@@ -31,7 +31,7 @@ struct DisasterResourceRequest: BackendRequest {
     }
     
     var alernativeUrl: URL? {
-        return nil
+        return URL(string: "http://readybadger.org")
     }
     
 }

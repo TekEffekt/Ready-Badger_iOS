@@ -22,11 +22,11 @@ struct FeedRequest: BackendRequest {
         return .GET
     }
     
-    var parameters: [String : AnyObject]? {
+    var parameters: [Parameter]? {
         let selectedCounties = CountyQueries.getAllSelectedCounties()
-        var parameters = [String : AnyObject]()
+        var parameters = [Parameter]()
         for county in selectedCounties {
-            parameters["\(county.id)"] = "county[]" as AnyObject?
+            parameters.append(Parameter(Key: "county[]", Value: "\(county.id)" as AnyObject))
         }
         return parameters
     }

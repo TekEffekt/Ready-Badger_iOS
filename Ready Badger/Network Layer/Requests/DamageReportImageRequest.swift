@@ -30,8 +30,8 @@ struct DamageReportImageRequest: BackendRequest {
         return URL(string: "http://imageserver.appfactoryuwp.com")
     }
     
-    var parameters: [String : AnyObject]? {
-        return ["albumid": albumId as AnyObject]
+    var parameters: [Parameter]? {
+        return [Parameter(Key: "albumid", Value: albumId as AnyObject)]
     }
     
     //, "title": "NULL" as AnyObject, "description": "NULL" as AnyObject
