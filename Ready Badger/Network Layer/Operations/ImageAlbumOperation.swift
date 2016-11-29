@@ -25,7 +25,9 @@ class ImageAlbumOperation: Operation, BackendOperation {
                 }
                 
                 let albumId = dictionary.value(forKey: "albumid") as! String
-                NetworkQueue.shared.addOperation(DamageReportImageOperation(withRequest: DamageReportImageRequest(imageData: (self.request as! ImageAlbumRequest).imageData!, albumId: albumId)))
+                if let imageData = (self.request as! ImageAlbumRequest).imageData {
+                    NetworkQueue.shared.addOperation(DamageReportImageOperation(withRequest: DamageReportImageRequest(imageData: imageData, albumId: albumId)))
+                }
                 
                 NetworkQueue.shared.addOperation(DamageReportOperation(withRequest: DamageReportRequest(withReport: self.damageReport, andAlbumId: albumId)))
                 

@@ -33,7 +33,7 @@ struct ImageAlbumRequest: BackendRequest {
         return nil
     }
     
-    init(withImageData imageData: Data) {
+    init(withImageData imageData: Data?) {
         self.imageData = imageData
     }
     
