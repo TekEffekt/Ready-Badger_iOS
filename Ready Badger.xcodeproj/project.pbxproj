@@ -61,6 +61,7 @@
 		B646B2B51DEC1B1200F57419 /* BoundaryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B646B2B41DEC1B1200F57419 /* BoundaryString.swift */; };
 		B64B83001DED49770011CAA9 /* DataInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B82FF1DED49770011CAA9 /* DataInitialization.swift */; };
 		B64B83041DEDF6720011CAA9 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83031DEDF6720011CAA9 /* Parameter.swift */; };
+		B64B830A1DEE6D560011CAA9 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */; };
 		B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* Bomb Threat.html */; };
 		B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* Extreme Heat.html */; };
 		B655A5DB1DD1510600401155 /* Fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* Fire.html */; };
@@ -133,8 +134,6 @@
 		B6D051401DE2B3C900AB1741 /* IconFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0513F1DE2B3C900AB1741 /* IconFactory.swift */; };
 		B6DA41F11DDA096C00CEB6E5 /* DamageReportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */; };
 		B6DA41F31DDA123B00CEB6E5 /* DamageReportOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */; };
-		B6DA41F61DDA2F4100CEB6E5 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F51DDA2F4100CEB6E5 /* EmptyState.swift */; };
-		B6DA41F81DDA2F5900CEB6E5 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DA41F71DDA2F5900CEB6E5 /* EmptyState.xib */; };
 		B6DA41FA1DDA313A00CEB6E5 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -195,6 +194,7 @@
 		B646B2B41DEC1B1200F57419 /* BoundaryString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundaryString.swift; path = "Ready Badger/Network Layer/BoundaryString.swift"; sourceTree = SOURCE_ROOT; };
 		B64B82FF1DED49770011CAA9 /* DataInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInitialization.swift; sourceTree = "<group>"; };
 		B64B83031DEDF6720011CAA9 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyStateView.swift; path = "Alert Feed/EmptyStateView.swift"; sourceTree = "<group>"; };
 		B655A5CF1DD1510600401155 /* Bomb Threat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Bomb Threat.html"; sourceTree = "<group>"; };
 		B655A5D01DD1510600401155 /* Extreme Heat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Extreme Heat.html"; sourceTree = "<group>"; };
 		B655A5D11DD1510600401155 /* Fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fire.html; sourceTree = "<group>"; };
@@ -267,8 +267,6 @@
 		B6D0513F1DE2B3C900AB1741 /* IconFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFactory.swift; sourceTree = "<group>"; };
 		B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportRequest.swift; sourceTree = "<group>"; };
 		B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportOperation.swift; sourceTree = "<group>"; };
-		B6DA41F51DDA2F4100CEB6E5 /* EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyState.swift; path = EmptyState/EmptyState.swift; sourceTree = "<group>"; };
-		B6DA41F71DDA2F5900CEB6E5 /* EmptyState.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmptyState.xib; path = EmptyState/EmptyState.xib; sourceTree = "<group>"; };
 		B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		F110EB010FF8B96B63B5F0ED /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		FCA8D8F889F1DD002E1685AE /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
@@ -443,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */,
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B64B82FF1DED49770011CAA9 /* DataInitialization.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
@@ -459,7 +458,6 @@
 				B69F76BA1DE4329D000A3166 /* Make A List */,
 				B69F76B31DE4299A000A3166 /* Web Views */,
 				B69F76941DE3FF2D000A3166 /* River Maps */,
-				B6DA41F41DDA2F1C00CEB6E5 /* Empty State */,
 				B630D5781DD911C80061F2F4 /* Disaster Resources */,
 				B612E5E21DD0EB330098D47C /* Disaster Info */,
 				B69004BC1DA9CF8E0001D4F8 /* Storyboards */,
@@ -679,15 +677,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		B6DA41F41DDA2F1C00CEB6E5 /* Empty State */ = {
-			isa = PBXGroup;
-			children = (
-				B6DA41F71DDA2F5900CEB6E5 /* EmptyState.xib */,
-				B6DA41F51DDA2F4100CEB6E5 /* EmptyState.swift */,
-			);
-			name = "Empty State";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -760,7 +749,6 @@
 				B69004C11DA9CF8E0001D4F8 /* Base.storyboard in Resources */,
 				B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */,
 				B655A5E11DD1510600401155 /* Tornado.html in Resources */,
-				B6DA41F81DDA2F5900CEB6E5 /* EmptyState.xib in Resources */,
 				B655A5DD1DD1510600401155 /* Hazardous Material.html in Resources */,
 				B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */,
 				B655A5DE1DD1510600401155 /* Public Health Emergency.html in Resources */,
@@ -840,6 +828,7 @@
 				B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */,
 				B61981081DBDCA2100787101 /* Ownership.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
+				B64B830A1DEE6D560011CAA9 /* EmptyStateView.swift in Sources */,
 				B6D0513E1DE293B300AB1741 /* FeedDataValue.swift in Sources */,
 				B6D051211DDEC2CB00AB1741 /* FeedData.swift in Sources */,
 				B6D051271DDEC35400AB1741 /* WeatherData.swift in Sources */,
@@ -924,7 +913,6 @@
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
 				B6D0512B1DDEC43C00AB1741 /* AirQualityData.swift in Sources */,
 				B630D57C1DD931A60061F2F4 /* DisasterResourceBaseController.swift in Sources */,
-				B6DA41F61DDA2F4100CEB6E5 /* EmptyState.swift in Sources */,
 				B6D051251DDEC30C00AB1741 /* AlertData.swift in Sources */,
 				B630D57E1DD939D80061F2F4 /* DisasterResourceType.swift in Sources */,
 				B62E735F1DA1D21F00C33683 /* AppDelegate.swift in Sources */,

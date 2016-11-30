@@ -15,25 +15,23 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     var alertFeeds: [FeedPageViewController]!
     var menu: HamburgerMenu?
     var loadingIndicator: MBProgressHUD?
-    var emptyState: EmptyState?
+    var emptyState: EmptyStateView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadAlertFeeds()        
-    }
-    
-    private func setEmptyState(on: Bool) {
-        if emptyState == nil {
-            emptyState = Bundle.loadView(fromNib: "EmptyState", withType: EmptyState.self)
-            emptyState?.center = CGPoint(x: view.center.x, y: 180)
-            view.addSubview(emptyState!)
-        }
-        
-        emptyState?.isHidden = !on
+        loadAlertFeeds()
     }
     
     private func downloadFeedData() {
-        guard CountyQueries.getAllSelectedCounties().count > 0 else { return }
+        guard CountyQueries.getAllSelectedCounties().count > 0 else {
+            if emptyState != nil {
+                emptyState.isHidden = false
+            }
+            for vc in self.alertFeeds {
+                vc.feedData = nil
+            }
+            return
+        }
         loadingIndicator = MBProgressHUD.showAdded(to: navigationController!.view, animated: true)
         loadingIndicator?.label.text = "Loading.."
         loadingIndicator?.isUserInteractionEnabled = false
@@ -44,6 +42,9 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
                 for vc in self.alertFeeds {
                     vc.feedData = feedData
                 }
+                
+                self.emptyState.isHidden =
+                    feedData.getSectionNumber(withOrientation: .byCounty) > 0 ? true : false
             })
         }))
     }
@@ -54,10 +55,16 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         downloadFeedData()
     }
     
+    private func setupEmptyState() {
+        emptyState = EmptyStateView(parentView: view, image: #imageLiteral(resourceName: "Empty State"), primaryText: "No County Data", secondaryText: "Hit the settings button to subscribe.")
+        view.addSubview(emptyState)
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         if pageMenu == nil {
             setupPageMenu()
+            setupEmptyState()
         }
     }
     
