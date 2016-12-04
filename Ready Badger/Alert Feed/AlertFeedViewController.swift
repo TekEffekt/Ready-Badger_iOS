@@ -9,7 +9,7 @@
 import UIKit
 import MBProgressHUD
 
-class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
+class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptyState {
     
     var pageMenu: CAPSPageMenu?
     var alertFeeds: [FeedPageViewController]!
@@ -55,16 +55,11 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
         downloadFeedData()
     }
     
-    private func setupEmptyState() {
-        emptyState = EmptyStateView(parentView: view, image: #imageLiteral(resourceName: "Empty State"), primaryText: "No County Data", secondaryText: "Hit the settings button to subscribe.")
-        view.addSubview(emptyState)
-    }
-    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         if pageMenu == nil {
             setupPageMenu()
-            setupEmptyState()
+            setupEmptyState(withPrimaryText: "No County Data", andSecondaryText: "Hit the settings button to subscribe to a county.")
         }
     }
     

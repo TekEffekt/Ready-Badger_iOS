@@ -27,8 +27,6 @@
 		B627DA7E1DAA4389009EC6FB /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */; };
 		B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA7D1DAA4389009EC6FB /* Searchable.swift */; };
 		B627DA811DAAC6A5009EC6FB /* CountySearchLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */; };
-		B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */; };
-		B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */; };
 		B627DA8E1DB47543009EC6FB /* Damage Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */; };
 		B627DA911DB4B093009EC6FB /* DamageReportTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA901DB4B093009EC6FB /* DamageReportTableController.swift */; };
 		B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA921DB4B9B7009EC6FB /* OptionController.swift */; };
@@ -62,6 +60,7 @@
 		B64B83001DED49770011CAA9 /* DataInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B82FF1DED49770011CAA9 /* DataInitialization.swift */; };
 		B64B83041DEDF6720011CAA9 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83031DEDF6720011CAA9 /* Parameter.swift */; };
 		B64B830A1DEE6D560011CAA9 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */; };
+		B64B830C1DF3C2B20011CAA9 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B830B1DF3C2B20011CAA9 /* EmptyState.swift */; };
 		B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* Bomb Threat.html */; };
 		B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* Extreme Heat.html */; };
 		B655A5DB1DD1510600401155 /* Fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* Fire.html */; };
@@ -158,8 +157,6 @@
 		B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
 		B627DA7D1DAA4389009EC6FB /* Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
 		B627DA801DAAC6A5009EC6FB /* CountySearchLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountySearchLogic.swift; path = "County Settings/CountySearchLogic.swift"; sourceTree = "<group>"; };
-		B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherRequest.swift; sourceTree = "<group>"; };
-		B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherOperation.swift; sourceTree = "<group>"; };
 		B627DA8D1DB47543009EC6FB /* Damage Report.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Damage Report.storyboard"; sourceTree = "<group>"; };
 		B627DA901DB4B093009EC6FB /* DamageReportTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DamageReportTableController.swift; path = "Damage Report/DamageReportTableController.swift"; sourceTree = "<group>"; };
 		B627DA921DB4B9B7009EC6FB /* OptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionController.swift; path = "Damage Report/OptionController.swift"; sourceTree = "<group>"; };
@@ -195,6 +192,7 @@
 		B64B82FF1DED49770011CAA9 /* DataInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInitialization.swift; sourceTree = "<group>"; };
 		B64B83031DEDF6720011CAA9 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyStateView.swift; path = "Alert Feed/EmptyStateView.swift"; sourceTree = "<group>"; };
+		B64B830B1DF3C2B20011CAA9 /* EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		B655A5CF1DD1510600401155 /* Bomb Threat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Bomb Threat.html"; sourceTree = "<group>"; };
 		B655A5D01DD1510600401155 /* Extreme Heat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Extreme Heat.html"; sourceTree = "<group>"; };
 		B655A5D11DD1510600401155 /* Fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fire.html; sourceTree = "<group>"; };
@@ -383,6 +381,7 @@
 			children = (
 				B627DA7C1DAA4389009EC6FB /* DefaultTheme.swift */,
 				B627DA7D1DAA4389009EC6FB /* Searchable.swift */,
+				B64B830B1DF3C2B20011CAA9 /* EmptyState.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -544,7 +543,6 @@
 			isa = PBXGroup;
 			children = (
 				B65D261C1DAA086E001A3634 /* AllCountyOperation.swift */,
-				B627DA841DAB51EA009EC6FB /* CurrentWeatherOperation.swift */,
 				B630D5851DD96E320061F2F4 /* DisasterResourceOperation.swift */,
 				B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */,
 				B6D051321DDED18000AB1741 /* FeedOperation.swift */,
@@ -558,7 +556,6 @@
 			isa = PBXGroup;
 			children = (
 				B65D261A1DAA07D0001A3634 /* AllCountyRequest.swift */,
-				B627DA821DAB5016009EC6FB /* CurrentWeatherRequest.swift */,
 				B630D5831DD96C0C0061F2F4 /* DisasterResourceRequest.swift */,
 				B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */,
 				B6D051301DDECFA500AB1741 /* FeedRequest.swift */,
@@ -867,9 +864,7 @@
 				B6DA41F31DDA123B00CEB6E5 /* DamageReportOperation.swift in Sources */,
 				B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */,
 				B6D051231DDEC2EB00AB1741 /* CountyData.swift in Sources */,
-				B627DA851DAB51EA009EC6FB /* CurrentWeatherOperation.swift in Sources */,
 				B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */,
-				B627DA831DAB5016009EC6FB /* CurrentWeatherRequest.swift in Sources */,
 				B630D5861DD96E320061F2F4 /* DisasterResourceOperation.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
 				B6D051361DDED2B000AB1741 /* WeatherTableViewCell.swift in Sources */,
@@ -907,6 +902,7 @@
 				B67510E01DA2271A00E81CB3 /* MenuLinkCell.swift in Sources */,
 				B65D26061DAA0615001A3634 /* BackendRequestJSONExtension.swift in Sources */,
 				B6D0512F1DDECF4C00AB1741 /* FeedParse.swift in Sources */,
+				B64B830C1DF3C2B20011CAA9 /* EmptyState.swift in Sources */,
 				B627DA9B1DB513CA009EC6FB /* DamageReportSegues.swift in Sources */,
 				B6D0513A1DDED2C900AB1741 /* RoadIncidentTableViewCell.swift in Sources */,
 				B630D5881DD97CB40061F2F4 /* DisasterResourceWrite.swift in Sources */,

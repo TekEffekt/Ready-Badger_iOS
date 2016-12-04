@@ -11,7 +11,7 @@ import Foundation
 struct FeedRequest: BackendRequest {
     
     var endpoint: String {
-        return "api/rss"
+        return "api/v0.5/rss"
     }
 
     var headers: [String : String]? {

@@ -14,7 +14,7 @@ struct DamageReportRequest: BackendRequest {
     let albumId: String?
     
     var endpoint: String {
-        return "api/damages"
+        return "api/v0.5/damages"
     }
     
     var headers: [String : String]? {

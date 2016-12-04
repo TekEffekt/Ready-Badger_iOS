@@ -11,7 +11,7 @@ import Foundation
 class BackendConfiguration {
     
     let baseUrl: NSURL
-    static var shared: BackendConfiguration = BackendConfiguration(urlString: "http://131.210.225.175:8080")
+    static var shared: BackendConfiguration = BackendConfiguration(urlString: "http://readybadger.org")
     
     init(urlString: String) {
         baseUrl = NSURL(string: urlString) ?? NSURL()

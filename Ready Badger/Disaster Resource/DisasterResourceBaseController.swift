@@ -8,13 +8,14 @@
 
 import UIKit
 
-class DisasterResourceBaseController: UIViewController, MenuItem {
+class DisasterResourceBaseController: UIViewController, MenuItem, EmptyState {
 
     var menu: HamburgerMenu?
     var pageMenu: CAPSPageMenu?
     var resourcePages: [DisasterResourcePageController] {
         var pages: [DisasterResourcePageController] = []
         let resources = DisasterResourceQuery.getResources()
+        emptyState.isHidden = resources.count > 0 ? true : false
         for type in DisasterResourceType.getAll() {
             let page = storyboard?.instantiateViewController(withIdentifier: "Resource Page") as! DisasterResourcePageController
             let typeData = resources[type.rawValue]
@@ -28,10 +29,12 @@ class DisasterResourceBaseController: UIViewController, MenuItem {
         }
         return pages
     }
+    var emptyState: EmptyStateView!
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         if pageMenu == nil {
+            setupEmptyState(withPrimaryText: "No Disaster Resources", andSecondaryText: "Subscribe to a county to get disaster resources for that county.")
             setupPageMenu()
         }
     }
@@ -56,8 +59,7 @@ class DisasterResourceBaseController: UIViewController, MenuItem {
         pageMenu!.view.backgroundColor = UIColor.clear
         
         self.edgesForExtendedLayout = UIRectEdge()
-        self.view.addSubview(pageMenu!.view)
-        view.addSubview(pageMenu!.view)
+        view.insertSubview(pageMenu!.view, belowSubview: emptyState)
     }
 
 }
