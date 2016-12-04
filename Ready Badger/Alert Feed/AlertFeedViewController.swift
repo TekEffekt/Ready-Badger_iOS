@@ -80,7 +80,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
     
     private func setupPageMenu() {
         let parameters: [CAPSPageMenuOption] = [
-            .menuItemSeparatorWidth(4.3),
+            .menuItemSeparatorWidth(4),
             .useMenuLikeSegmentedControl(true),
             .menuItemSeparatorPercentageHeight(0.1),
             .scrollMenuBackgroundColor(UIColor.white),
@@ -88,7 +88,8 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem {
             .selectionIndicatorColor(UIColor.tint()),
             .menuItemFont(UIFont.systemFont(ofSize: 14.6, weight: UIFontWeightMedium)),
             .menuHeight(40),
-            .menuItemSeparatorColor(#colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1))
+            .menuItemSeparatorColor(#colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1)),
+            .menuItemSeparatorRoundEdges(true)
         ]
         
         pageMenu = CAPSPageMenu(viewControllers: alertFeeds,
