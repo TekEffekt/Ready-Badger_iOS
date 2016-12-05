@@ -17,7 +17,6 @@ class MakeAListViewController: UITableViewController, MenuItem, DefaultTheme {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,27 +33,10 @@ class MakeAListViewController: UITableViewController, MenuItem, DefaultTheme {
         performSegue(withIdentifier: "Show List Detail", sender: self)
     }
     
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-        
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        tableView.beginUpdates()
-        tableView.deleteRows(at: [indexPath], with: .fade)
-        tableView.endUpdates()
-        let list = (tableView.cellForRow(at: indexPath) as! ListCell).list
-        dataSource.delete(list: list!)
-        tableView.reloadData()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let listDetailVc = segue.destination as? ListDetailController {
             listDetailVc.list = chosenList!
         }
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
     }
 
 }

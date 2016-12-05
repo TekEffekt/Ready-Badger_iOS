@@ -54,4 +54,16 @@ class ListItemDatasource: NSObject, UITableViewDataSource {
         reloadData()
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let listItem = (tableView.cellForRow(at: indexPath) as! ListItemCell).listItem
+        delete(listItem: listItem!, fromList: list)
+        tableView.beginUpdates()
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        tableView.endUpdates()
+    }
+    
 }
