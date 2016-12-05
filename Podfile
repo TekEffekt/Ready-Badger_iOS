@@ -10,7 +10,6 @@ pod 'JTHamburgerButton'
 pod 'RealmSwift'
 pod 'Validator'
 pod 'MBProgressHUD', '~> 1.0.0'
-pod 'Segmentio', '~> 2.0'
 pod 'AEXML'
 pod 'SwiftyJSON'
 end

@@ -39,22 +39,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Segmentio-Segmentio.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Segmentio.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SwiftyJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>TGCameraViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,7 +57,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2CB8A0AA819AEA2376A4E96798A25C2E</key>
+		<key>41E66F33D359CCF6CF313E8F111DB1BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,22 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>560C72C26660A112C2CC7C6BC7D5E111</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>562E6B62A6CF2C2512D5485BCAA1CE0C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>700FD4BBF518E874E2DA0FE0FB311B88</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7D014C40327243F9035FDCFA14630F79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,22 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC5337BF9ED7481DBA3268D710CC8743</key>
+		<key>ABB69060D9199953FCC1664C1CF62F67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF7EEEA43E3D6F17A50489122990D295</key>
+		<key>BD8FABA9B054FCCE7D30FDC03F611454</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EC692C3199C65751E000610BF0CD1F4B</key>
+		<key>CBA60CA054B8068C03514672FAB52122</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F6CFF232BD68B482BD9CC369BCA8B3FC</key>
+		<key>F8C5755F01F62F83169DF79A77921DFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

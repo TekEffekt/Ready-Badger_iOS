@@ -61,6 +61,18 @@
 		B64B83041DEDF6720011CAA9 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83031DEDF6720011CAA9 /* Parameter.swift */; };
 		B64B830A1DEE6D560011CAA9 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */; };
 		B64B830C1DF3C2B20011CAA9 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B830B1DF3C2B20011CAA9 /* EmptyState.swift */; };
+		B64B830E1DF3E2660011CAA9 /* MakeAListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B830D1DF3E2660011CAA9 /* MakeAListViewController.swift */; };
+		B64B83101DF3EE360011CAA9 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B830F1DF3EE360011CAA9 /* ListItem.swift */; };
+		B64B83121DF3EED50011CAA9 /* ListItemQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83111DF3EED50011CAA9 /* ListItemQueries.swift */; };
+		B64B83141DF3F22A0011CAA9 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83131DF3F22A0011CAA9 /* ListItemCell.swift */; };
+		B64B83181DF3F7AD0011CAA9 /* EditListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83171DF3F7AD0011CAA9 /* EditListController.swift */; };
+		B64B831A1DF403EA0011CAA9 /* ListItemWrites.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83191DF403EA0011CAA9 /* ListItemWrites.swift */; };
+		B64B831C1DF413160011CAA9 /* ReadyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B831B1DF413160011CAA9 /* ReadyList.swift */; };
+		B64B831E1DF41E520011CAA9 /* ListDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B831D1DF41E520011CAA9 /* ListDetailController.swift */; };
+		B64B83201DF41EBB0011CAA9 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B831F1DF41EBB0011CAA9 /* ListCell.swift */; };
+		B64B83271DF41EFA0011CAA9 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83251DF41EFA0011CAA9 /* ListDataSource.swift */; };
+		B64B83281DF41EFA0011CAA9 /* ListItemDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83261DF41EFA0011CAA9 /* ListItemDatasource.swift */; };
+		B64B832A1DF41F270011CAA9 /* EditListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B83291DF41F270011CAA9 /* EditListItemController.swift */; };
 		B655A5D91DD1510600401155 /* Bomb Threat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5CF1DD1510600401155 /* Bomb Threat.html */; };
 		B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D01DD1510600401155 /* Extreme Heat.html */; };
 		B655A5DB1DD1510600401155 /* Fire.html in Resources */ = {isa = PBXBuildFile; fileRef = B655A5D11DD1510600401155 /* Fire.html */; };
@@ -193,6 +205,18 @@
 		B64B83031DEDF6720011CAA9 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyStateView.swift; path = "Alert Feed/EmptyStateView.swift"; sourceTree = "<group>"; };
 		B64B830B1DF3C2B20011CAA9 /* EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		B64B830D1DF3E2660011CAA9 /* MakeAListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeAListViewController.swift; sourceTree = "<group>"; };
+		B64B830F1DF3EE360011CAA9 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		B64B83111DF3EED50011CAA9 /* ListItemQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemQueries.swift; sourceTree = "<group>"; };
+		B64B83131DF3F22A0011CAA9 /* ListItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		B64B83171DF3F7AD0011CAA9 /* EditListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListController.swift; sourceTree = "<group>"; };
+		B64B83191DF403EA0011CAA9 /* ListItemWrites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemWrites.swift; sourceTree = "<group>"; };
+		B64B831B1DF413160011CAA9 /* ReadyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadyList.swift; sourceTree = "<group>"; };
+		B64B831D1DF41E520011CAA9 /* ListDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailController.swift; sourceTree = "<group>"; };
+		B64B831F1DF41EBB0011CAA9 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		B64B83251DF41EFA0011CAA9 /* ListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
+		B64B83261DF41EFA0011CAA9 /* ListItemDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemDatasource.swift; sourceTree = "<group>"; };
+		B64B83291DF41F270011CAA9 /* EditListItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListItemController.swift; sourceTree = "<group>"; };
 		B655A5CF1DD1510600401155 /* Bomb Threat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Bomb Threat.html"; sourceTree = "<group>"; };
 		B655A5D01DD1510600401155 /* Extreme Heat.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Extreme Heat.html"; sourceTree = "<group>"; };
 		B655A5D11DD1510600401155 /* Fire.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Fire.html; sourceTree = "<group>"; };
@@ -351,6 +375,8 @@
 			children = (
 				B627DA6A1DAA25B7009EC6FB /* County.swift */,
 				B630D57F1DD93D0B0061F2F4 /* DisasterResource.swift */,
+				B64B830F1DF3EE360011CAA9 /* ListItem.swift */,
+				B64B831B1DF413160011CAA9 /* ReadyList.swift */,
 			);
 			name = Objects;
 			path = Persistence/Objects;
@@ -361,6 +387,7 @@
 			children = (
 				B627DA701DAA32B4009EC6FB /* CountyQueries.swift */,
 				B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */,
+				B64B83111DF3EED50011CAA9 /* ListItemQueries.swift */,
 			);
 			name = Queries;
 			path = Persistence/Queries;
@@ -371,6 +398,7 @@
 			children = (
 				B627DA6E1DAA2660009EC6FB /* CountyWrites.swift */,
 				B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */,
+				B64B83191DF403EA0011CAA9 /* ListItemWrites.swift */,
 			);
 			name = Writes;
 			path = Persistence/Writes;
@@ -406,7 +434,6 @@
 		B627DA8F1DB4B06A009EC6FB /* Damage Report */ = {
 			isa = PBXGroup;
 			children = (
-				B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */,
 				B627DA901DB4B093009EC6FB /* DamageReportTableController.swift */,
 				B6469E871DD04F4A002B109B /* DescriptionViewController.swift */,
 				B627DA921DB4B9B7009EC6FB /* OptionController.swift */,
@@ -450,6 +477,7 @@
 				B69F76A41DE3FF36000A3166 /* Location.swift */,
 				B69F76A51DE3FF36000A3166 /* LocationManager.swift */,
 				B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */,
+				B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */,
 				B65D25E91DAA0615001A3634 /* Network Layer */,
 				B67510E91DA2389B00E81CB3 /* Alert Feed */,
 				B627DA8F1DB4B06A009EC6FB /* Damage Report */,
@@ -491,6 +519,15 @@
 			);
 			name = Cells;
 			path = "Damage Report/Cells";
+			sourceTree = "<group>";
+		};
+		B64B83241DF41EFA0011CAA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B64B83251DF41EFA0011CAA9 /* ListDataSource.swift */,
+				B64B83261DF41EFA0011CAA9 /* ListItemDatasource.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B655A5CE1DD1510600401155 /* Disaster HTML */ = {
@@ -659,6 +696,13 @@
 		B69F76BA1DE4329D000A3166 /* Make A List */ = {
 			isa = PBXGroup;
 			children = (
+				B64B830D1DF3E2660011CAA9 /* MakeAListViewController.swift */,
+				B64B831D1DF41E520011CAA9 /* ListDetailController.swift */,
+				B64B83171DF3F7AD0011CAA9 /* EditListController.swift */,
+				B64B83291DF41F270011CAA9 /* EditListItemController.swift */,
+				B64B831F1DF41EBB0011CAA9 /* ListCell.swift */,
+				B64B83131DF3F22A0011CAA9 /* ListItemCell.swift */,
+				B64B83241DF41EFA0011CAA9 /* Model */,
 			);
 			path = "Make A List";
 			sourceTree = "<group>";
@@ -822,6 +866,7 @@
 				B65D26041DAA0615001A3634 /* BackendOperation.swift in Sources */,
 				B69F769E1DE3FF2D000A3166 /* CalloutAnnotationView.swift in Sources */,
 				B69F76A71DE3FF36000A3166 /* Keys.swift in Sources */,
+				B64B831A1DF403EA0011CAA9 /* ListItemWrites.swift in Sources */,
 				B65D260B1DAA0615001A3634 /* BackendService.swift in Sources */,
 				B61981081DBDCA2100787101 /* Ownership.swift in Sources */,
 				B67510E11DA2271A00E81CB3 /* MenuTableViewController.swift in Sources */,
@@ -829,12 +874,15 @@
 				B6D0513E1DE293B300AB1741 /* FeedDataValue.swift in Sources */,
 				B6D051211DDEC2CB00AB1741 /* FeedData.swift in Sources */,
 				B6D051271DDEC35400AB1741 /* WeatherData.swift in Sources */,
+				B64B83181DF3F7AD0011CAA9 /* EditListController.swift in Sources */,
 				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
 				B6DA41F11DDA096C00CEB6E5 /* DamageReportRequest.swift in Sources */,
 				B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */,
 				B69F76A81DE3FF36000A3166 /* Location.swift in Sources */,
+				B64B83121DF3EED50011CAA9 /* ListItemQueries.swift in Sources */,
 				B61981041DBDBC7800787101 /* DisasterType.swift in Sources */,
 				B69F76A21DE3FF2D000A3166 /* RiversKMLParser.swift in Sources */,
+				B64B83281DF41EFA0011CAA9 /* ListItemDatasource.swift in Sources */,
 				B6D051401DE2B3C900AB1741 /* IconFactory.swift in Sources */,
 				B627DA911DB4B093009EC6FB /* DamageReportTableController.swift in Sources */,
 				B627DA711DAA32B4009EC6FB /* CountyQueries.swift in Sources */,
@@ -847,6 +895,7 @@
 				B6D0512D1DDEC6D300AB1741 /* FeedOrientation.swift in Sources */,
 				B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */,
 				B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */,
+				B64B831E1DF41E520011CAA9 /* ListDetailController.swift in Sources */,
 				B627DA9D1DB51EDC009EC6FB /* FormTableViewController.swift in Sources */,
 				B627DA811DAAC6A5009EC6FB /* CountySearchLogic.swift in Sources */,
 				B65D261B1DAA07D0001A3634 /* AllCountyRequest.swift in Sources */,
@@ -859,12 +908,15 @@
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */,
 				B69F76A91DE3FF36000A3166 /* LocationManager.swift in Sources */,
+				B64B83101DF3EE360011CAA9 /* ListItem.swift in Sources */,
+				B64B83141DF3F22A0011CAA9 /* ListItemCell.swift in Sources */,
 				B61981061DBDC5C700787101 /* State.swift in Sources */,
 				B67510EF1DA23DD500E81CB3 /* UIColorAppColors.swift in Sources */,
 				B6DA41F31DDA123B00CEB6E5 /* DamageReportOperation.swift in Sources */,
 				B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */,
 				B6D051231DDEC2EB00AB1741 /* CountyData.swift in Sources */,
 				B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */,
+				B64B830E1DF3E2660011CAA9 /* MakeAListViewController.swift in Sources */,
 				B630D5861DD96E320061F2F4 /* DisasterResourceOperation.swift in Sources */,
 				B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */,
 				B6D051361DDED2B000AB1741 /* WeatherTableViewCell.swift in Sources */,
@@ -876,6 +928,8 @@
 				B612E5DF1DD0D89B0098D47C /* PictureCell.swift in Sources */,
 				B630D57A1DD912050061F2F4 /* DisasterResourcePageController.swift in Sources */,
 				B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */,
+				B64B83271DF41EFA0011CAA9 /* ListDataSource.swift in Sources */,
+				B64B831C1DF413160011CAA9 /* ReadyList.swift in Sources */,
 				B612E5E41DD0EB4C0098D47C /* DisasterInfoViewController.swift in Sources */,
 				B6DA41FA1DDA313A00CEB6E5 /* BundleExtension.swift in Sources */,
 				B6D051311DDECFA500AB1741 /* FeedRequest.swift in Sources */,
@@ -883,6 +937,7 @@
 				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,
 				B69F769D1DE3FF2D000A3166 /* CalloutAnnotation.swift in Sources */,
 				B630D5841DD96C0C0061F2F4 /* DisasterResourceRequest.swift in Sources */,
+				B64B832A1DF41F270011CAA9 /* EditListItemController.swift in Sources */,
 				B627DA7F1DAA4389009EC6FB /* Searchable.swift in Sources */,
 				B646B2B51DEC1B1200F57419 /* BoundaryString.swift in Sources */,
 				B646B2B31DEC101500F57419 /* DamageReportImageOperation.swift in Sources */,
@@ -907,6 +962,7 @@
 				B6D0513A1DDED2C900AB1741 /* RoadIncidentTableViewCell.swift in Sources */,
 				B630D5881DD97CB40061F2F4 /* DisasterResourceWrite.swift in Sources */,
 				B67510DF1DA2271A00E81CB3 /* MenuItem.swift in Sources */,
+				B64B83201DF41EBB0011CAA9 /* ListCell.swift in Sources */,
 				B6D0512B1DDEC43C00AB1741 /* AirQualityData.swift in Sources */,
 				B630D57C1DD931A60061F2F4 /* DisasterResourceBaseController.swift in Sources */,
 				B6D051251DDEC30C00AB1741 /* AlertData.swift in Sources */,
