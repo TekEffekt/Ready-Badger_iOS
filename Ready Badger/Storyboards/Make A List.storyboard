@@ -397,10 +397,11 @@
                                                     <rect key="frame" x="8" y="8" width="359" height="63"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.85882352941176465" green="0.29803921568627451" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <connections>
-                                                        <outlet property="delegate" destination="5aa-Ol-mkb" id="O0g-SL-dMC"/>
+                                                        <outlet property="delegate" destination="5aa-Ol-mkb" id="ziK-Pj-OyM"/>
                                                     </connections>
                                                 </textView>
                                             </subviews>
@@ -433,7 +434,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionTextView" destination="Fa6-sB-y5V" id="B4a-Om-qqO"/>
+                        <outlet property="descriptionTextView" destination="Fa6-sB-y5V" id="p6j-og-RgU"/>
                         <outlet property="saveButton" destination="LHk-7F-335" id="2Dy-Ux-iEz"/>
                         <outlet property="titleLabel" destination="VAM-9z-iwe" id="57J-SO-tBe"/>
                     </connections>

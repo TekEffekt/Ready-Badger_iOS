@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FormTableViewController: UITableViewController, UITextFieldDelegate {
+class FormTableViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate {
     // MARK: Properties
     var amountMoved: CGFloat = 0
     var currentTextField: UITextField?
@@ -81,6 +81,10 @@ class FormTableViewController: UITableViewController, UITextFieldDelegate {
         }
         
         amountMoved = 0
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        return true
     }
     
     // MARK: Deinit

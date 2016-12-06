@@ -16,6 +16,7 @@ class EditListItemController: FormTableViewController, DefaultTheme {
     var listItem: ListItem?
     var list: ReadyList!
     var isNew: Bool = false
+    var descriptionEmpty = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +36,16 @@ class EditListItemController: FormTableViewController, DefaultTheme {
         setupTextFields()
     }
     
-    func setupTextFields() {
+    private func setupTextFields() {
         if listItem!.name.characters.count > 0 {
             titleLabel.text = listItem!.name
         }
         if listItem!.itemDescription.characters.count > 0 {
             descriptionTextView.text = listItem!.itemDescription
+            descriptionEmpty = false
+            descriptionTextView.textColor = .black
+        } else {
+            descriptionTextView.textColor = .lightGray
         }
     }
     
@@ -49,11 +54,35 @@ class EditListItemController: FormTableViewController, DefaultTheme {
         let newString = (userEnteredString! as NSString).replacingCharacters(in: range, with: string)
         if titleLabel === textField {
             ListItemWrites.update(item: listItem!, withName: newString)
-        } else if descriptionTextView === textField {
-            ListItemWrites.update(item: listItem!, withDescription: newString)
         }
-        
         return true
+    }
+    
+    override func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let userEnteredString = textView.text
+        let newString = (userEnteredString! as NSString).replacingCharacters(in: range, with: text)
+        if descriptionTextView === textView {
+            updateDescription(withString: text, andNewString: newString)
+        }
+        return true
+    }
+    
+    private func updateDescription(withString string: String, andNewString newString: String) {
+        if descriptionEmpty {
+            descriptionTextView.text = string
+            descriptionEmpty = false
+            ListItemWrites.update(item: listItem!, withDescription: "")
+            descriptionTextView.textColor = .black
+        } else {
+            if newString.characters.count == 0 {
+                descriptionTextView.text = "Description goes here..."
+                descriptionTextView.textColor = .lightGray
+                descriptionEmpty = true
+                ListItemWrites.update(item: listItem!, withDescription: "")
+            } else {
+                ListItemWrites.update(item: listItem!, withDescription: newString)
+            }
+        }
     }
     
     @IBAction func closePressed(_ sender: UIBarButtonItem) {
