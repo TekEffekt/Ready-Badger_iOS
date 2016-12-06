@@ -76,14 +76,18 @@
             </objects>
             <point key="canvasLocation" x="-410.39999999999998" y="68.815592203898049"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="VrL-iu-17Z">
             <objects>
-                <navigationController id="XVt-wY-UPX" sceneMemberID="viewController">
+                <navigationController id="XVt-wY-UPX" customClass="CustomNavigationController" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="rsy-67-bXc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.85882352941176465" green="0.29803921568627451" blue="0.24705882352941178" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="m2j-j1-vMz" kind="relationship" relationship="rootViewController" id="Jdh-UP-ISo"/>
@@ -317,14 +321,18 @@
             </objects>
             <point key="canvasLocation" x="1177" y="825"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="riO-NU-NW3">
             <objects>
-                <navigationController id="2ST-b5-De3" sceneMemberID="viewController">
+                <navigationController id="2ST-b5-De3" customClass="CustomNavigationController" customModule="Ready_Badger" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="J9l-Nu-pIn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.85882352939999995" green="0.29803921570000003" blue="0.2470588235" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="5aa-Ol-mkb" kind="relationship" relationship="rootViewController" id="sHb-mo-OMl"/>

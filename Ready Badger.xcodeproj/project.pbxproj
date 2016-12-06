@@ -126,6 +126,7 @@
 		B69F76B91DE431F2000A3166 /* Make A List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69F76B81DE431F2000A3166 /* Make A List.storyboard */; };
 		B6AA49CC1DD82E1000905DCA /* DisasterInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */; };
 		B6AA49CE1DD8328600905DCA /* DisasterInfoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */; };
+		B6AB17D11DF63ACD00F21432 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AB17D01DF63ACD00F21432 /* CustomNavigationController.swift */; };
 		B6BDF99E1DC7F5E800F5AD48 /* DamageReportInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */; };
 		B6D051211DDEC2CB00AB1741 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D051201DDEC2CB00AB1741 /* FeedData.swift */; };
 		B6D051231DDEC2EB00AB1741 /* CountyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D051221DDEC2EB00AB1741 /* CountyData.swift */; };
@@ -270,6 +271,7 @@
 		B69F76B81DE431F2000A3166 /* Make A List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Make A List.storyboard"; sourceTree = "<group>"; };
 		B6AA49CB1DD82E1000905DCA /* DisasterInfoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoType.swift; sourceTree = "<group>"; };
 		B6AA49CD1DD8328600905DCA /* DisasterInfoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterInfoPageController.swift; sourceTree = "<group>"; };
+		B6AB17D01DF63ACD00F21432 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		B6BDF99D1DC7F5E800F5AD48 /* DamageReportInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportInputValidator.swift; sourceTree = "<group>"; };
 		B6D051201DDEC2CB00AB1741 /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
 		B6D051221DDEC2EB00AB1741 /* CountyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyData.swift; sourceTree = "<group>"; };
@@ -467,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B6AB17D01DF63ACD00F21432 /* CustomNavigationController.swift */,
 				B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */,
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B64B82FF1DED49770011CAA9 /* DataInitialization.swift */,
@@ -873,6 +876,7 @@
 				B64B830A1DEE6D560011CAA9 /* EmptyStateView.swift in Sources */,
 				B6D0513E1DE293B300AB1741 /* FeedDataValue.swift in Sources */,
 				B6D051211DDEC2CB00AB1741 /* FeedData.swift in Sources */,
+				B6AB17D11DF63ACD00F21432 /* CustomNavigationController.swift in Sources */,
 				B6D051271DDEC35400AB1741 /* WeatherData.swift in Sources */,
 				B64B83181DF3F7AD0011CAA9 /* EditListController.swift in Sources */,
 				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
