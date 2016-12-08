@@ -1,0 +1,46 @@
+body {
+    color: #282828;
+    background: #ffffff;
+    font-family:Helvetica;
+    margin-left: 10px;
+}
+h1 {
+    color: #282828;
+    font-family:Helvetica;
+    font-size: 18pt;
+}
+h2 {
+    color: #282828;
+    font-family:Helvetica;
+    font-size: 13pt;
+}
+
+h2 {
+    margin-bottom: 2px;
+}
+
+h3 {
+    color: #282828;
+    font-family:Helvetica;
+    font-size: 16pt;
+    justify: center;
+}
+
+h4 {
+    color: #282828;
+    font-family:Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+img{
+    padding-left:0;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+li {
+    margin-bottom: 5px;
+    margin-left: -10px;
+}

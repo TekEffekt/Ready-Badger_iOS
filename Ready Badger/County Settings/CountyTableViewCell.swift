@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OneSignal
 
 protocol CountyCellDelegate: class {
     func countySwitchTurned(on: Bool, withCounty county: County)
@@ -21,6 +22,12 @@ class CountyTableViewCell: UITableViewCell {
     
     @IBAction func countySwitchTapped(_ sender: UISwitch) {
         CountyWrites.turn(county: county, toSelected: sender.isOn)
+        if sender.isOn {
+            print(county.name)
+            OneSignal.sendTag(county.name, value: "1")
+        } else {
+            OneSignal.deleteTag(county.name)
+        }
     }
 
 }

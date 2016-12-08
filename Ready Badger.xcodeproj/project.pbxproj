@@ -45,6 +45,11 @@
 		B630D5881DD97CB40061F2F4 /* DisasterResourceWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */; };
 		B630D58A1DD981110061F2F4 /* DisasterResourceQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */; };
 		B630D58C1DD989120061F2F4 /* DisasterResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */; };
+		B63BCAE41DF8F312002765D9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BCAE31DF8F312002765D9 /* AboutUsViewController.swift */; };
+		B63BCAE91DF8F325002765D9 /* aboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = B63BCAE61DF8F325002765D9 /* aboutUs.html */; };
+		B63BCAEA1DF8F325002765D9 /* EMERGENCY.png in Resources */ = {isa = PBXBuildFile; fileRef = B63BCAE71DF8F325002765D9 /* EMERGENCY.png */; };
+		B63BCAEB1DF8F325002765D9 /* formatting2.css in Resources */ = {isa = PBXBuildFile; fileRef = B63BCAE81DF8F325002765D9 /* formatting2.css */; };
+		B63BCAED1DF8F3DE002765D9 /* About Us.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BCAEC1DF8F3DE002765D9 /* About Us.storyboard */; };
 		B63BFF091DEA5786004C2398 /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF081DEA5786004C2398 /* AlertFactory.swift */; };
 		B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E871DD04F4A002B109B /* DescriptionViewController.swift */; };
 		B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */; };
@@ -190,6 +195,11 @@
 		B630D5871DD97CB40061F2F4 /* DisasterResourceWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceWrite.swift; sourceTree = "<group>"; };
 		B630D5891DD981110061F2F4 /* DisasterResourceQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisasterResourceQuery.swift; sourceTree = "<group>"; };
 		B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisasterResourceCell.swift; path = "Disaster Resource/DisasterResourceCell.swift"; sourceTree = "<group>"; };
+		B63BCAE31DF8F312002765D9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutUsViewController.swift; path = "About Us/AboutUsViewController.swift"; sourceTree = "<group>"; };
+		B63BCAE61DF8F325002765D9 /* aboutUs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = aboutUs.html; sourceTree = "<group>"; };
+		B63BCAE71DF8F325002765D9 /* EMERGENCY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMERGENCY.png; sourceTree = "<group>"; };
+		B63BCAE81DF8F325002765D9 /* formatting2.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = formatting2.css; sourceTree = "<group>"; };
+		B63BCAEC1DF8F3DE002765D9 /* About Us.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "About Us.storyboard"; sourceTree = "<group>"; };
 		B63BFF081DEA5786004C2398 /* AlertFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertFactory.swift; path = "Damage Report/AlertFactory.swift"; sourceTree = "<group>"; };
 		B6469E871DD04F4A002B109B /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = "Damage Report/DescriptionViewController.swift"; sourceTree = "<group>"; };
 		B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasementFloodedCell.swift; sourceTree = "<group>"; };
@@ -292,6 +302,7 @@
 		B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportRequest.swift; sourceTree = "<group>"; };
 		B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportOperation.swift; sourceTree = "<group>"; };
 		B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		B6EECDA21DF8A4DE006408BE /* Ready Badger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ready Badger.entitlements"; sourceTree = "<group>"; };
 		F110EB010FF8B96B63B5F0ED /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		FCA8D8F889F1DD002E1685AE /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -481,6 +492,8 @@
 				B69F76A51DE3FF36000A3166 /* LocationManager.swift */,
 				B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */,
 				B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */,
+				B6EECDA21DF8A4DE006408BE /* Ready Badger.entitlements */,
+				B6EECDA31DF8F0E9006408BE /* About Us */,
 				B65D25E91DAA0615001A3634 /* Network Layer */,
 				B67510E91DA2389B00E81CB3 /* Alert Feed */,
 				B627DA8F1DB4B06A009EC6FB /* Damage Report */,
@@ -508,6 +521,17 @@
 				B630D58B1DD989120061F2F4 /* DisasterResourceCell.swift */,
 			);
 			name = "Disaster Resources";
+			sourceTree = "<group>";
+		};
+		B63BCAE51DF8F325002765D9 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				B63BCAE61DF8F325002765D9 /* aboutUs.html */,
+				B63BCAE71DF8F325002765D9 /* EMERGENCY.png */,
+				B63BCAE81DF8F325002765D9 /* formatting2.css */,
+			);
+			name = HTML;
+			path = "About Us/HTML";
 			sourceTree = "<group>";
 		};
 		B6469E891DD04F72002B109B /* Cells */ = {
@@ -658,6 +682,7 @@
 				B69F76AF1DE428AA000A3166 /* Basic Kit.storyboard */,
 				B69F76B11DE428B9000A3166 /* Plan Ahead.storyboard */,
 				B69F76B81DE431F2000A3166 /* Make A List.storyboard */,
+				B63BCAEC1DF8F3DE002765D9 /* About Us.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -721,6 +746,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		B6EECDA31DF8F0E9006408BE /* About Us */ = {
+			isa = PBXGroup;
+			children = (
+				B63BCAE51DF8F325002765D9 /* HTML */,
+				B63BCAE31DF8F312002765D9 /* AboutUsViewController.swift */,
+			);
+			name = "About Us";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -758,6 +792,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2T9JP2ZYVK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -784,8 +826,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BCAE91DF8F325002765D9 /* aboutUs.html in Resources */,
 				B69F76B21DE428B9000A3166 /* Plan Ahead.storyboard in Resources */,
 				B69004C61DA9D2700001D4F8 /* County Settings.storyboard in Resources */,
+				B63BCAEB1DF8F325002765D9 /* formatting2.css in Resources */,
+				B63BCAED1DF8F3DE002765D9 /* About Us.storyboard in Resources */,
 				B655A5DC1DD1510600401155 /* Flood.html in Resources */,
 				B630D5771DD8568C0061F2F4 /* Disaster Resources.storyboard in Resources */,
 				B627DA8E1DB47543009EC6FB /* Damage Report.storyboard in Resources */,
@@ -801,6 +846,7 @@
 				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
 				B655A5DB1DD1510600401155 /* Fire.html in Resources */,
 				B69F76B01DE428AA000A3166 /* Basic Kit.storyboard in Resources */,
+				B63BCAEA1DF8F325002765D9 /* EMERGENCY.png in Resources */,
 				B655A5E01DD1510600401155 /* Thunderstorm.html in Resources */,
 				B69F76AC1DE3FF86000A3166 /* River Map.storyboard in Resources */,
 				B612E5E11DD0EB0E0098D47C /* Disaster Info.storyboard in Resources */,
@@ -896,6 +942,7 @@
 				B67510EB1DA238BD00E81CB3 /* AlertFeedViewController.swift in Sources */,
 				B619810C1DBDCF8B00787101 /* Answer.swift in Sources */,
 				B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */,
+				B63BCAE41DF8F312002765D9 /* AboutUsViewController.swift in Sources */,
 				B6D0512D1DDEC6D300AB1741 /* FeedOrientation.swift in Sources */,
 				B69004C91DA9D8010001D4F8 /* CountySettingsViewController.swift in Sources */,
 				B67510DE1DA2271A00E81CB3 /* HamburgerMenu.swift in Sources */,
@@ -1083,11 +1130,12 @@
 			baseConfigurationReference = F110EB010FF8B96B63B5F0ED /* Pods-Ready Badger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ready Badger/Ready Badger.entitlements";
 				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
 				INFOPLIST_FILE = "Ready Badger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uwp.edu.appFactory.Ready-Badger";
+				PRODUCT_BUNDLE_IDENTIFIER = UWPAppFactory.ReadyBadgerWisconsin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1098,11 +1146,12 @@
 			baseConfigurationReference = FCA8D8F889F1DD002E1685AE /* Pods-Ready Badger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ready Badger/Ready Badger.entitlements";
 				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
 				INFOPLIST_FILE = "Ready Badger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uwp.edu.appFactory.Ready-Badger";
+				PRODUCT_BUNDLE_IDENTIFIER = UWPAppFactory.ReadyBadgerWisconsin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
