@@ -13,18 +13,12 @@ class AboutUsViewController: UIViewController, MenuItem, DefaultTheme {
     @IBOutlet weak var webView: UIWebView!
     var menu: HamburgerMenu?
     
-    // Stuff said local html file into the webview (called when the view is awoken - see awakeFromNib())
-    func loadAddressURL(){
-        
-    }
-
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()
-        
-        let urlpath = Bundle.main.path(forResource: "aboutUs", ofType: "html");
-        let requesturl = URL(string: urlpath!)
+        let urlPath = NSString(string: Bundle.main.path(forResource: "aboutUs", ofType: "html")!)
+        let escapedString = urlPath.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
+        let requesturl = URL(string: escapedString!)
         let request = URLRequest(url: requesturl!)
         webView.loadRequest(request)
     }
