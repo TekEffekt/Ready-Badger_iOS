@@ -41,7 +41,7 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
             case .PreparedSection:
                 return 4
             case .RespondSection:
-                return 4
+                return 3
             case .MonitorSection:
                 return 2
             case .ShelterSection:
