@@ -12,6 +12,8 @@ pod 'MBProgressHUD', '~> 1.0.0'
 pod 'AEXML'
 pod 'SwiftyJSON'
 pod 'LGSideMenuController'
+pod 'Firebase/Core'
+pod 'Firebase/Crash'
 end
 
 post_install do |installer|

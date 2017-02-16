@@ -68,7 +68,7 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
         if let cellTitle = cellTitle {
             cell.countyLabel.text = cellTitle
         }
-        cell.roadIcon.image = IconFactory.getRoadIcon(text: data.severity)
+        cell.roadIcon.image = IconFactory.getRoadIcon(text: data.severity ?? "good")
         cell.titleLabel.text = data.title
         cell.descriptionLabel.text = "\(data.roadwayName), \(data.location), \(data.travelDirection)"
         cell.lanesAffectedLabel.text = "Lanes Affected: \(data.lanesAffected)"

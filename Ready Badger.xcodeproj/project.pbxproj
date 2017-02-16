@@ -153,6 +153,8 @@
 		B6DA41F11DDA096C00CEB6E5 /* DamageReportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F01DDA096C00CEB6E5 /* DamageReportRequest.swift */; };
 		B6DA41F31DDA123B00CEB6E5 /* DamageReportOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */; };
 		B6DA41FA1DDA313A00CEB6E5 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */; };
+		B6FAC6A31E5580F600187466 /* firebase-crash.json in Resources */ = {isa = PBXBuildFile; fileRef = B6FAC6A21E5580F600187466 /* firebase-crash.json */; };
+		B6FAC6A51E5588C700187466 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FAC6A41E5588C700187466 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -305,6 +307,8 @@
 		B6DA41F21DDA123B00CEB6E5 /* DamageReportOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportOperation.swift; sourceTree = "<group>"; };
 		B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		B6EECDA21DF8A4DE006408BE /* Ready Badger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ready Badger.entitlements"; sourceTree = "<group>"; };
+		B6FAC6A21E5580F600187466 /* firebase-crash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "firebase-crash.json"; sourceTree = "<group>"; };
+		B6FAC6A41E5588C700187466 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F110EB010FF8B96B63B5F0ED /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		FCA8D8F889F1DD002E1685AE /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -482,6 +486,8 @@
 			isa = PBXGroup;
 			children = (
 				B6EECDA21DF8A4DE006408BE /* Ready Badger.entitlements */,
+				B6FAC6A21E5580F600187466 /* firebase-crash.json */,
+				B6FAC6A41E5588C700187466 /* GoogleService-Info.plist */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
 				B62119871E07518300111F59 /* LoadingIndicator.swift */,
 				B6AB17D01DF63ACD00F21432 /* CustomNavigationController.swift */,
@@ -771,6 +777,7 @@
 				B62E73591DA1D21F00C33683 /* Resources */,
 				B2515563387263358F72CCC9 /* [CP] Embed Pods Frameworks */,
 				93460812A9393C0FE3E80CB3 /* [CP] Copy Pods Resources */,
+				B6FAC6A61E558C2B00187466 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -842,8 +849,10 @@
 				B69004C41DA9CF8E0001D4F8 /* Alert Feed.storyboard in Resources */,
 				B655A5E11DD1510600401155 /* Tornado.html in Resources */,
 				B655A5DD1DD1510600401155 /* Hazardous Material.html in Resources */,
+				B6FAC6A51E5588C700187466 /* GoogleService-Info.plist in Resources */,
 				B655A5DA1DD1510600401155 /* Extreme Heat.html in Resources */,
 				B655A5DE1DD1510600401155 /* Public Health Emergency.html in Resources */,
+				B6FAC6A31E5580F600187466 /* firebase-crash.json in Resources */,
 				B655A5DF1DD1510600401155 /* Power Outage.html in Resources */,
 				B62E73661DA1D21F00C33683 /* Assets.xcassets in Resources */,
 				B69004C31DA9CF8E0001D4F8 /* LaunchScreen.storyboard in Resources */,
@@ -905,6 +914,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B6FAC6A61E558C2B00187466 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:263922887006:ios:e45cc5d1f74ddfc3\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}\"/Ready\\ Badger/firebase-crash.json ";
 		};
 /* End PBXShellScriptBuildPhase section */
 

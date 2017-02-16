@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JTHamburgerButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,7 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41E66F33D359CCF6CF313E8F111DB1BA</key>
+		<key>07A35DCB4697EB1DEB6636824442A9CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23DE20586BC1609587D53A835CE24659</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29D120738164ADF9AD1749C06D024A91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C169E58A68FA3C10E91ADFD6D861A66</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,32 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>87C8DF26196F0FE175760C77F08BC2C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88C257C954247EE49E09C66A8B19E56A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABB69060D9199953FCC1664C1CF62F67</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BD8FABA9B054FCCE7D30FDC03F611454</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CBA60CA054B8068C03514672FAB52122</key>
+		<key>C5B80060FE8C664DF08841000F41D515</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DC62791899375413C44E63EDE7488F9F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F8C5755F01F62F83169DF79A77921DFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

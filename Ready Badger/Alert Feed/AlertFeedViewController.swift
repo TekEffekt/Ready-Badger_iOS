@@ -19,16 +19,6 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAlertFeeds()
-        //view.frame = CGRect(x: view.frame.origin.x, y: 64, width: view.frame.width, height: view.frame.height)
-        print("First")
-        print(view.frame)
-        print(navigationController!.view.frame)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        print("second")
-        print(view.frame)
-        print(navigationController!.view.frame)
     }
     
     private func downloadFeedData() {

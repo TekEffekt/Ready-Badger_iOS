@@ -8,6 +8,7 @@
 
 import UIKit
 import OneSignal
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,8 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes as? [String : AnyObject], for: UIControlState.normal)
         
         DataInitialization.initialize()
+        
         OneSignal.initWithLaunchOptions(launchOptions, appId: "95f6dcea-aff3-4457-b8d7-7eabcd1bf083", handleNotificationReceived:nil, handleNotificationAction:nil, settings: [kOSSettingsKeyInFocusDisplayOption: true, kOSSettingsKeyAutoPrompt: true])
         
+        FIRApp.configure()
+                
         return true
     }
 

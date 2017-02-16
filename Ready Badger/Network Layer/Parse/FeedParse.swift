@@ -42,7 +42,13 @@ class FeedParse {
                 roads = []
                 for jsonObject in jsonArray {
                     guard let json = jsonObject as? NSDictionary else { continue }
-                    let roadIncident = RoadData(title: json.value(forKey: "title") as! String, travelDirection: json.value(forKey: "direction_of_travel") as! String, location: json.value(forKey: "location") as! String, roadwayName: json.value(forKey: "roadway_name") as! String, lanesAffected: json.value(forKey: "lanes_affected") as! String, severity: json.value(forKey: "severity") as! String, countyName: county.name)
+                    guard let title = json.value(forKey: "title") as? String else { continue }
+                    let travelDirection = (json.value(forKey: "direction_of_travel") as? String) ?? ""
+                    let location = (json.value(forKey: "location") as? String) ?? ""
+                    let roadWay = (json.value(forKey: "roadway_name") as? String) ?? ""
+                    let lanesAffected = (json.value(forKey: "lanes_affected") as? String) ?? ""
+                    let severity = (json.value(forKey: "severity") as? String) ?? ""
+                    let roadIncident = RoadData(title: title, travelDirection: travelDirection, location: location, roadwayName: roadWay, lanesAffected: lanesAffected, severity: severity, countyName: county.name)
                     roads!.append(roadIncident)
                 }
             }
