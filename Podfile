@@ -5,13 +5,13 @@ use_frameworks!
 
 target 'Ready Badger' do
 pod 'OneSignal'
-pod 'LGSideMenuController'
 pod 'JTHamburgerButton'
 pod 'RealmSwift'
 pod 'Validator'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'AEXML'
 pod 'SwiftyJSON'
+pod 'LGSideMenuController'
 end
 
 post_install do |installer|

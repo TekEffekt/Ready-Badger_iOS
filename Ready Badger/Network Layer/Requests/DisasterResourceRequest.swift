@@ -11,7 +11,7 @@ import Foundation
 struct DisasterResourceRequest: BackendRequest {
     
     var endpoint: String {
-        return "api/v0.5/index.php/locations"
+        return "api/v0.5/locations"
     }
     
     var method: BackendServiceMethod {
@@ -31,7 +31,7 @@ struct DisasterResourceRequest: BackendRequest {
     }
     
     var alernativeUrl: URL? {
-        return URL(string: "http://readybadger.org")
+        return nil
     }
     
 }

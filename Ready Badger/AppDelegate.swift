@@ -14,16 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let cancelButtonAttributes: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
         UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes as? [String : AnyObject], for: UIControlState.normal)
         
         DataInitialization.initialize()
-        OneSignal.initWithLaunchOptions(launchOptions, appId: "95f6dcea-aff3-4457-b8d7-7eabcd1bf083")
-        OneSignal.registerForPushNotifications()
-        //OneSignal.
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "95f6dcea-aff3-4457-b8d7-7eabcd1bf083", handleNotificationReceived:nil, handleNotificationAction:nil, settings: [kOSSettingsKeyInFocusDisplayOption: true, kOSSettingsKeyAutoPrompt: true])
         
         return true
     }
@@ -54,15 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.registerForRemoteNotifications()
     }
     
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        print(deviceToken)
-    }
-    
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register:", error)
     }
-
-
 
 }
 

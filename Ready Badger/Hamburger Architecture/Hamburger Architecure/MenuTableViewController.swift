@@ -55,7 +55,6 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     // MARK: Datasource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //print(numberForSection(forLink: MenuLinks.allSections[section])
         return numberForSection(forLink: MenuLinks.allSections[section])
     }
     

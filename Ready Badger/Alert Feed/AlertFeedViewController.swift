@@ -7,19 +7,28 @@
 //
 
 import UIKit
-import MBProgressHUD
+import OneSignal
 
 class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptyState {
     
     var pageMenu: CAPSPageMenu?
     var alertFeeds: [FeedPageViewController]!
     var menu: HamburgerMenu?
-    var loadingIndicator: MBProgressHUD?
     var emptyState: EmptyStateView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAlertFeeds()
+        //view.frame = CGRect(x: view.frame.origin.x, y: 64, width: view.frame.width, height: view.frame.height)
+        print("First")
+        print(view.frame)
+        print(navigationController!.view.frame)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("second")
+        print(view.frame)
+        print(navigationController!.view.frame)
     }
     
     private func downloadFeedData() {
@@ -32,13 +41,10 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
             }
             return
         }
-        loadingIndicator = MBProgressHUD.showAdded(to: navigationController!.view, animated: true)
-        loadingIndicator?.label.text = "Loading.."
-        loadingIndicator?.isUserInteractionEnabled = false
+        
         NetworkQueue.shared.addOperation(FeedOperation(withRequest: FeedRequest(), completionHandler: { (feedData) in
             OperationQueue.main.addOperation({
-                self.loadingIndicator?.hide(animated: true)
-
+                
                 for vc in self.alertFeeds {
                     vc.feedData = feedData
                 }
@@ -51,12 +57,15 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        view.frame = CGRect(x: view.frame.origin.x, y: 64, width: view.frame.width, height: view.frame.height)
         applyTheme()
         downloadFeedData()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        print("Third")
+        print(view.frame)
         if pageMenu == nil {
             setupPageMenu()
             setupEmptyState(withPrimaryText: "No County Data", andSecondaryText: "Hit the settings button to subscribe to a county.")

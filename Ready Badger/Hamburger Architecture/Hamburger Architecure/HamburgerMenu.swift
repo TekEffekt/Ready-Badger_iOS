@@ -49,7 +49,7 @@ class HamburgerMenu: LGSideMenuController {
     
     private func setupHamburgerButton() {
         hamButton = JTHamburgerButton(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
-        hamButton!.addTarget(self, action: #selector(HamburgerMenu.tappedMenu(sender:)), for: UIControlEvents.touchUpInside)
+        hamButton!.addTarget(self, action: #selector(HamburgerMenu.tappedMenu), for: UIControlEvents.touchUpInside)
         
         menuBarButton = UIBarButtonItem(customView: hamButton!)
     }
@@ -60,7 +60,7 @@ class HamburgerMenu: LGSideMenuController {
     
     private func setupMenuNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(HamburgerMenu.userOpenedMenu), name: NSNotification.Name(rawValue: kLGSideMenuControllerWillShowLeftViewNotification), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(HamburgerMenu.userReturnedFromMenu), name: NSNotification.Name(rawValue: kLGSideMenuControllerWillDismissLeftViewNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(HamburgerMenu.userReturnedFromMenu), name: NSNotification.Name(rawValue: kLGSideMenuControllerWillHideLeftViewNotification), object: nil)
     }
     
     private func setupNavigationController() {
@@ -82,7 +82,7 @@ class HamburgerMenu: LGSideMenuController {
     private func setupMenuTable() {
         menuLinkTable = (storyboard!.instantiateViewController(withIdentifier: "Table") as! MenuTableViewController)
         menuLinkTable!.hamburgerMenu = self
-        leftView().addSubview(menuLinkTable!.view)
+        leftViewController = menuLinkTable
     }
     
     private func setMenuFrame() {
@@ -94,9 +94,7 @@ class HamburgerMenu: LGSideMenuController {
         hideLeftView(animated: true, completionHandler: nil)
         let storyboard = UIStoryboard(name: name, bundle: nil)
         guard let newItem = storyboard.instantiateViewController(withIdentifier: name) as? MenuItem else { return }
-        
         newItem.menu = self
-        
         let newVc = newItem as! UIViewController
         
         if (name != "Emergency Tone" && navController!.viewControllers.count > 0) {
@@ -104,11 +102,10 @@ class HamburgerMenu: LGSideMenuController {
         }
         
         navController!.viewControllers.append(newVc)
-        
         setupHamburgerButton(forController: newVc)
     }
     
-    func tappedMenu(sender: JTHamburgerButton) {
+    func tappedMenu() {
         showLeftView(animated: true, completionHandler: nil)
     }
     
@@ -130,4 +127,3 @@ class HamburgerMenu: LGSideMenuController {
     }
 
 }
-

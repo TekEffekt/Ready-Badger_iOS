@@ -18,6 +18,7 @@
 		B619810C1DBDCF8B00787101 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810B1DBDCF8B00787101 /* Answer.swift */; };
 		B61981101DBDF8A500787101 /* DamageReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619810F1DBDF8A500787101 /* DamageReportDataSource.swift */; };
 		B61981121DBDF8B200787101 /* DamageReportCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61981111DBDF8B200787101 /* DamageReportCellType.swift */; };
+		B62119881E07518300111F59 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62119871E07518300111F59 /* LoadingIndicator.swift */; };
 		B627DA631DAA21D5009EC6FB /* CountyDataParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */; };
 		B627DA651DAA226C009EC6FB /* BackendResponseParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */; };
 		B627DA6B1DAA25B7009EC6FB /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = B627DA6A1DAA25B7009EC6FB /* County.swift */; };
@@ -166,6 +167,7 @@
 		B619810B1DBDCF8B00787101 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		B619810F1DBDF8A500787101 /* DamageReportDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportDataSource.swift; sourceTree = "<group>"; };
 		B61981111DBDF8B200787101 /* DamageReportCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCellType.swift; sourceTree = "<group>"; };
+		B62119871E07518300111F59 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		B627DA621DAA21D5009EC6FB /* CountyDataParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountyDataParse.swift; sourceTree = "<group>"; };
 		B627DA641DAA226C009EC6FB /* BackendResponseParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendResponseParse.swift; sourceTree = "<group>"; };
 		B627DA6A1DAA25B7009EC6FB /* County.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
@@ -479,7 +481,9 @@
 		B62E735D1DA1D21F00C33683 /* Ready Badger */ = {
 			isa = PBXGroup;
 			children = (
+				B6EECDA21DF8A4DE006408BE /* Ready Badger.entitlements */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B62119871E07518300111F59 /* LoadingIndicator.swift */,
 				B6AB17D01DF63ACD00F21432 /* CustomNavigationController.swift */,
 				B64B83091DEE6D560011CAA9 /* EmptyStateView.swift */,
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
@@ -492,7 +496,6 @@
 				B69F76A51DE3FF36000A3166 /* LocationManager.swift */,
 				B69F76A61DE3FF36000A3166 /* RealmUserDefaults.swift */,
 				B627DA9C1DB51EDC009EC6FB /* FormTableViewController.swift */,
-				B6EECDA21DF8A4DE006408BE /* Ready Badger.entitlements */,
 				B6EECDA31DF8F0E9006408BE /* About Us */,
 				B65D25E91DAA0615001A3634 /* Network Layer */,
 				B67510E91DA2389B00E81CB3 /* Alert Feed */,
@@ -983,6 +986,7 @@
 				B64B831C1DF413160011CAA9 /* ReadyList.swift in Sources */,
 				B612E5E41DD0EB4C0098D47C /* DisasterInfoViewController.swift in Sources */,
 				B6DA41FA1DDA313A00CEB6E5 /* BundleExtension.swift in Sources */,
+				B62119881E07518300111F59 /* LoadingIndicator.swift in Sources */,
 				B6D051311DDECFA500AB1741 /* FeedRequest.swift in Sources */,
 				B67510E31DA227EF00E81CB3 /* Menu Links.swift in Sources */,
 				B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */,
