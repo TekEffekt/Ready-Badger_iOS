@@ -8,10 +8,11 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 class ListDatasource: NSObject, UITableViewDataSource {
     
-    private var lists: [ReadyList]
+    private var lists: Results<ReadyList>
     weak var listTableView: UITableView?
     
     override init() {
@@ -20,6 +21,9 @@ class ListDatasource: NSObject, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        if lists.isEmpty {
+            return 0
+        }
         return 1
     }
     
@@ -40,17 +44,12 @@ class ListDatasource: NSObject, UITableViewDataSource {
         return lists.isEmpty
     }
     
-    func reloadData() {
-        lists = ListItemQueries.getLists()
-    }
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Your Lists"
     }
     
     func delete(list: ReadyList) {
         ListItemWrites.remove(list: list)
-        reloadData()
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

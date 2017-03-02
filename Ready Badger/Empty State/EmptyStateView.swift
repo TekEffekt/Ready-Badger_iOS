@@ -9,7 +9,7 @@
 import UIKit
 
 enum EmptyStateType {
-    case alert, resources, makeAList
+    case alert, resources, makeAList, listItem
 }
 
 class EmptyStateView: UIView {
@@ -78,6 +78,18 @@ class MakeAListEmptyStateView: EmptyStateView {
     
     init(inParentView parentView: UIView) {
         super.init(parentView: parentView, image: #imageLiteral(resourceName: "Empty State"), primaryText: "No Lists", secondaryText: "Hit the plus button to create a list.")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+class ListItemEmptyStateView: EmptyStateView {
+    
+    init(inParentView parentView: UIView) {
+        super.init(parentView: parentView, image: #imageLiteral(resourceName: "Empty State"), primaryText: "No List Items", secondaryText: "Hit the plus button to create an item.")
     }
     
     required init?(coder aDecoder: NSCoder) {

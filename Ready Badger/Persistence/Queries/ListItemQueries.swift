@@ -11,13 +11,13 @@ import RealmSwift
 
 class ListItemQueries {
     
-    static func getListItems(forList list: ReadyList) -> [ListItem] {
-        return Array(list.items)
+    static func getListItems(forList list: ReadyList) -> List<ListItem> {
+        return list.items
     }
     
-    static func getLists() -> [ReadyList] {
+    static func getLists() -> Results<ReadyList> {
         let realm = try! Realm()
-        return Array(realm.objects(ReadyList.self))
+        return realm.objects(ReadyList.self)
     }
     
 }

@@ -8,10 +8,11 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 class ListItemDatasource: NSObject, UITableViewDataSource {
     
-    private var listItems: [ListItem]
+    private var listItems: List<ListItem>
     weak var listTableView: UITableView?
     let list: ReadyList
     

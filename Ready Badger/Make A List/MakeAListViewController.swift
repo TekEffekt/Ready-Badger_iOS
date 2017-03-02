@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MakeAListViewController: UITableViewController, MenuItem, DefaultTheme {
+class MakeAListViewController: UITableViewController, MenuItem, DefaultTheme, EmptyState {
 
     var menu: HamburgerMenu?
     let dataSource = ListDatasource()
     var chosenList: ReadyList?
+    var emptyState: EmptyStateView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +24,16 @@ class MakeAListViewController: UITableViewController, MenuItem, DefaultTheme {
         super.viewWillAppear(animated)
         applyTheme()
         dataSource.listTableView = tableView
-        dataSource.reloadData()
         tableView.reloadData()
+        checkIfEmpty()
+    }
+    
+    func checkIfEmpty() {
+        if dataSource.isEmpty() {
+            configureEmptyState(ofType: .makeAList, hidden: false)
+        } else {
+            configureEmptyState(ofType: .makeAList, hidden: true)
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

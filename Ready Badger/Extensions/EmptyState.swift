@@ -26,6 +26,8 @@ extension EmptyState where Self: UIViewController {
             emptyState = ResourcesEmptyStateView(inParentView: view)
         case .makeAList:
             emptyState = MakeAListEmptyStateView(inParentView: view)
+        case .listItem:
+            emptyState = ListItemEmptyStateView(inParentView: view)
         }
         view.addSubview(emptyState!)
         

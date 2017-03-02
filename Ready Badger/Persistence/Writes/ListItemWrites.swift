@@ -44,8 +44,6 @@ class ListItemWrites {
     static func remove(listItem: ListItem, fromList list: ReadyList) {
         let realm = try! Realm()
         try! realm.write {
-            let index = list.items.index(of: listItem)
-            list.items.remove(objectAtIndex: index!)
             realm.delete(listItem)
         }
     }
