@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 class EditListController: FormTableViewController, DefaultTheme {
     
@@ -42,7 +43,9 @@ class EditListController: FormTableViewController, DefaultTheme {
         let userEnteredString = textField.text
         let newString = (userEnteredString! as NSString).replacingCharacters(in: range, with: string)
         if titleLabel === textField {
-            list?.name = newString
+            try! Realm().write {
+                list?.name = newString
+            }
         }
         
         return true

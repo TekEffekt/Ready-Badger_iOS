@@ -15,6 +15,7 @@ class ListItemDatasource: NSObject, UITableViewDataSource {
     private var listItems: List<ListItem>
     weak var listTableView: UITableView?
     let list: ReadyList
+    weak var vcWithEmptyState: EmptyState?
     
     init(withList list: ReadyList) {
         self.list = list
@@ -42,17 +43,16 @@ class ListItemDatasource: NSObject, UITableViewDataSource {
         return listItems.isEmpty
     }
     
-    func reloadData() {
-        listItems = ListItemQueries.getListItems(forList: list)
-    }
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if isEmpty() {
+            return nil
+        }
         return "Your List Items"
     }
     
     func delete(listItem: ListItem, fromList list: ReadyList) {
         ListItemWrites.remove(listItem: listItem, fromList: list)
-        reloadData()
+        vcWithEmptyState?.checkIfEmpty()
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -65,6 +65,7 @@ class ListItemDatasource: NSObject, UITableViewDataSource {
         tableView.beginUpdates()
         tableView.deleteRows(at: [indexPath], with: .fade)
         tableView.endUpdates()
+        tableView.reloadData()
     }
     
 }

@@ -21,10 +21,10 @@ class ReadyList: Object {
     
     static func incrementID() -> Int {
         let realm = try! Realm()
-        let nextLocation = Array(realm.objects(ListItem.self).sorted(byProperty: "id"))
-        let last = nextLocation.last
-        if nextLocation.count > 0 {
-            let currentID = last?.value(forKey: "id") as? Int
+        let items = realm.objects(ReadyList.self).sorted(byProperty: "id")
+        let lastItem = items.last
+        if items.count > 0 {
+            let currentID = lastItem?.value(forKey: "id") as? Int
             return currentID! + 1
         }
         else {

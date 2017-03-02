@@ -24,7 +24,6 @@ class EditListItemController: FormTableViewController, DefaultTheme {
             listItem = ListItem()
             navigationItem.title = "Create Item"
             isNew = true
-            saveButton.title = "Done"
         } else {
             navigationItem.leftBarButtonItem = nil
         }
@@ -34,6 +33,9 @@ class EditListItemController: FormTableViewController, DefaultTheme {
         super.viewWillAppear(animated)
         applyTheme()
         setupTextFields()
+        if !isNew {
+            navigationItem.rightBarButtonItem = nil
+        }
     }
     
     private func setupTextFields() {

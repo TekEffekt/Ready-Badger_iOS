@@ -12,23 +12,21 @@ import RealmSwift
 class ListItemWrites {
     
     static func add(list: ReadyList) {
-        if list.id == 0 {
-            list.id = ReadyList.incrementID()
-        }
-        
         let realm = try! Realm()
         try! realm.write {
+            if list.id == 0 {
+                list.id = ReadyList.incrementID()
+            }
             realm.add(list, update: true)
         }
     }
     
     static func add(listItem: ListItem, inList list: ReadyList) {
-        if listItem.id == 0 {
-            listItem.id = ListItem.incrementID()
-        }
-        
         let realm = try! Realm()
         try! realm.write {
+            if listItem.id == 0 {
+                listItem.id = ListItem.incrementID()
+            }
             realm.add(listItem, update: true)
             list.items.append(listItem)
         }

@@ -8,22 +8,32 @@
 
 import UIKit
 
-class ListDetailController: UITableViewController, MenuItem, DefaultTheme {
+class ListDetailController: UITableViewController, MenuItem, DefaultTheme, EmptyState {
 
     var menu: HamburgerMenu?
-    var dataSource: ListItemDatasource?
+    var dataSource: ListItemDatasource!
     var list: ReadyList!
     var chosenItem: ListItem?
+    var emptyState: EmptyStateView?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()
         dataSource = ListItemDatasource(withList: list)
         tableView.dataSource = dataSource
-        dataSource!.listTableView = tableView
-        dataSource!.reloadData()
+        dataSource.listTableView = tableView
+        dataSource.vcWithEmptyState = self
         tableView.reloadData()
         title = list.name
+        checkIfEmpty()
+    }
+    
+    func checkIfEmpty() {
+        if dataSource.isEmpty() {
+            configureEmptyState(ofType: .listItem, hidden: false)
+        } else {
+            configureEmptyState(ofType: .listItem, hidden: true)
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

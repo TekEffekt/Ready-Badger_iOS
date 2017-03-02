@@ -18,6 +18,7 @@ class MakeAListViewController: UITableViewController, MenuItem, DefaultTheme, Em
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
+        dataSource.vcWithEmptyState = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
