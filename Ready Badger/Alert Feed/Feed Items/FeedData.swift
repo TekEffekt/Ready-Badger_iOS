@@ -13,6 +13,10 @@ struct FeedData {
     var dataByCounties: [String: [FeedDataValue]]
     var dataByAlert: [String: [FeedDataValue]]
     var dataByAlertKeys: [String] = ["weather", "alerts", "roads", "airQuality"]
+    var isEmpty: Bool {
+        print("County Data: \(countyData)")
+        return countyData.count == 0
+    }
     
     init(withCountyData countyData: [CountyData]) {
         self.countyData = countyData

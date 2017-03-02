@@ -10,15 +10,26 @@ import Foundation
 import UIKit
 
 protocol EmptyState: class {
-    func setupEmptyState(withPrimaryText primaryText: String, andSecondaryText secondaryText: String)
-    var emptyState: EmptyStateView! { get set }
+    func configureEmptyState(ofType type: EmptyStateType, hidden: Bool)
+    var emptyState: EmptyStateView? { get set }
+    func checkIfEmpty()
 }
 
 extension EmptyState where Self: UIViewController {
     
-    func setupEmptyState(withPrimaryText primaryText: String, andSecondaryText secondaryText: String) {
-        emptyState = EmptyStateView(parentView: view, image: #imageLiteral(resourceName: "Empty State"), primaryText: primaryText, secondaryText: secondaryText)
-        view.addSubview(emptyState)
+    func configureEmptyState(ofType type: EmptyStateType, hidden: Bool) {
+        emptyState?.removeFromSuperview()
+        switch type {
+        case .alert:
+            emptyState = AlertEmptyStateView(inParentView: view)
+        case .resources:
+            emptyState = ResourcesEmptyStateView(inParentView: view)
+        case .makeAList:
+            emptyState = MakeAListEmptyStateView(inParentView: view)
+        }
+        view.addSubview(emptyState!)
+        
+        emptyState!.isHidden = hidden
     }
     
 }

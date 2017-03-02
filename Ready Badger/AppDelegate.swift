@@ -9,6 +9,7 @@
 import UIKit
 import OneSignal
 import Firebase
+import RealReachability
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         OneSignal.initWithLaunchOptions(launchOptions, appId: "95f6dcea-aff3-4457-b8d7-7eabcd1bf083", handleNotificationReceived:nil, handleNotificationAction:nil, settings: [kOSSettingsKeyInFocusDisplayOption: true, kOSSettingsKeyAutoPrompt: true])
         
         FIRApp.configure()
-                
+        RealReachability.sharedInstance().startNotifier()
+        
         return true
     }
 

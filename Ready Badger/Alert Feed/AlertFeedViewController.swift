@@ -14,7 +14,8 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
     var pageMenu: CAPSPageMenu?
     var alertFeeds: [FeedPageViewController]!
     var menu: HamburgerMenu?
-    var emptyState: EmptyStateView!
+    var emptyState: EmptyStateView?
+    var feedData: FeedData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +24,22 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
     
     private func downloadFeedData() {
         guard CountyQueries.getAllSelectedCounties().count > 0 else {
-            if emptyState != nil {
-                emptyState.isHidden = false
-            }
             for vc in self.alertFeeds {
                 vc.feedData = nil
             }
+            configureEmptyState(ofType: .alert, hidden: false)
             return
         }
         
         NetworkQueue.shared.addOperation(FeedOperation(withRequest: FeedRequest(), completionHandler: { (feedData) in
             OperationQueue.main.addOperation({
-                
+                self.feedData = feedData
+                print("County Data Count: \(feedData.countyData.count)")
                 for vc in self.alertFeeds {
                     vc.feedData = feedData
                 }
                 
-                self.emptyState.isHidden =
-                    feedData.getSectionNumber(withOrientation: .byCounty) > 0 ? true : false
+                self.checkIfEmpty()
             })
         }))
     }
@@ -54,12 +53,19 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        print("Third")
-        print(view.frame)
         if pageMenu == nil {
             setupPageMenu()
-            setupEmptyState(withPrimaryText: "No County Data", andSecondaryText: "Hit the settings button to subscribe to a county.")
         }
+    }
+    
+    func checkIfEmpty() {
+        var hidden = true
+        if let data = feedData {
+            hidden = !data.isEmpty
+        } else {
+            hidden = false
+        }
+        configureEmptyState(ofType: .alert, hidden: hidden)
     }
     
     private func loadAlertFeeds() {
@@ -91,8 +97,12 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
                                 pageMenuOptions: parameters)
         pageMenu!.view.backgroundColor = UIColor.clear
         
-        self.edgesForExtendedLayout = UIRectEdge()
-        self.view.addSubview(pageMenu!.view)
+        edgesForExtendedLayout = UIRectEdge()
+        if let emptyState = emptyState {
+            view.insertSubview(pageMenu!.view, belowSubview: emptyState)
+        } else {
+            self.view.addSubview(pageMenu!.view)
+        }
     }
     
 }

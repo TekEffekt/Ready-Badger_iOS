@@ -14,6 +14,7 @@ pod 'SwiftyJSON'
 pod 'LGSideMenuController'
 pod 'Firebase/Core'
 pod 'Firebase/Crash'
+pod 'RealReachability'
 end
 
 post_install do |installer|
