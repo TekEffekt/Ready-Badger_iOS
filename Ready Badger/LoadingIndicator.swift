@@ -17,6 +17,7 @@ class LoadingIndicator {
         OperationQueue.main.addOperation {
             guard let base = UIApplication.shared.keyWindow?.rootViewController else { return }
             
+            indicator?.removeFromSuperview()
             indicator = MBProgressHUD.showAdded(to: base.view, animated: true)
             indicator?.label.text = "Loading.."
             indicator?.isUserInteractionEnabled = false
