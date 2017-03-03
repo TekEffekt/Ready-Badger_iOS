@@ -25,4 +25,17 @@ class County: Object {
         return "id"
     }
     
+    static func incrementID() -> Int {
+        let realm = try! Realm()
+        let counties = Array(realm.objects(County.self).sorted(byProperty: "id"))
+        let last = counties.last
+        if counties.count > 0 {
+            let currentID = last?.value(forKey: "id") as? Int
+            return currentID! + 1
+        }
+        else {
+            return 1
+        }
+    }
+    
 }
