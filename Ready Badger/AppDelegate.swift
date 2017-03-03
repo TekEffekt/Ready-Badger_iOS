@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        RealReachability.sharedInstance().startNotifier()
         let cancelButtonAttributes: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
         UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes as? [String : AnyObject], for: UIControlState.normal)
         
@@ -26,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         OneSignal.initWithLaunchOptions(launchOptions, appId: "95f6dcea-aff3-4457-b8d7-7eabcd1bf083", handleNotificationReceived:nil, handleNotificationAction:nil, settings: [kOSSettingsKeyInFocusDisplayOption: true, kOSSettingsKeyAutoPrompt: true])
         
         FIRApp.configure()
-        RealReachability.sharedInstance().startNotifier()
         
         return true
     }
