@@ -40,5 +40,10 @@ class DamageReportImageOperation: Operation, BackendOperation {
         service.request(with: request, success: handleSuccess, failure: handleFailure)
     }
     
+    override func cancel() {
+        super.cancel()
+        service.cancel()
+    }
+    
 }
 

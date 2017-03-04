@@ -95,9 +95,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
         pageMenu = CAPSPageMenu(viewControllers: alertFeeds,
                                 frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height),
                                 pageMenuOptions: parameters)
-        pageMenu!.view.backgroundColor = UIColor.clear
-        
-        edgesForExtendedLayout = UIRectEdge()
+        pageMenu!.view.backgroundColor = UIColor.clear        
         if let emptyState = emptyState {
             view.insertSubview(pageMenu!.view, belowSubview: emptyState)
         } else {

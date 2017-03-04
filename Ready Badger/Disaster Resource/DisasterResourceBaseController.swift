@@ -12,9 +12,10 @@ class DisasterResourceBaseController: UIViewController, MenuItem, EmptyState {
 
     var menu: HamburgerMenu?
     var pageMenu: CAPSPageMenu?
+    var resources: [String : [String : [DisasterResource]]] = [:]
     var resourcePages: [DisasterResourcePageController] {
         var pages: [DisasterResourcePageController] = []
-        let resources = DisasterResourceQuery.getResources()
+        resources = DisasterResourceQuery.getResources()
         checkIfEmpty()
         for type in DisasterResourceType.getAll() {
             let page = storyboard?.instantiateViewController(withIdentifier: "Resource Page") as! DisasterResourcePageController
@@ -39,7 +40,7 @@ class DisasterResourceBaseController: UIViewController, MenuItem, EmptyState {
     }
     
     func checkIfEmpty() {
-        let hidden = DisasterResourceQuery.getResources().count > 0 ? true : false
+        let hidden = resources.count > 0 ? true : false
         configureEmptyState(ofType: .resources, hidden: hidden)
     }
     
@@ -61,8 +62,11 @@ class DisasterResourceBaseController: UIViewController, MenuItem, EmptyState {
                                 frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height),
                                 pageMenuOptions: parameters)
         pageMenu!.view.backgroundColor = UIColor.clear
-        
-        self.edgesForExtendedLayout = UIRectEdge()
+        if let emptyState = emptyState {
+            view.insertSubview(pageMenu!.view, belowSubview: emptyState)
+        } else {
+            self.view.addSubview(pageMenu!.view)
+        }
     }
 
 }
