@@ -11,7 +11,7 @@ import Foundation
 struct DisasterResourceRequest: BackendRequest {
     
     var endpoint: String {
-        return "api/v0.5/locations"
+        return "api/v1.0/locations"
     }
     
     var method: BackendServiceMethod {

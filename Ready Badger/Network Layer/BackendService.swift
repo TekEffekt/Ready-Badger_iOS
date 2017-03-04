@@ -53,6 +53,7 @@ class BackendService {
         let session = URLSession.shared
         networkTask = session.dataTask(with: urlRequest as URLRequest, completionHandler: { (data, response, error) in
             LoadingIndicator.hideIndicator()
+            print("Response :\(response)")
             if data != nil && error == nil {
                 success(data! as NSData)
             } else {

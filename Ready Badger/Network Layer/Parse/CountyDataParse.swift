@@ -22,8 +22,9 @@ class CountyDataParse: BackendResponseParse {
             let facebook = (dict["facebook"] as? String) ?? ""
             let twitter = (dict["twitter"] as? String) ?? ""
             let website = (dict["website"] as? String) ?? ""
+            let id = Int((dict["id"] as? String) ?? "") ?? 0
             
-            CountyWrites.saveCounty(name: name, region: reigon, weatherAlertCode: weatherAlertCode, currentWeatherCode: currentWeatherCode, facebook: facebook, twitter: twitter, website: website)
+            CountyWrites.saveCounty(name: name, region: reigon, weatherAlertCode: weatherAlertCode, currentWeatherCode: currentWeatherCode, facebook: facebook, twitter: twitter, website: website, id: id)
         }
     }
     

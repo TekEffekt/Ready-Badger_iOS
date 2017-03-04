@@ -11,7 +11,7 @@ import Foundation
 struct AllCountyRequest: BackendRequest {
     
     var endpoint: String {
-        return "api/v0.5/counties"
+        return "api/v1.0/counties"
     }
     
     var method: BackendServiceMethod {

@@ -11,7 +11,7 @@ import Foundation
 struct FeedRequest: BackendRequest {
     
     var endpoint: String {
-        return "api/v0.5/rss"
+        return "api/v1.0/rss"
     }
 
     var headers: [String : String]? {
@@ -25,9 +25,11 @@ struct FeedRequest: BackendRequest {
     var parameters: [Parameter]? {
         let selectedCounties = CountyQueries.getAllSelectedCounties()
         var parameters = [Parameter]()
+        var value = ""
         for county in selectedCounties {
-            parameters.append(Parameter(Key: "county[]", Value: "\(county.id)" as AnyObject))
+            value += "\(county.id),"
         }
+        parameters.append(Parameter(Key: "county", Value: value as AnyObject))
         return parameters
     }
     
