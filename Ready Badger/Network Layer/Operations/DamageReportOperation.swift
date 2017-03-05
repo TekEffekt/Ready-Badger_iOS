@@ -16,8 +16,7 @@ class DamageReportOperation: Operation, BackendOperation {
     var handleSuccess: ((NSData) -> Void) {
         return { data in
             do {
-                let string = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue)
-                print(string)
+                ReportAlert.show()
             } catch _ {
                 print("JSON Invalid")
             }

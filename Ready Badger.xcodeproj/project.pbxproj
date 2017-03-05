@@ -157,6 +157,7 @@
 		B6E389D41E67A6F6007FA181 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E389D31E67A6F6007FA181 /* EmptyStateView.swift */; };
 		B6FAC6A31E5580F600187466 /* firebase-crash.json in Resources */ = {isa = PBXBuildFile; fileRef = B6FAC6A21E5580F600187466 /* firebase-crash.json */; };
 		B6FAC6A51E5588C700187466 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6FAC6A41E5588C700187466 /* GoogleService-Info.plist */; };
+		B6FF88DA1E6BA11A008B26ED /* ReportAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FF88D91E6BA11A008B26ED /* ReportAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -313,6 +314,7 @@
 		B6EECDA21DF8A4DE006408BE /* Ready Badger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ready Badger.entitlements"; sourceTree = "<group>"; };
 		B6FAC6A21E5580F600187466 /* firebase-crash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "firebase-crash.json"; sourceTree = "<group>"; };
 		B6FAC6A41E5588C700187466 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6FF88D91E6BA11A008B26ED /* ReportAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportAlert.swift; sourceTree = "<group>"; };
 		F110EB010FF8B96B63B5F0ED /* Pods-Ready Badger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.debug.xcconfig"; sourceTree = "<group>"; };
 		FCA8D8F889F1DD002E1685AE /* Pods-Ready Badger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready Badger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready Badger/Pods-Ready Badger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -497,6 +499,7 @@
 				B62119871E07518300111F59 /* LoadingIndicator.swift */,
 				B6AB17D01DF63ACD00F21432 /* CustomNavigationController.swift */,
 				B6E389CE1E679EF9007FA181 /* Network Alert.swift */,
+				B6FF88D91E6BA11A008B26ED /* ReportAlert.swift */,
 				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B64B82FF1DED49770011CAA9 /* DataInitialization.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
@@ -999,6 +1002,7 @@
 				B65D260A1DAA0615001A3634 /* BackendConfiguration.swift in Sources */,
 				B627DA931DB4B9B7009EC6FB /* OptionController.swift in Sources */,
 				B69F76A91DE3FF36000A3166 /* LocationManager.swift in Sources */,
+				B6FF88DA1E6BA11A008B26ED /* ReportAlert.swift in Sources */,
 				B64B83101DF3EE360011CAA9 /* ListItem.swift in Sources */,
 				B64B83141DF3F22A0011CAA9 /* ListItemCell.swift in Sources */,
 				B61981061DBDC5C700787101 /* State.swift in Sources */,
