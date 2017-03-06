@@ -27,6 +27,11 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
         damageReportDatasource.tableView = tableView
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        LoadingIndicator.hideIndicator()
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if damageReportDatasource.dateSelectMode && indexPath.section == 0 && indexPath.row == 2 {
             return 216

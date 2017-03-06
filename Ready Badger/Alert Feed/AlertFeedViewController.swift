@@ -16,6 +16,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
     var menu: HamburgerMenu?
     var emptyState: EmptyStateView?
     var feedData: FeedData?
+    var feedOperation: FeedOperation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
             return
         }
         
-        NetworkQueue.shared.addOperation(FeedOperation(withRequest: FeedRequest(), completionHandler: { (feedData) in
+        feedOperation = FeedOperation(withRequest: FeedRequest(), completionHandler: { (feedData) in
             OperationQueue.main.addOperation({
                 self.feedData = feedData
                 print("County Data Count: \(feedData.countyData.count)")
@@ -41,7 +42,8 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
                 
                 self.checkIfEmpty()
             })
-        }))
+        })
+        NetworkQueue.shared.addOperation(feedOperation!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +58,12 @@ class AlertFeedViewController: UIViewController, DefaultTheme, MenuItem, EmptySt
         if pageMenu == nil {
             setupPageMenu()
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        feedOperation?.cancel()
+        LoadingIndicator.hideIndicator()
     }
     
     func checkIfEmpty() {
