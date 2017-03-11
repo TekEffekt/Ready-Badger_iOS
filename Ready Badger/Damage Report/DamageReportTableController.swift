@@ -113,6 +113,7 @@ class DamageReportTableController: FormTableViewController, DefaultTheme, MenuIt
                 let request = ImageAlbumRequest(withImageData: nil)
                 NetworkQueue.shared.addOperation(ImageAlbumOperation(withRequest: request, andDamageReport: damageReportDatasource.damageReport))
             }
+            tableView.reloadData()
         } else {
             tableView.reloadData()
         }
