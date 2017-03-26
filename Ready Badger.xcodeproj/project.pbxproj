@@ -817,7 +817,7 @@
 				TargetAttributes = {
 					B62E735A1DA1D21F00C33683 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2T9JP2ZYVK;
+						DevelopmentTeam = V8N6W23849;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1177,11 +1177,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Ready Badger/Ready Badger.entitlements";
-				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
+				DEVELOPMENT_TEAM = V8N6W23849;
 				INFOPLIST_FILE = "Ready Badger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = UWPAppFactory.ReadyBadgerWisconsin;
+				PRODUCT_BUNDLE_IDENTIFIER = uwp.edu.appfactory.ReadyBadger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1193,11 +1193,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Ready Badger/Ready Badger.entitlements";
-				DEVELOPMENT_TEAM = 2T9JP2ZYVK;
+				DEVELOPMENT_TEAM = V8N6W23849;
 				INFOPLIST_FILE = "Ready Badger/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = UWPAppFactory.ReadyBadgerWisconsin;
+				PRODUCT_BUNDLE_IDENTIFIER = uwp.edu.appfactory.ReadyBadger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
