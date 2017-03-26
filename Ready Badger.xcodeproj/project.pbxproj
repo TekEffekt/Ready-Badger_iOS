@@ -52,6 +52,7 @@
 		B63BCAEB1DF8F325002765D9 /* formatting2.css in Resources */ = {isa = PBXBuildFile; fileRef = B63BCAE81DF8F325002765D9 /* formatting2.css */; };
 		B63BCAED1DF8F3DE002765D9 /* About Us.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BCAEC1DF8F3DE002765D9 /* About Us.storyboard */; };
 		B63BFF091DEA5786004C2398 /* AlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF081DEA5786004C2398 /* AlertFactory.swift */; };
+		B63F79971E884F7E0091C23F /* MyReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F79961E884F7E0091C23F /* MyReachability.swift */; };
 		B6469E881DD04F4A002B109B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E871DD04F4A002B109B /* DescriptionViewController.swift */; };
 		B6469E8F1DD04F72002B109B /* BasementFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */; };
 		B6469E901DD04F72002B109B /* DamageReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6469E8B1DD04F72002B109B /* DamageReportCell.swift */; };
@@ -208,6 +209,7 @@
 		B63BCAE81DF8F325002765D9 /* formatting2.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = formatting2.css; sourceTree = "<group>"; };
 		B63BCAEC1DF8F3DE002765D9 /* About Us.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "About Us.storyboard"; sourceTree = "<group>"; };
 		B63BFF081DEA5786004C2398 /* AlertFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertFactory.swift; path = "Damage Report/AlertFactory.swift"; sourceTree = "<group>"; };
+		B63F79961E884F7E0091C23F /* MyReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReachability.swift; sourceTree = "<group>"; };
 		B6469E871DD04F4A002B109B /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionViewController.swift; path = "Damage Report/DescriptionViewController.swift"; sourceTree = "<group>"; };
 		B6469E8A1DD04F72002B109B /* BasementFloodedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasementFloodedCell.swift; sourceTree = "<group>"; };
 		B6469E8B1DD04F72002B109B /* DamageReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DamageReportCell.swift; sourceTree = "<group>"; };
@@ -496,11 +498,12 @@
 				B6FAC6A41E5588C700187466 /* GoogleService-Info.plist */,
 				B6E389D01E67A2BE007FA181 /* sos_sound.mp3 */,
 				B62E736A1DA1D21F00C33683 /* Info.plist */,
+				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
+				B63F79961E884F7E0091C23F /* MyReachability.swift */,
 				B62119871E07518300111F59 /* LoadingIndicator.swift */,
 				B6AB17D01DF63ACD00F21432 /* CustomNavigationController.swift */,
 				B6E389CE1E679EF9007FA181 /* Network Alert.swift */,
 				B6FF88D91E6BA11A008B26ED /* ReportAlert.swift */,
-				B62E735E1DA1D21F00C33683 /* AppDelegate.swift */,
 				B64B82FF1DED49770011CAA9 /* DataInitialization.swift */,
 				B67510EE1DA23DD500E81CB3 /* UIColorAppColors.swift */,
 				B6DA41F91DDA313A00CEB6E5 /* BundleExtension.swift */,
@@ -970,6 +973,7 @@
 				B65D260C1DAA0615001A3634 /* NetworkQueue.swift in Sources */,
 				B6DA41F11DDA096C00CEB6E5 /* DamageReportRequest.swift in Sources */,
 				B65D26081DAA0615001A3634 /* BackendServiceMethod.swift in Sources */,
+				B63F79971E884F7E0091C23F /* MyReachability.swift in Sources */,
 				B69F76A81DE3FF36000A3166 /* Location.swift in Sources */,
 				B64B83121DF3EED50011CAA9 /* ListItemQueries.swift in Sources */,
 				B61981041DBDBC7800787101 /* DisasterType.swift in Sources */,

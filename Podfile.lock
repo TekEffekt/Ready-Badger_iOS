@@ -36,16 +36,12 @@ PODS:
   - LGSideMenuController (2.0.5)
   - MBProgressHUD (1.0.0)
   - OneSignal (2.1.15)
+  - ReachabilitySwift (3)
   - Realm (2.0.2):
     - Realm/Headers (= 2.0.2)
   - Realm/Headers (2.0.2)
   - RealmSwift (2.0.2):
     - Realm (= 2.0.2)
-  - RealReachability (1.1.8):
-    - RealReachability/Connection (= 1.1.8)
-    - RealReachability/Ping (= 1.1.8)
-  - RealReachability/Connection (1.1.8)
-  - RealReachability/Ping (1.1.8)
   - SwiftyJSON (3.1.1)
   - Validator (2.0.0)
 
@@ -57,8 +53,8 @@ DEPENDENCIES:
   - LGSideMenuController
   - MBProgressHUD (~> 1.0.0)
   - OneSignal
+  - ReachabilitySwift
   - RealmSwift
-  - RealReachability
   - SwiftyJSON
   - Validator
 
@@ -76,12 +72,12 @@ SPEC CHECKSUMS:
   LGSideMenuController: 3cc82025a53b672926d3ffb3f428f4f3e15e3349
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   OneSignal: de89d8a0667559332f825dbc2f545af8ce110a5f
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
-  RealReachability: e6c8a2bbffa316006e8c282efc1ee2567d61a920
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
   Validator: 1e2292640c6d5de15af424ee06ebd778369c0329
 
-PODFILE CHECKSUM: 5d8a7b928816e4f369abeda6631e65bff7a26614
+PODFILE CHECKSUM: 38477bc64c9d2df2a3201a40e11132ba35c56ccc
 
 COCOAPODS: 1.1.1

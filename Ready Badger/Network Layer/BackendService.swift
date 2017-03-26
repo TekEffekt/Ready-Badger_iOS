@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RealReachability
 
 class BackendService {
     
@@ -20,10 +19,7 @@ class BackendService {
     
     func request(with request: BackendRequest, success: @escaping ((NSData) -> Void),
                       failure: @escaping ((NSError) -> Void)) {
-        guard RealReachability.sharedInstance().currentReachabilityStatus() != .RealStatusNotReachable else {
-            NetworkAlert.show()
-            return
-        }
+        guard MyReachability.shared.currentReachabilityStatus != .notReachable else { NetworkAlert.show(); return }
         
         let url: URL
         if let alernativeUrl = request.alernativeUrl {

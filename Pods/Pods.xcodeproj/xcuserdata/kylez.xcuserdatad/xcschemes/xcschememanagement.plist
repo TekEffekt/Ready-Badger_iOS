@@ -34,7 +34,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RealReachability.xcscheme</key>
+		<key>ReachabilitySwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,17 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>09CE86535F170744F374C4DAB7B58CB8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1C76C90967D1190923518AD232A6513F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2539F3FF19A7B739530062BC05A36250</key>
+		<key>3720D9502D4C787CEAD416B3499A3C78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +77,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>62450A0E2E94161801D9E55A189BAD1E</key>
+		<key>43E7438535CFC7AD8E97E4BA8FC9F1ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7048F49A35785CC46CB21DEB0707C0DC</key>
+		<key>4E870E2C2D2FEAEC3AFE76B32DCD78A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B8D85A57657301FED70AA5866825E33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,12 +97,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98B7A0E7EA92773818417BFFCB3F06DD</key>
+		<key>ABBC853375F3D441147048FBE243C523</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C5B80060FE8C664DF08841000F41D515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCF78FC0945CE3271C2C58E0B524D8A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

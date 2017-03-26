@@ -9,7 +9,7 @@
 import UIKit
 import OneSignal
 import Firebase
-import RealReachability
+import ReachabilitySwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        RealReachability.sharedInstance().startNotifier()
+        setupReachability()
+        
         let cancelButtonAttributes: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
         UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes as? [String : AnyObject], for: UIControlState.normal)
         
@@ -29,6 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         
         return true
+    }
+    
+    private func setupReachability() {
+        do {
+            try MyReachability.shared.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
